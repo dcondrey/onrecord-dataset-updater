@@ -7,6 +7,7 @@ import re
 import stat
 import subprocess
 import sys
+import time
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -152,7 +153,16 @@ def deploy(github, files, secret, *, set_secret, state=None, save_state=lambda v
         new_commit = github.request("POST", prefix + "/git/commits", {"message": "feat: Add autonomous public dataset refresh", "tree": new_tree["sha"], "parents": [parent]})
         github.request("PATCH", prefix + "/git/refs/heads/" + branch, {"sha": new_commit["sha"], "force": False})
         parent = new_commit["sha"]
-    github.request("POST", prefix + "/actions/workflows/refresh.yml/dispatches", {"ref": branch})
+    workflow = None
+    for attempt in range(10):
+        workflow = github.request("GET", prefix + "/actions/workflows/refresh.yml", absent=True)
+        if workflow is not None:
+            break
+        if attempt < 9:
+            time.sleep(2)
+    if workflow is None or type(workflow.get("id")) is not int or workflow.get("state") != "active":
+        raise DeploymentError("Workflow registration is not ready; retry deployment")
+    github.request("POST", prefix + f"/actions/workflows/{workflow['id']}/dispatches", {"ref": branch})
     return {"repository": repository, "url": "https://github.com/" + repository, "commit": parent, "workflow": "https://github.com/" + repository + "/actions/workflows/refresh.yml"}
 
 

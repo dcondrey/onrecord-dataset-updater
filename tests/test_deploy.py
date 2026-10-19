@@ -2,6 +2,7 @@ import base64
 import json
 import re
 import unittest
+from unittest.mock import patch
 
 import yaml
 
@@ -26,6 +27,8 @@ class FakeGitHub:
             return {"object": {"sha": "a" * 40}}
         if method == "GET" and "/git/commits/" in path:
             return {"tree": {"sha": "b" * 40}}
+        if method == "GET" and path.endswith("/actions/workflows/refresh.yml"):
+            return {"id": 1, "state": "active"}
         if path.endswith(("/git/blobs", "/git/trees", "/git/commits")):
             return {"sha": "c" * 40}
         return None
@@ -116,6 +119,23 @@ class DeploymentTests(unittest.TestCase):
         self.assertFalse(ref_update["force"])
         self.assertTrue(all("billing" not in path and "onrecord-studio" not in path for _, path, _ in github.calls))
         self.assertTrue(github.calls[-1][1].endswith("/dispatches"))
+
+    def test_first_workflow_registration_can_be_delayed(self):
+        class Delayed(FakeGitHub):
+            attempts = 0
+
+            def request(self, method, path, payload=None, **kwargs):
+                if method == "GET" and path.endswith("/actions/workflows/refresh.yml"):
+                    self.attempts += 1
+                    if self.attempts == 1:
+                        return None
+                return super().request(method, path, payload, **kwargs)
+
+        github = Delayed()
+        with patch.object(d.time, "sleep") as sleep:
+            d.deploy(github, {"README.md": b"example"}, "secret", set_secret=lambda *args: None)
+        self.assertEqual(github.attempts, 2)
+        sleep.assert_called_once_with(2)
 
 
 if __name__ == "__main__":
