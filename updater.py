@@ -115,11 +115,12 @@ class Network:
         self.opener = urllib.request.build_opener(Redirects(hosts, self.check_robots))
         self.robots = {}
         self.paused_hosts = set()
+        self.freshness = {}
         self.bytes_read = 0
         self.max_bytes = max_bytes
         self.deadline = time.monotonic() + seconds if seconds else None
 
-    def read(self, url, limit, *, prefix=False, source=False):
+    def read(self, url, limit, *, prefix=False, source=False, if_none_match=None):
         allowed_url(url, self.hosts)
         host = urllib.parse.urlsplit(url).hostname
         if host in self.paused_hosts:
@@ -134,6 +135,10 @@ class Network:
                 raise Refusal("Run byte budget reached")
             limit = min(limit, remaining)
         headers = {"User-Agent": USER_AGENT, "Accept-Encoding": "identity"}
+        if if_none_match is not None:
+            if not isinstance(if_none_match, str) or len(if_none_match) > 1024 or any(ord(c) < 32 for c in if_none_match):
+                raise Refusal("Invalid publisher freshness marker")
+            headers["If-None-Match"] = if_none_match
         if prefix:
             headers["Range"] = f"bytes=0-{limit - 1}"
         request = urllib.request.Request(url, headers=headers)
@@ -151,8 +156,15 @@ class Network:
                     raise Refusal("Response exceeds the byte limit")
                 if not prefix and length and len(data) != int(length):
                     raise Refusal("Response is truncated")
+                if source:
+                    self.freshness[url] = {
+                        "etag": response.headers.get("ETag"),
+                        "last_modified": response.headers.get("Last-Modified"),
+                    }
                 return data
         except urllib.error.HTTPError as error:
+            if error.code == 304 and if_none_match is not None:
+                return None
             if error.code in (429, 503):
                 self.paused_hosts.add(host)
             raise Refusal(f"HTTP {error.code}") from None
@@ -473,6 +485,7 @@ def run(config: dict, network, hub, output: Path, *, selected=None):
               "upstream_candidates": review_upstreams(config, network)}
     output.mkdir(parents=True, exist_ok=True)
     cache = {}
+    not_modified = set()
     limits = config["limits"]
     for pack in config["packs"]:
         repo = pack["repo"]
@@ -531,9 +544,20 @@ def run(config: dict, network, hub, output: Path, *, selected=None):
                     url = allowed_url(item["url"], config["hosts"])
                     sid = source_id(item)
                     previous = index["current"].get(sid)
+                    validator = previous.get("etag") if previous else baseline_files[item["baseline_path"]].get("etag")
+                    if now.day <= 7 or (item.get("new_year") and previous is None):
+                        validator = None
                     if url not in cache:
-                        remaining = limits["run_bytes"] - network.bytes_read
-                        cache[url] = network.read(url, min(limits["file_bytes"], remaining), source=True)
+                        if (url, validator) not in not_modified:
+                            remaining = limits["run_bytes"] - network.bytes_read
+                            received = network.read(url, min(limits["file_bytes"], remaining), source=True, if_none_match=validator)
+                            if received is None:
+                                not_modified.add((url, validator))
+                            else:
+                                cache[url] = received
+                        if url not in cache:
+                            item_status.update(status="publisher_not_modified", snapshot_sha256=previous["sha256"] if previous else item["baseline_sha256"])
+                            continue
                     raw = cache[url]
                     sha = digest(raw)
                     item_status.update(sha256=sha, bytes=len(raw))
@@ -566,6 +590,7 @@ def run(config: dict, network, hub, output: Path, *, selected=None):
                             "rows_sha256": digest(rows_data), "rows_bytes": len(rows_data), "rows": count, "headers": header,
                             "original_path": original_path, "rows_path": rows_path,
                             "licence": baseline_files[item["baseline_path"]].get("licence") or baseline.get("licence"),
+                            **getattr(network, "freshness", {}).get(url, {}),
                         }
                         files[original_path] = raw
                         files[rows_path] = rows_data
@@ -576,7 +601,7 @@ def run(config: dict, network, hub, output: Path, *, selected=None):
                     pack_status["updated_sources"] += 1
                 except Refusal as error:
                     reason = str(error)
-                    if "budget" in reason:
+                    if any(limit in reason for limit in ("budget", "byte limit", "growth limit", "row limit")):
                         item_status["status"] = "budget_deferred"
                     elif reason.startswith("Unsupported non-CSV"):
                         item_status["status"] = "unsupported_format"

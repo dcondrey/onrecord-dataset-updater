@@ -12,6 +12,10 @@ checked each run. Recognized City annual filename series are checked for newly a
 California CKAN resource URLs are resolved from approved resource IDs when the publisher allows
 access to that listing.
 
+Between monthly full checks, sources with an ETag use conditional requests. A publisher's HTTP
+304 is recorded as `publisher_not_modified`, separately from a freshly downloaded file whose
+bytes were hash-checked. Missing or changed markers cause a full download within the budgets.
+
 The initial catalogue contains nine existing datasets and 159 source originals. Ten Wayback
 captures are preserved as archival records. Two Excel originals are outside this version's CSV
 support. Large sources can be deferred by the byte budgets; this is not a promise that every

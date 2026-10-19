@@ -122,6 +122,19 @@ class Response(io.BytesIO):
 
 
 class NetworkTests(unittest.TestCase):
+    def test_conditional_304_is_distinct_from_a_download(self):
+        network = u.Network(["source.test"])
+        error = urllib.error.HTTPError("https://source.test/a", 304, "Not Modified", {}, None)
+        with patch.object(network.opener, "open", side_effect=error):
+            self.assertIsNone(network.read("https://source.test/a", 8, if_none_match='"known"'))
+            self.assertEqual(network.bytes_read, 0)
+            with self.assertRaises(u.Refusal):
+                network.read("https://source.test/a", 8)
+
+    def test_freshness_header_cannot_inject_another_header(self):
+        network = u.Network(["source.test"])
+        with self.assertRaises(u.Refusal):
+            network.read("https://source.test/a", 8, if_none_match="known\r\nInjected: value")
     def test_response_size_boundaries_without_a_declared_length(self):
         for size in (7, 8, 9):
             network = u.Network(["source.test"])
@@ -255,6 +268,12 @@ class PipelineTests(unittest.TestCase):
 
     def test_growth_budget_refuses_upload(self):
         self.config["limits"]["repo_added_bytes"] = 10
+        status = self.execute(b"id\n001\n002\n")
+        self.assertEqual(status["sources"][0]["status"], "budget_deferred")
+        self.assertEqual(self.hub.commits, [])
+
+    def test_download_limit_is_a_deferral_and_not_a_schema_failure(self):
+        self.config["limits"]["file_bytes"] = 9
         status = self.execute(b"id\n001\n002\n")
         self.assertEqual(status["sources"][0]["status"], "budget_deferred")
         self.assertEqual(self.hub.commits, [])
