@@ -1,0 +1,14 @@
+[project]
+name = "onrecord-dataset-updater"
+version = "0.1.0"
+description = "Bounded, incremental updates to existing public OnRecord datasets"
+requires-python = ">=3.12"
+dependencies = [
+    "cryptography==50.0.2",
+    "huggingface-hub==2.2.0",
+    "pynacl==1.6.2",
+    "PyYAML==6.0.3",
+]
+
+[tool.uv]
+package = false

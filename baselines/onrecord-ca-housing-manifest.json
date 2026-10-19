@@ -1,0 +1,229 @@
+{
+  "manifestCanonicalBase64": "eyJwYWNrIjoiY2EtaG91c2luZyIsInBhY2tWZXJzaW9uIjoiMjAyNi4xMC44Iiwic2NoZW1hVmVyc2lvbiI6IjEuMCIsImJ1aWx0QXQiOiIyMDI2LTEwLTA4VDA2OjQ3OjQ0LjMxMzQ4MiswMDowMCIsImxpY2VuY2UiOnsiaWQiOiJtaXhlZCIsInVybCI6Imh0dHBzOi8vaHVnZ2luZ2ZhY2UuY28vZGF0YXNldHMvV3JpdGVyc2xvZ2ljL29ucmVjb3JkLWNhLWhvdXNpbmciLCJkaXNjbGFpbWVyIjoiVGhpcyBwYWNrJ3MgZmlsZXMgY29tZSBmcm9tIHNldmVyYWwgcHVibGlzaGVyczogc2VlIGVhY2ggZmlsZSdzIGxpY2VuY2UsIGF0dHJpYnV0aW9uIGFuZCBkaXNjbGFpbWVyLiJ9LCJmaWxlcyI6W3sicGF0aCI6Im9yaWdpbmFscy9hcHJfdGFibGVfYTJfaG91c2luZ19wcm9kdWN0aW9uL3RhYmxlYTIuY3N2IiwidGFibGUiOiJhcHJfdGFibGVfYTJfaG91c2luZ19wcm9kdWN0aW9uIiwiZm9ybWF0IjoiT1JJR0lOQUwiLCJzb3VyY2VVcmwiOiJodHRwczovL3B1Ymxpc2guZGF0YS5jYS5nb3YvZGF0YXNldC84MWIwODQxZi0yODAyLTQwM2UtYjQ4ZS0yZWY0Yjc1MWY3N2MvcmVzb3VyY2UvZmU1MDVkOWItOGMzNi00MmJhLWJhMzAtMDhiYzRmMzRlMDIyL2Rvd25sb2FkL3RhYmxlYTIuY3N2IiwicmV0cmlldmVkQXQiOiIyMDI2LTEwLTA4VDA2OjQ1OjIwLjM5Mzg3MFoiLCJzaGEyNTYiOiI3NGQ0YTJiNDRmMDMzNTAwOGJjOWVhYzBmZjIwYzhiZGQ0ODI3MDQxYTczMTkxNjI4NTZiYmQxZWQxYjMxNzMwIiwiYnl0ZXMiOjI5MzM3MzIyNCwicm93cyI6OTIyODAwLCJ5ZWFyIjpudWxsLCJwYXJ0aWFsIjp0cnVlLCJsYXN0TW9kaWZpZWQiOiJUdWUsIDA2IE9jdCAyMDI2IDAxOjA4OjEyIEdNVCIsImV0YWciOiJcImM0YzM4MDc0MTNkZTM0NzMxODM0MjU1OThkNmY4ZWRiXCIiLCJsaWNlbmNlIjp7ImlkIjoiQ0EtcHVibGljLXJlY29yZHMiLCJ1cmwiOiJodHRwczovL2RhdGEuY2EuZ292L2RhdGFzZXQvaG91c2luZy1lbGVtZW50LWFubnVhbC1wcm9ncmVzcy1yZXBvcnQtYXByLWRhdGEtYnktanVyaXNkaWN0aW9uLWFuZC15ZWFyIiwiYXR0cmlidXRpb24iOm51bGwsImRpc2NsYWltZXIiOm51bGx9fSx7InBhdGgiOiJwYXJxdWV0L2Fwcl90YWJsZV9hMl9ob3VzaW5nX3Byb2R1Y3Rpb24vdGFibGVhMi5wYXJxdWV0IiwidGFibGUiOiJhcHJfdGFibGVfYTJfaG91c2luZ19wcm9kdWN0aW9uIiwiZm9ybWF0IjoiUEFSUVVFVCIsInNvdXJjZVVybCI6Imh0dHBzOi8vcHVibGlzaC5kYXRhLmNhLmdvdi9kYXRhc2V0LzgxYjA4NDFmLTI4MDItNDAzZS1iNDhlLTJlZjRiNzUxZjc3Yy9yZXNvdXJjZS9mZTUwNWQ5Yi04YzM2LTQyYmEtYmEzMC0wOGJjNGYzNGUwMjIvZG93bmxvYWQvdGFibGVhMi5jc3YiLCJyZXRyaWV2ZWRBdCI6IjIwMjYtMTAtMDhUMDY6NDU6MjAuMzkzODcwWiIsInNoYTI1NiI6IjliZmM2ZmVhMzRhNTU5OWY3MTg4MWI2NzljMjdhNTQwNWFhNjNjNmZiNmQyZTVlOTA4ZjFhM2U4OTVlYWMwOWIiLCJieXRlcyI6MTI5MzYyNjYwLCJyb3dzIjo5MjI4MDAsImV4Y2x1ZGVkUm93cyI6MCwieWVhciI6bnVsbCwicGFydGlhbCI6dHJ1ZSwibGFzdE1vZGlmaWVkIjoiVHVlLCAwNiBPY3QgMjAyNiAwMTowODoxMiBHTVQiLCJldGFnIjoiXCJjNGMzODA3NDEzZGUzNDczMTgzNDI1NTk4ZDZmOGVkYlwiIiwibGljZW5jZSI6eyJpZCI6IkNBLXB1YmxpYy1yZWNvcmRzIiwidXJsIjoiaHR0cHM6Ly9kYXRhLmNhLmdvdi9kYXRhc2V0L2hvdXNpbmctZWxlbWVudC1hbm51YWwtcHJvZ3Jlc3MtcmVwb3J0LWFwci1kYXRhLWJ5LWp1cmlzZGljdGlvbi1hbmQteWVhciIsImF0dHJpYnV0aW9uIjpudWxsLCJkaXNjbGFpbWVyIjpudWxsfX0seyJwYXRoIjoib3JpZ2luYWxzL2Fwcl90YWJsZV9hX2hvdXNpbmdfYXBwbGljYXRpb25zL3RhYmxlYS5jc3YiLCJ0YWJsZSI6ImFwcl90YWJsZV9hX2hvdXNpbmdfYXBwbGljYXRpb25zIiwiZm9ybWF0IjoiT1JJR0lOQUwiLCJzb3VyY2VVcmwiOiJodHRwczovL3B1Ymxpc2guZGF0YS5jYS5nb3YvZGF0YXNldC84MWIwODQxZi0yODAyLTQwM2UtYjQ4ZS0yZWY0Yjc1MWY3N2MvcmVzb3VyY2UvYzc4Yjc2OWQtY2MwMi00MDUwLTkxZWYtNzlkZWQ2NjViNWE4L2Rvd25sb2FkL3RhYmxlYS5jc3YiLCJyZXRyaWV2ZWRBdCI6IjIwMjYtMTAtMDhUMDY6NDY6NDMuNDUyMjc0WiIsInNoYTI1NiI6ImU4ZjYzZjcwNjBhYjk4NTc5MTBmZTRlOGU4MDk4MWRmNDgxNGVhYjllYzA1NjIzYzdiY2IwYzI5ZjcyYTgyOWUiLCJieXRlcyI6OTA2NzMwMjEsInJvd3MiOjM1Nzk5MywieWVhciI6bnVsbCwicGFydGlhbCI6dHJ1ZSwibGFzdE1vZGlmaWVkIjoiVHVlLCAwNiBPY3QgMjAyNiAwMTowOTozNSBHTVQiLCJldGFnIjoiXCI4YjJmNTI3ZjUxMzY0ZGNlMjQxZGIxYTFiYWQwZjQwM1wiIiwibGljZW5jZSI6eyJpZCI6IkNBLXB1YmxpYy1yZWNvcmRzIiwidXJsIjoiaHR0cHM6Ly9kYXRhLmNhLmdvdi9kYXRhc2V0L2hvdXNpbmctZWxlbWVudC1hbm51YWwtcHJvZ3Jlc3MtcmVwb3J0LWFwci1kYXRhLWJ5LWp1cmlzZGljdGlvbi1hbmQteWVhciIsImF0dHJpYnV0aW9uIjpudWxsLCJkaXNjbGFpbWVyIjpudWxsfX0seyJwYXRoIjoicGFycXVldC9hcHJfdGFibGVfYV9ob3VzaW5nX2FwcGxpY2F0aW9ucy90YWJsZWEucGFycXVldCIsInRhYmxlIjoiYXByX3RhYmxlX2FfaG91c2luZ19hcHBsaWNhdGlvbnMiLCJmb3JtYXQiOiJQQVJRVUVUIiwic291cmNlVXJsIjoiaHR0cHM6Ly9wdWJsaXNoLmRhdGEuY2EuZ292L2RhdGFzZXQvODFiMDg0MWYtMjgwMi00MDNlLWI0OGUtMmVmNGI3NTFmNzdjL3Jlc291cmNlL2M3OGI3NjlkLWNjMDItNDA1MC05MWVmLTc5ZGVkNjY1YjVhOC9kb3dubG9hZC90YWJsZWEuY3N2IiwicmV0cmlldmVkQXQiOiIyMDI2LTEwLTA4VDA2OjQ2OjQzLjQ1MjI3NFoiLCJzaGEyNTYiOiI5NTdlN2U4MWYyZWM2OTI4M2FmNTc5YTI0ZGFmNmEyM2QxZDUwNjgwNTQ5MzYzOGQ3MDcxMjFlZWJjMWE4ZmE0IiwiYnl0ZXMiOjUwNTQ2ODQ2LCJyb3dzIjozNTc5OTMsImV4Y2x1ZGVkUm93cyI6MCwieWVhciI6bnVsbCwicGFydGlhbCI6dHJ1ZSwibGFzdE1vZGlmaWVkIjoiVHVlLCAwNiBPY3QgMjAyNiAwMTowOTozNSBHTVQiLCJldGFnIjoiXCI4YjJmNTI3ZjUxMzY0ZGNlMjQxZGIxYTFiYWQwZjQwM1wiIiwibGljZW5jZSI6eyJpZCI6IkNBLXB1YmxpYy1yZWNvcmRzIiwidXJsIjoiaHR0cHM6Ly9kYXRhLmNhLmdvdi9kYXRhc2V0L2hvdXNpbmctZWxlbWVudC1hbm51YWwtcHJvZ3Jlc3MtcmVwb3J0LWFwci1kYXRhLWJ5LWp1cmlzZGljdGlvbi1hbmQteWVhciIsImF0dHJpYnV0aW9uIjpudWxsLCJkaXNjbGFpbWVyIjpudWxsfX0seyJwYXRoIjoib3JpZ2luYWxzL3JobmFfcHJvZ3Jlc3NfNXRoX2N5Y2xlL3JobmFfcHJvZ3Jlc3NfNS5jc3YiLCJ0YWJsZSI6InJobmFfcHJvZ3Jlc3NfNXRoX2N5Y2xlIiwiZm9ybWF0IjoiT1JJR0lOQUwiLCJzb3VyY2VVcmwiOiJodHRwczovL3B1Ymxpc2guZGF0YS5jYS5nb3YvZGF0YXNldC9mZjA4MmU5Ni03MmY3LTQ0NDMtOTc0Ny04YjhkYWRjMTU2NzEvcmVzb3VyY2UvY2ZmMGJjNDktZGQ4NS00M2ExLWIxZDUtMWNmYTdjZjFhZTIyL2Rvd25sb2FkL3JobmFfcHJvZ3Jlc3NfNS5jc3YiLCJyZXRyaWV2ZWRBdCI6IjIwMjYtMTAtMDhUMDY6NDc6MjcuOTkyOTk4WiIsInNoYTI1NiI6ImM5ZDFkZDUxMjM4OGE3ZGVmZWM3MzNjYjE2ZjgyMmMzMTE4MTIwNjk3YTkyZGZmZThhNjE1NGI0ZTY2OGI2ZmEiLCJieXRlcyI6NDM5MzAsInJvd3MiOjUzOSwieWVhciI6bnVsbCwicGFydGlhbCI6ZmFsc2UsImxhc3RNb2RpZmllZCI6IlR1ZSwgMDYgT2N0IDIwMjYgMDE6MjE6NTMgR01UIiwiZXRhZyI6IlwiY2RjMjgyOTMwMzU2OWFmMGMxZTdiMGE4ODhjN2U3YjBcIiIsImxpY2VuY2UiOnsiaWQiOiJvdGhlci1wZCIsInVybCI6Imh0dHBzOi8vZGF0YS5jYS5nb3YvZGF0YXNldC9yaG5hLXByb2dyZXNzLXJlcG9ydCIsImF0dHJpYnV0aW9uIjpudWxsLCJkaXNjbGFpbWVyIjpudWxsfX0seyJwYXRoIjoicGFycXVldC9yaG5hX3Byb2dyZXNzXzV0aF9jeWNsZS9yaG5hX3Byb2dyZXNzXzUucGFycXVldCIsInRhYmxlIjoicmhuYV9wcm9ncmVzc181dGhfY3ljbGUiLCJmb3JtYXQiOiJQQVJRVUVUIiwic291cmNlVXJsIjoiaHR0cHM6Ly9wdWJsaXNoLmRhdGEuY2EuZ292L2RhdGFzZXQvZmYwODJlOTYtNzJmNy00NDQzLTk3NDctOGI4ZGFkYzE1NjcxL3Jlc291cmNlL2NmZjBiYzQ5LWRkODUtNDNhMS1iMWQ1LTFjZmE3Y2YxYWUyMi9kb3dubG9hZC9yaG5hX3Byb2dyZXNzXzUuY3N2IiwicmV0cmlldmVkQXQiOiIyMDI2LTEwLTA4VDA2OjQ3OjI3Ljk5Mjk5OFoiLCJzaGEyNTYiOiI5MTVkMGYyNzRmMmI3ZThjZGFlYjNjMDFhMmQxYTQwYTY0YWJmNWMzOTBlOGMyY2I4OGMzNTRhNjVjZDZmMzYzIiwiYnl0ZXMiOjQ2ODEzLCJyb3dzIjo1MzksImV4Y2x1ZGVkUm93cyI6MCwieWVhciI6bnVsbCwicGFydGlhbCI6ZmFsc2UsImxhc3RNb2RpZmllZCI6IlR1ZSwgMDYgT2N0IDIwMjYgMDE6MjE6NTMgR01UIiwiZXRhZyI6IlwiY2RjMjgyOTMwMzU2OWFmMGMxZTdiMGE4ODhjN2U3YjBcIiIsImxpY2VuY2UiOnsiaWQiOiJvdGhlci1wZCIsInVybCI6Imh0dHBzOi8vZGF0YS5jYS5nb3YvZGF0YXNldC9yaG5hLXByb2dyZXNzLXJlcG9ydCIsImF0dHJpYnV0aW9uIjpudWxsLCJkaXNjbGFpbWVyIjpudWxsfX0seyJwYXRoIjoib3JpZ2luYWxzL3JobmFfcHJvZ3Jlc3NfNnRoX2N5Y2xlL3JobmFfcHJvZ3Jlc3NfNi5jc3YiLCJ0YWJsZSI6InJobmFfcHJvZ3Jlc3NfNnRoX2N5Y2xlIiwiZm9ybWF0IjoiT1JJR0lOQUwiLCJzb3VyY2VVcmwiOiJodHRwczovL3B1Ymxpc2guZGF0YS5jYS5nb3YvZGF0YXNldC9mZjA4MmU5Ni03MmY3LTQ0NDMtOTc0Ny04YjhkYWRjMTU2NzEvcmVzb3VyY2UvMWU4MGE5Y2YtNzI0Yy00MzJkLTgzNzQtZTk3MDhhNmE5MmRjL2Rvd25sb2FkL3JobmFfcHJvZ3Jlc3NfNi5jc3YiLCJyZXRyaWV2ZWRBdCI6IjIwMjYtMTAtMDhUMDY6NDc6MzcuODIyMjA2WiIsInNoYTI1NiI6IjY1YjJjOTYzNWYxMWEwYTk4YzUwNWY4NDRlM2Y1ODU0M2Y4M2Q5MWY5ZmVlOTYwYjg1YzE1MzZmYWNjNjYwYWQiLCJieXRlcyI6NDcwMTksInJvd3MiOjUzOSwieWVhciI6bnVsbCwicGFydGlhbCI6dHJ1ZSwibGFzdE1vZGlmaWVkIjoiVHVlLCAwNiBPY3QgMjAyNiAwMToyMjo1OCBHTVQiLCJldGFnIjoiXCJlMDA2ZjQ3YTBlNWY0ZWZjOWEzMjQyZmNkYmQ5NTZiYVwiIiwibGljZW5jZSI6eyJpZCI6Im90aGVyLXBkIiwidXJsIjoiaHR0cHM6Ly9kYXRhLmNhLmdvdi9kYXRhc2V0L3JobmEtcHJvZ3Jlc3MtcmVwb3J0IiwiYXR0cmlidXRpb24iOm51bGwsImRpc2NsYWltZXIiOm51bGx9fSx7InBhdGgiOiJwYXJxdWV0L3JobmFfcHJvZ3Jlc3NfNnRoX2N5Y2xlL3JobmFfcHJvZ3Jlc3NfNi5wYXJxdWV0IiwidGFibGUiOiJyaG5hX3Byb2dyZXNzXzZ0aF9jeWNsZSIsImZvcm1hdCI6IlBBUlFVRVQiLCJzb3VyY2VVcmwiOiJodHRwczovL3B1Ymxpc2guZGF0YS5jYS5nb3YvZGF0YXNldC9mZjA4MmU5Ni03MmY3LTQ0NDMtOTc0Ny04YjhkYWRjMTU2NzEvcmVzb3VyY2UvMWU4MGE5Y2YtNzI0Yy00MzJkLTgzNzQtZTk3MDhhNmE5MmRjL2Rvd25sb2FkL3JobmFfcHJvZ3Jlc3NfNi5jc3YiLCJyZXRyaWV2ZWRBdCI6IjIwMjYtMTAtMDhUMDY6NDc6MzcuODIyMjA2WiIsInNoYTI1NiI6ImU1YjBkMWNlNzhjYWMxYTIxM2Y4NGM2ODE4MDFhNzc0NzhhYjQ5ZmMwZDVmZGExNDA0N2I5NmZmMDlmNTMxOWIiLCJieXRlcyI6NDQ0OTIsInJvd3MiOjUzOSwiZXhjbHVkZWRSb3dzIjowLCJ5ZWFyIjpudWxsLCJwYXJ0aWFsIjp0cnVlLCJsYXN0TW9kaWZpZWQiOiJUdWUsIDA2IE9jdCAyMDI2IDAxOjIyOjU4IEdNVCIsImV0YWciOiJcImUwMDZmNDdhMGU1ZjRlZmM5YTMyNDJmY2RiZDk1NmJhXCIiLCJsaWNlbmNlIjp7ImlkIjoib3RoZXItcGQiLCJ1cmwiOiJodHRwczovL2RhdGEuY2EuZ292L2RhdGFzZXQvcmhuYS1wcm9ncmVzcy1yZXBvcnQiLCJhdHRyaWJ1dGlvbiI6bnVsbCwiZGlzY2xhaW1lciI6bnVsbH19LHsicGF0aCI6Im9yaWdpbmFscy9jaXR5X3JlbnRhbF91bml0X2J1c2luZXNzX3RheF9hY2NvdW50cy9ydGF4X2FjY291bnRzX2RhdGFzZC5jc3YiLCJ0YWJsZSI6ImNpdHlfcmVudGFsX3VuaXRfYnVzaW5lc3NfdGF4X2FjY291bnRzIiwiZm9ybWF0IjoiT1JJR0lOQUwiLCJzb3VyY2VVcmwiOiJodHRwczovL3Nlc2hhdC5kYXRhc2Qub3JnL3J0YXhfYWNjb3VudHMvcnRheF9hY2NvdW50c19kYXRhc2QuY3N2IiwicmV0cmlldmVkQXQiOiIyMDI2LTEwLTA4VDA2OjQ3OjM4LjI5ODA3OFoiLCJzaGEyNTYiOiJiNjYzZmE1ZjY4ODRmOWI2ZjJkMmIxYWZkZjQ2YmFlMjNjYjQ0MTViMDI2ZWJmN2IxYTFmYWI3NTU3MzVhODM0IiwiYnl0ZXMiOjI0MzIyODAzLCJyb3dzIjozMjg3MjIsInllYXIiOm51bGwsInBhcnRpYWwiOnRydWUsImxhc3RNb2RpZmllZCI6IldlZCwgMDcgT2N0IDIwMjYgMTE6MzA6MjggR01UIiwiZXRhZyI6IlwiZGEzM2IwYzVhM2IyZmM2Y2Y2YTczZjMxYWI1MWQ2NmMtM1wiIiwibGljZW5jZSI6eyJpZCI6IlBEREwtMS4wIiwidXJsIjoiaHR0cHM6Ly9vcGVuZGVmaW5pdGlvbi5vcmcvbGljZW5zZXMvb2RjLXBkZGwvIiwiYXR0cmlidXRpb24iOm51bGwsImRpc2NsYWltZXIiOiJUaGUgQ2l0eSBtYWtlcyBubyByZXByZXNlbnRhdGlvbiBvciB3YXJyYW50eSB0aGF0IHRoZSBpbmZvcm1hdGlvbiBjb250YWluZWQgaW4gdGhlIERhdGEgaXMgYWNjdXJhdGUsIHRydWUgb3IgY29ycmVjdC4gSW4gdXNpbmcgdGhlIERhdGEsIHlvdSB1bmRlcnN0YW5kIGFuZCBhZ3JlZSB0aGF0IHRoZSBpbmZvcm1hdGlvbiBjb250YWluZWQgdGhlcmVpbiBpcyBzdWJqZWN0IHRvIGVycm9yLCBhbmQgY2Fubm90IGJlIHJlbGllZCB1cG9uIHdpdGhvdXQgdmVyaWZpY2F0aW9uIG9yIHNpdGUgaW5zcGVjdGlvbi4ifX0seyJwYXRoIjoicGFycXVldC9jaXR5X3JlbnRhbF91bml0X2J1c2luZXNzX3RheF9hY2NvdW50cy9ydGF4X2FjY291bnRzX2RhdGFzZC5wYXJxdWV0IiwidGFibGUiOiJjaXR5X3JlbnRhbF91bml0X2J1c2luZXNzX3RheF9hY2NvdW50cyIsImZvcm1hdCI6IlBBUlFVRVQiLCJzb3VyY2VVcmwiOiJodHRwczovL3Nlc2hhdC5kYXRhc2Qub3JnL3J0YXhfYWNjb3VudHMvcnRheF9hY2NvdW50c19kYXRhc2QuY3N2IiwicmV0cmlldmVkQXQiOiIyMDI2LTEwLTA4VDA2OjQ3OjM4LjI5ODA3OFoiLCJzaGEyNTYiOiJlZjA3ZGNjN2FkNDViYjg2MmYzNDBjNmVlNmU2YjU4Njk0NjQ3YjRlMWFjNDgzNTkyYTBkMjhmOTMxZTA4NjMxIiwiYnl0ZXMiOjE0MjU3NTgxLCJyb3dzIjozMjg3MjIsImV4Y2x1ZGVkUm93cyI6MCwieWVhciI6bnVsbCwicGFydGlhbCI6dHJ1ZSwibGFzdE1vZGlmaWVkIjoiV2VkLCAwNyBPY3QgMjAyNiAxMTozMDoyOCBHTVQiLCJldGFnIjoiXCJkYTMzYjBjNWEzYjJmYzZjZjZhNzNmMzFhYjUxZDY2Yy0zXCIiLCJsaWNlbmNlIjp7ImlkIjoiUERETC0xLjAiLCJ1cmwiOiJodHRwczovL29wZW5kZWZpbml0aW9uLm9yZy9saWNlbnNlcy9vZGMtcGRkbC8iLCJhdHRyaWJ1dGlvbiI6bnVsbCwiZGlzY2xhaW1lciI6IlRoZSBDaXR5IG1ha2VzIG5vIHJlcHJlc2VudGF0aW9uIG9yIHdhcnJhbnR5IHRoYXQgdGhlIGluZm9ybWF0aW9uIGNvbnRhaW5lZCBpbiB0aGUgRGF0YSBpcyBhY2N1cmF0ZSwgdHJ1ZSBvciBjb3JyZWN0LiBJbiB1c2luZyB0aGUgRGF0YSwgeW91IHVuZGVyc3RhbmQgYW5kIGFncmVlIHRoYXQgdGhlIGluZm9ybWF0aW9uIGNvbnRhaW5lZCB0aGVyZWluIGlzIHN1YmplY3QgdG8gZXJyb3IsIGFuZCBjYW5ub3QgYmUgcmVsaWVkIHVwb24gd2l0aG91dCB2ZXJpZmljYXRpb24gb3Igc2l0ZSBpbnNwZWN0aW9uLiJ9fV19",
+  "manifestSha256": "93b78ea7490e9b69bff08e7b0cbbd815fad5d74ff1661c49f055718aef2b96ad",
+  "manifest": {
+    "pack": "ca-housing",
+    "packVersion": "2026.10.8",
+    "schemaVersion": "1.0",
+    "builtAt": "2026-10-08T06:47:44.313482+00:00",
+    "licence": {
+      "id": "mixed",
+      "url": "https://huggingface.co/datasets/Writerslogic/onrecord-ca-housing",
+      "disclaimer": "This pack's files come from several publishers: see each file's licence, attribution and disclaimer."
+    },
+    "files": [
+      {
+        "path": "originals/apr_table_a2_housing_production/tablea2.csv",
+        "table": "apr_table_a2_housing_production",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://publish.data.ca.gov/dataset/81b0841f-2802-403e-b48e-2ef4b751f77c/resource/fe505d9b-8c36-42ba-ba30-08bc4f34e022/download/tablea2.csv",
+        "retrievedAt": "2026-10-08T06:45:20.393870Z",
+        "sha256": "74d4a2b44f0335008bc9eac0ff20c8bdd4827041a7319162856bbd1ed1b31730",
+        "bytes": 293373224,
+        "rows": 922800,
+        "year": null,
+        "partial": true,
+        "lastModified": "Tue, 06 Oct 2026 01:08:12 GMT",
+        "etag": "\"c4c3807413de3473183425598d6f8edb\"",
+        "licence": {
+          "id": "CA-public-records",
+          "url": "https://data.ca.gov/dataset/housing-element-annual-progress-report-apr-data-by-jurisdiction-and-year",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/apr_table_a2_housing_production/tablea2.parquet",
+        "table": "apr_table_a2_housing_production",
+        "format": "PARQUET",
+        "sourceUrl": "https://publish.data.ca.gov/dataset/81b0841f-2802-403e-b48e-2ef4b751f77c/resource/fe505d9b-8c36-42ba-ba30-08bc4f34e022/download/tablea2.csv",
+        "retrievedAt": "2026-10-08T06:45:20.393870Z",
+        "sha256": "9bfc6fea34a5599f71881b679c27a5405aa63c6fb6d2e5e908f1a3e895eac09b",
+        "bytes": 129362660,
+        "rows": 922800,
+        "excludedRows": 0,
+        "year": null,
+        "partial": true,
+        "lastModified": "Tue, 06 Oct 2026 01:08:12 GMT",
+        "etag": "\"c4c3807413de3473183425598d6f8edb\"",
+        "licence": {
+          "id": "CA-public-records",
+          "url": "https://data.ca.gov/dataset/housing-element-annual-progress-report-apr-data-by-jurisdiction-and-year",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "originals/apr_table_a_housing_applications/tablea.csv",
+        "table": "apr_table_a_housing_applications",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://publish.data.ca.gov/dataset/81b0841f-2802-403e-b48e-2ef4b751f77c/resource/c78b769d-cc02-4050-91ef-79ded665b5a8/download/tablea.csv",
+        "retrievedAt": "2026-10-08T06:46:43.452274Z",
+        "sha256": "e8f63f7060ab9857910fe4e8e80981df4814eab9ec05623c7bcb0c29f72a829e",
+        "bytes": 90673021,
+        "rows": 357993,
+        "year": null,
+        "partial": true,
+        "lastModified": "Tue, 06 Oct 2026 01:09:35 GMT",
+        "etag": "\"8b2f527f51364dce241db1a1bad0f403\"",
+        "licence": {
+          "id": "CA-public-records",
+          "url": "https://data.ca.gov/dataset/housing-element-annual-progress-report-apr-data-by-jurisdiction-and-year",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/apr_table_a_housing_applications/tablea.parquet",
+        "table": "apr_table_a_housing_applications",
+        "format": "PARQUET",
+        "sourceUrl": "https://publish.data.ca.gov/dataset/81b0841f-2802-403e-b48e-2ef4b751f77c/resource/c78b769d-cc02-4050-91ef-79ded665b5a8/download/tablea.csv",
+        "retrievedAt": "2026-10-08T06:46:43.452274Z",
+        "sha256": "957e7e81f2ec69283af579a24daf6a23d1d506805493638d707121eebc1a8fa4",
+        "bytes": 50546846,
+        "rows": 357993,
+        "excludedRows": 0,
+        "year": null,
+        "partial": true,
+        "lastModified": "Tue, 06 Oct 2026 01:09:35 GMT",
+        "etag": "\"8b2f527f51364dce241db1a1bad0f403\"",
+        "licence": {
+          "id": "CA-public-records",
+          "url": "https://data.ca.gov/dataset/housing-element-annual-progress-report-apr-data-by-jurisdiction-and-year",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "originals/rhna_progress_5th_cycle/rhna_progress_5.csv",
+        "table": "rhna_progress_5th_cycle",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://publish.data.ca.gov/dataset/ff082e96-72f7-4443-9747-8b8dadc15671/resource/cff0bc49-dd85-43a1-b1d5-1cfa7cf1ae22/download/rhna_progress_5.csv",
+        "retrievedAt": "2026-10-08T06:47:27.992998Z",
+        "sha256": "c9d1dd512388a7defec733cb16f822c3118120697a92dffe8a6154b4e668b6fa",
+        "bytes": 43930,
+        "rows": 539,
+        "year": null,
+        "partial": false,
+        "lastModified": "Tue, 06 Oct 2026 01:21:53 GMT",
+        "etag": "\"cdc2829303569af0c1e7b0a888c7e7b0\"",
+        "licence": {
+          "id": "other-pd",
+          "url": "https://data.ca.gov/dataset/rhna-progress-report",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/rhna_progress_5th_cycle/rhna_progress_5.parquet",
+        "table": "rhna_progress_5th_cycle",
+        "format": "PARQUET",
+        "sourceUrl": "https://publish.data.ca.gov/dataset/ff082e96-72f7-4443-9747-8b8dadc15671/resource/cff0bc49-dd85-43a1-b1d5-1cfa7cf1ae22/download/rhna_progress_5.csv",
+        "retrievedAt": "2026-10-08T06:47:27.992998Z",
+        "sha256": "915d0f274f2b7e8cdaeb3c01a2d1a40a64abf5c390e8c2cb88c354a65cd6f363",
+        "bytes": 46813,
+        "rows": 539,
+        "excludedRows": 0,
+        "year": null,
+        "partial": false,
+        "lastModified": "Tue, 06 Oct 2026 01:21:53 GMT",
+        "etag": "\"cdc2829303569af0c1e7b0a888c7e7b0\"",
+        "licence": {
+          "id": "other-pd",
+          "url": "https://data.ca.gov/dataset/rhna-progress-report",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "originals/rhna_progress_6th_cycle/rhna_progress_6.csv",
+        "table": "rhna_progress_6th_cycle",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://publish.data.ca.gov/dataset/ff082e96-72f7-4443-9747-8b8dadc15671/resource/1e80a9cf-724c-432d-8374-e9708a6a92dc/download/rhna_progress_6.csv",
+        "retrievedAt": "2026-10-08T06:47:37.822206Z",
+        "sha256": "65b2c9635f11a0a98c505f844e3f58543f83d91f9fee960b85c1536facc660ad",
+        "bytes": 47019,
+        "rows": 539,
+        "year": null,
+        "partial": true,
+        "lastModified": "Tue, 06 Oct 2026 01:22:58 GMT",
+        "etag": "\"e006f47a0e5f4efc9a3242fcdbd956ba\"",
+        "licence": {
+          "id": "other-pd",
+          "url": "https://data.ca.gov/dataset/rhna-progress-report",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/rhna_progress_6th_cycle/rhna_progress_6.parquet",
+        "table": "rhna_progress_6th_cycle",
+        "format": "PARQUET",
+        "sourceUrl": "https://publish.data.ca.gov/dataset/ff082e96-72f7-4443-9747-8b8dadc15671/resource/1e80a9cf-724c-432d-8374-e9708a6a92dc/download/rhna_progress_6.csv",
+        "retrievedAt": "2026-10-08T06:47:37.822206Z",
+        "sha256": "e5b0d1ce78cac1a213f84c681801a77478ab49fc0d5fda14047b96ff09f5319b",
+        "bytes": 44492,
+        "rows": 539,
+        "excludedRows": 0,
+        "year": null,
+        "partial": true,
+        "lastModified": "Tue, 06 Oct 2026 01:22:58 GMT",
+        "etag": "\"e006f47a0e5f4efc9a3242fcdbd956ba\"",
+        "licence": {
+          "id": "other-pd",
+          "url": "https://data.ca.gov/dataset/rhna-progress-report",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "originals/city_rental_unit_business_tax_accounts/rtax_accounts_datasd.csv",
+        "table": "city_rental_unit_business_tax_accounts",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://seshat.datasd.org/rtax_accounts/rtax_accounts_datasd.csv",
+        "retrievedAt": "2026-10-08T06:47:38.298078Z",
+        "sha256": "b663fa5f6884f9b6f2d2b1afdf46bae23cb4415b026ebf7b1a1fab755735a834",
+        "bytes": 24322803,
+        "rows": 328722,
+        "year": null,
+        "partial": true,
+        "lastModified": "Wed, 07 Oct 2026 11:30:28 GMT",
+        "etag": "\"da33b0c5a3b2fc6cf6a73f31ab51d66c-3\"",
+        "licence": {
+          "id": "PDDL-1.0",
+          "url": "https://opendefinition.org/licenses/odc-pddl/",
+          "attribution": null,
+          "disclaimer": "The City makes no representation or warranty that the information contained in the Data is accurate, true or correct. In using the Data, you understand and agree that the information contained therein is subject to error, and cannot be relied upon without verification or site inspection."
+        }
+      },
+      {
+        "path": "parquet/city_rental_unit_business_tax_accounts/rtax_accounts_datasd.parquet",
+        "table": "city_rental_unit_business_tax_accounts",
+        "format": "PARQUET",
+        "sourceUrl": "https://seshat.datasd.org/rtax_accounts/rtax_accounts_datasd.csv",
+        "retrievedAt": "2026-10-08T06:47:38.298078Z",
+        "sha256": "ef07dcc7ad45bb862f340c6ee6e6b58694647b4e1ac483592a0d28f931e08631",
+        "bytes": 14257581,
+        "rows": 328722,
+        "excludedRows": 0,
+        "year": null,
+        "partial": true,
+        "lastModified": "Wed, 07 Oct 2026 11:30:28 GMT",
+        "etag": "\"da33b0c5a3b2fc6cf6a73f31ab51d66c-3\"",
+        "licence": {
+          "id": "PDDL-1.0",
+          "url": "https://opendefinition.org/licenses/odc-pddl/",
+          "attribution": null,
+          "disclaimer": "The City makes no representation or warranty that the information contained in the Data is accurate, true or correct. In using the Data, you understand and agree that the information contained therein is subject to error, and cannot be relied upon without verification or site inspection."
+        }
+      }
+    ]
+  },
+  "signature": {
+    "algorithm": "Ed25519",
+    "publicKeyHex": "b42202850cd9ecda4ab2b96548891d3a2a8275f74dde76bba2153826089ca8ff",
+    "signerKeyId": "266f3c9c0320f40951854c7af66b6e73395a6735828fa04092c1cf79d2dafd2d",
+    "signatureHex": "4fb37c899fd1e5b1c3754092ac15674bbf5e536928c8413adc2019e170c1e787f0eca2a9102a60d8f30457c916ff2040566aa7cb599c553c366db4145d58ac0a",
+    "identityAssurance": "SELF_MANAGED_LOCAL_KEY_NOT_EXTERNALLY_ATTESTED"
+  }
+}

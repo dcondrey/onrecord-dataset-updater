@@ -1,0 +1,434 @@
+{
+  "manifestCanonicalBase64": "eyJwYWNrIjoic2FuLWRpZWdvLXdheWJhY2siLCJwYWNrVmVyc2lvbiI6IjIwMjYuMTAuOCIsInNjaGVtYVZlcnNpb24iOiIxLjAiLCJidWlsdEF0IjoiMjAyNi0xMC0wOFQwNjo0NTo1OS40OTA0MDQrMDA6MDAiLCJsaWNlbmNlIjp7ImlkIjoibWl4ZWQiLCJ1cmwiOiJodHRwczovL2h1Z2dpbmdmYWNlLmNvL2RhdGFzZXRzL1dyaXRlcnNsb2dpYy9vbnJlY29yZC1zYW4tZGllZ28td2F5YmFjayIsImRpc2NsYWltZXIiOiJUaGlzIHBhY2sncyBmaWxlcyBjb21lIGZyb20gc2V2ZXJhbCBwdWJsaXNoZXJzOiBzZWUgZWFjaCBmaWxlJ3MgbGljZW5jZSwgYXR0cmlidXRpb24gYW5kIGRpc2NsYWltZXIuIn0sImZpbGVzIjpbeyJwYXRoIjoib3JpZ2luYWxzL2FyY2hpdmVkX3NlcnZpY2VfcmVwb3J0cy8yMDI2LTA1LTEyVDEzMjQxNlovZ2V0X2l0X2RvbmVfcmVxdWVzdHNfb3Blbl9kYXRhc2QuY3N2IiwidGFibGUiOiJhcmNoaXZlZF9zZXJ2aWNlX3JlcG9ydHMiLCJmb3JtYXQiOiJPUklHSU5BTCIsInNvdXJjZVVybCI6Imh0dHBzOi8vd2ViLmFyY2hpdmUub3JnL3dlYi8yMDI2MDUxMjEzMjQxNmlkXy9odHRwczovL3Nlc2hhdC5kYXRhc2Qub3JnL2dldF9pdF9kb25lX3JlcG9ydHMvZ2V0X2l0X2RvbmVfcmVxdWVzdHNfb3Blbl9kYXRhc2QuY3N2IiwicmV0cmlldmVkQXQiOiIyMDI2LTEwLTA4VDA2OjQ1OjI1LjI1ODM5N1oiLCJzaGEyNTYiOiJjYTlhMDUxM2ZhYzM4Mjg1ZDhiNTQ0OWMyNWIxNzg3N2Y1NmVlZWU5YWZhNjk1Y2JjYTk2YWI2M2MyNGJjZWE1IiwiYnl0ZXMiOjMyNTkzMzQyLCJyb3dzIjo4NjM3MiwieWVhciI6bnVsbCwicGFydGlhbCI6ZmFsc2UsImxhc3RNb2RpZmllZCI6bnVsbCwiZXRhZyI6bnVsbCwibGljZW5jZSI6eyJpZCI6Ik9EQy1QRERMLTEuMCIsInVybCI6Imh0dHBzOi8vb3BlbmRlZmluaXRpb24ub3JnL2xpY2Vuc2VzL29kYy1wZGRsLyIsImF0dHJpYnV0aW9uIjpudWxsLCJkaXNjbGFpbWVyIjpudWxsfX0seyJwYXRoIjoicGFycXVldC9hcmNoaXZlZF9zZXJ2aWNlX3JlcG9ydHMvMjAyNi0wNS0xMlQxMzI0MTZaL2dldF9pdF9kb25lX3JlcXVlc3RzX29wZW5fZGF0YXNkLnBhcnF1ZXQiLCJ0YWJsZSI6ImFyY2hpdmVkX3NlcnZpY2VfcmVwb3J0cyIsImZvcm1hdCI6IlBBUlFVRVQiLCJzb3VyY2VVcmwiOiJodHRwczovL3dlYi5hcmNoaXZlLm9yZy93ZWIvMjAyNjA1MTIxMzI0MTZpZF8vaHR0cHM6Ly9zZXNoYXQuZGF0YXNkLm9yZy9nZXRfaXRfZG9uZV9yZXBvcnRzL2dldF9pdF9kb25lX3JlcXVlc3RzX29wZW5fZGF0YXNkLmNzdiIsInJldHJpZXZlZEF0IjoiMjAyNi0xMC0wOFQwNjo0NToyNS4yNTgzOTdaIiwic2hhMjU2IjoiNzYxNjNmNGU4MTRhY2FhMzE0ZjRlYTg2MWFlYjJkNDllNWU2YTVjMmIyNzcwODVlMWE2ZWEzMzA3ZTc5ODhiNSIsImJ5dGVzIjoxMjI4MjY4MCwicm93cyI6ODYzNzIsImV4Y2x1ZGVkUm93cyI6MCwieWVhciI6bnVsbCwicGFydGlhbCI6ZmFsc2UsImxhc3RNb2RpZmllZCI6bnVsbCwiZXRhZyI6bnVsbCwibGljZW5jZSI6eyJpZCI6Ik9EQy1QRERMLTEuMCIsInVybCI6Imh0dHBzOi8vb3BlbmRlZmluaXRpb24ub3JnL2xpY2Vuc2VzL29kYy1wZGRsLyIsImF0dHJpYnV0aW9uIjpudWxsLCJkaXNjbGFpbWVyIjpudWxsfX0seyJwYXRoIjoib3JpZ2luYWxzL2FyY2hpdmVkX2NpdHlfcGFyY2Vscy8yMDI1LTEyLTA4VDA3MTAzOFovY2l0eV9wcm9wZXJ0eV9wYXJjZWxzX2RhdGFzZC5jc3YiLCJ0YWJsZSI6ImFyY2hpdmVkX2NpdHlfcGFyY2VscyIsImZvcm1hdCI6Ik9SSUdJTkFMIiwic291cmNlVXJsIjoiaHR0cHM6Ly93ZWIuYXJjaGl2ZS5vcmcvd2ViLzIwMjUxMjA4MDcxMDM4aWRfL2h0dHBzOi8vc2VzaGF0LmRhdGFzZC5vcmcvY2l0eV9vd25lZF9wcm9wZXJ0aWVzX3BhcmNlbHMvY2l0eV9wcm9wZXJ0eV9wYXJjZWxzX2RhdGFzZC5jc3YiLCJyZXRyaWV2ZWRBdCI6IjIwMjYtMTAtMDhUMDY6NDU6NDIuNzUwMTU0WiIsInNoYTI1NiI6IjZmMzg4MzEzNTYzOWFiMzM5MjA3NmY4NmRjYmQxNGJlNjM4NjIxNGJjMDcyNzc3N2Q4MDgwMTU5NWE1MDUzOTUiLCJieXRlcyI6OTIyMjEsInJvd3MiOjQxOTMsInllYXIiOm51bGwsInBhcnRpYWwiOmZhbHNlLCJsYXN0TW9kaWZpZWQiOm51bGwsImV0YWciOm51bGwsImxpY2VuY2UiOnsiaWQiOiJPREMtUERETC0xLjAiLCJ1cmwiOiJodHRwczovL29wZW5kZWZpbml0aW9uLm9yZy9saWNlbnNlcy9vZGMtcGRkbC8iLCJhdHRyaWJ1dGlvbiI6bnVsbCwiZGlzY2xhaW1lciI6bnVsbH19LHsicGF0aCI6InBhcnF1ZXQvYXJjaGl2ZWRfY2l0eV9wYXJjZWxzLzIwMjUtMTItMDhUMDcxMDM4Wi9jaXR5X3Byb3BlcnR5X3BhcmNlbHNfZGF0YXNkLnBhcnF1ZXQiLCJ0YWJsZSI6ImFyY2hpdmVkX2NpdHlfcGFyY2VscyIsImZvcm1hdCI6IlBBUlFVRVQiLCJzb3VyY2VVcmwiOiJodHRwczovL3dlYi5hcmNoaXZlLm9yZy93ZWIvMjAyNTEyMDgwNzEwMzhpZF8vaHR0cHM6Ly9zZXNoYXQuZGF0YXNkLm9yZy9jaXR5X293bmVkX3Byb3BlcnRpZXNfcGFyY2Vscy9jaXR5X3Byb3BlcnR5X3BhcmNlbHNfZGF0YXNkLmNzdiIsInJldHJpZXZlZEF0IjoiMjAyNi0xMC0wOFQwNjo0NTo0Mi43NTAxNTRaIiwic2hhMjU2IjoiOTc3NzBkYjgzOTIxYjgwZWNkOWNmYzFkYjcxM2FkZTNhMzkzOWMyNWM3ODc2YzE4MmRmOWE0Yzg3ODU2YmEyNCIsImJ5dGVzIjozMTk0NDQsInJvd3MiOjQxOTMsImV4Y2x1ZGVkUm93cyI6MCwieWVhciI6bnVsbCwicGFydGlhbCI6ZmFsc2UsImxhc3RNb2RpZmllZCI6bnVsbCwiZXRhZyI6bnVsbCwibGljZW5jZSI6eyJpZCI6Ik9EQy1QRERMLTEuMCIsInVybCI6Imh0dHBzOi8vb3BlbmRlZmluaXRpb24ub3JnL2xpY2Vuc2VzL29kYy1wZGRsLyIsImF0dHJpYnV0aW9uIjpudWxsLCJkaXNjbGFpbWVyIjpudWxsfX0seyJwYXRoIjoib3JpZ2luYWxzL2FyY2hpdmVkX2NpdHlfcGFyY2Vscy8yMDE2LTExLTAzVDA2MzUwN1ovY2l0eV9wcm9wZXJ0eV9wYXJjZWxzX2RhdGFzZF8xLmNzdiIsInRhYmxlIjoiYXJjaGl2ZWRfY2l0eV9wYXJjZWxzIiwiZm9ybWF0IjoiT1JJR0lOQUwiLCJzb3VyY2VVcmwiOiJodHRwczovL3dlYi5hcmNoaXZlLm9yZy93ZWIvMjAxNjExMDMwNjM1MDdpZF8vaHR0cDovL2RhdGEuc2FuZGllZ28uZ292OjgwL3NpdGVzL2RlZmF1bHQvZmlsZXMvY2l0eV9wcm9wZXJ0eV9wYXJjZWxzX2RhdGFzZF8xLmNzdiIsInJldHJpZXZlZEF0IjoiMjAyNi0xMC0wOFQwNjo0NTo0My4xMzIxMjBaIiwic2hhMjU2IjoiMzNlYjgxYjExZGFlMWE5ZmEwNGFlZTkzMzE2Y2M0Y2VlOWFlNTQzZjAzMGVjOTQzYTk2MjE2N2QyNzM1ZTM1NiIsImJ5dGVzIjo3MzE3MSwicm93cyI6NDA2NSwieWVhciI6bnVsbCwicGFydGlhbCI6ZmFsc2UsImxhc3RNb2RpZmllZCI6bnVsbCwiZXRhZyI6bnVsbCwibGljZW5jZSI6eyJpZCI6Ik9EQy1QRERMLTEuMCIsInVybCI6Imh0dHBzOi8vb3BlbmRlZmluaXRpb24ub3JnL2xpY2Vuc2VzL29kYy1wZGRsLyIsImF0dHJpYnV0aW9uIjpudWxsLCJkaXNjbGFpbWVyIjpudWxsfX0seyJwYXRoIjoicGFycXVldC9hcmNoaXZlZF9jaXR5X3BhcmNlbHMvMjAxNi0xMS0wM1QwNjM1MDdaL2NpdHlfcHJvcGVydHlfcGFyY2Vsc19kYXRhc2RfMS5wYXJxdWV0IiwidGFibGUiOiJhcmNoaXZlZF9jaXR5X3BhcmNlbHMiLCJmb3JtYXQiOiJQQVJRVUVUIiwic291cmNlVXJsIjoiaHR0cHM6Ly93ZWIuYXJjaGl2ZS5vcmcvd2ViLzIwMTYxMTAzMDYzNTA3aWRfL2h0dHA6Ly9kYXRhLnNhbmRpZWdvLmdvdjo4MC9zaXRlcy9kZWZhdWx0L2ZpbGVzL2NpdHlfcHJvcGVydHlfcGFyY2Vsc19kYXRhc2RfMS5jc3YiLCJyZXRyaWV2ZWRBdCI6IjIwMjYtMTAtMDhUMDY6NDU6NDMuMTMyMTIwWiIsInNoYTI1NiI6IjBkZWFkZWQ1MzBhNzM2YWRiYzAxMDhjMzc3ZWE5ZmYxNDVmYzI3ZGMzOTIzY2FiYjQ1YjczODIyNzBmZjM3NGYiLCJieXRlcyI6MzEwMDI1LCJyb3dzIjo0MDY1LCJleGNsdWRlZFJvd3MiOjAsInllYXIiOm51bGwsInBhcnRpYWwiOmZhbHNlLCJsYXN0TW9kaWZpZWQiOm51bGwsImV0YWciOm51bGwsImxpY2VuY2UiOnsiaWQiOiJPREMtUERETC0xLjAiLCJ1cmwiOiJodHRwczovL29wZW5kZWZpbml0aW9uLm9yZy9saWNlbnNlcy9vZGMtcGRkbC8iLCJhdHRyaWJ1dGlvbiI6bnVsbCwiZGlzY2xhaW1lciI6bnVsbH19LHsicGF0aCI6Im9yaWdpbmFscy9hcmNoaXZlZF9jaXR5X3BhcmNlbHMvMjAxNi0xMi0yN1QwMDA2MjdaL2NpdHlfcHJvcGVydHlfcGFyY2Vsc19kYXRhc2RfMC5jc3YiLCJ0YWJsZSI6ImFyY2hpdmVkX2NpdHlfcGFyY2VscyIsImZvcm1hdCI6Ik9SSUdJTkFMIiwic291cmNlVXJsIjoiaHR0cHM6Ly93ZWIuYXJjaGl2ZS5vcmcvd2ViLzIwMTYxMjI3MDAwNjI3aWRfL2h0dHA6Ly9kYXRhLnNhbmRpZWdvLmdvdi9zaXRlcy9kZWZhdWx0L2ZpbGVzL2NpdHlfcHJvcGVydHlfcGFyY2Vsc19kYXRhc2RfMC5jc3YiLCJyZXRyaWV2ZWRBdCI6IjIwMjYtMTAtMDhUMDY6NDU6NDMuOTIyMjIwWiIsInNoYTI1NiI6IjYyOWZiYTNjZDZkZGIyZjQ3Yjc3ZTQ3NTdhN2VmZmQ0MzIzOTNlOWE1N2JiZjNlNTA1OGQ4NjU4NDNiMGU0NDMiLCJieXRlcyI6NzMyMDUsInJvd3MiOjQwNjcsInllYXIiOm51bGwsInBhcnRpYWwiOmZhbHNlLCJsYXN0TW9kaWZpZWQiOm51bGwsImV0YWciOm51bGwsImxpY2VuY2UiOnsiaWQiOiJPREMtUERETC0xLjAiLCJ1cmwiOiJodHRwczovL29wZW5kZWZpbml0aW9uLm9yZy9saWNlbnNlcy9vZGMtcGRkbC8iLCJhdHRyaWJ1dGlvbiI6bnVsbCwiZGlzY2xhaW1lciI6bnVsbH19LHsicGF0aCI6InBhcnF1ZXQvYXJjaGl2ZWRfY2l0eV9wYXJjZWxzLzIwMTYtMTItMjdUMDAwNjI3Wi9jaXR5X3Byb3BlcnR5X3BhcmNlbHNfZGF0YXNkXzAucGFycXVldCIsInRhYmxlIjoiYXJjaGl2ZWRfY2l0eV9wYXJjZWxzIiwiZm9ybWF0IjoiUEFSUVVFVCIsInNvdXJjZVVybCI6Imh0dHBzOi8vd2ViLmFyY2hpdmUub3JnL3dlYi8yMDE2MTIyNzAwMDYyN2lkXy9odHRwOi8vZGF0YS5zYW5kaWVnby5nb3Yvc2l0ZXMvZGVmYXVsdC9maWxlcy9jaXR5X3Byb3BlcnR5X3BhcmNlbHNfZGF0YXNkXzAuY3N2IiwicmV0cmlldmVkQXQiOiIyMDI2LTEwLTA4VDA2OjQ1OjQzLjkyMjIyMFoiLCJzaGEyNTYiOiJiNGI5ODU1MjUxMDA1NGM2ZWY0NTI2MTYwYTlkMTk2NmQ5ZGYxZTU1ODUyMTNmMjdhOTI5ZDBlNWQxYzg3ZmI2IiwiYnl0ZXMiOjMxMDE1Niwicm93cyI6NDA2NywiZXhjbHVkZWRSb3dzIjowLCJ5ZWFyIjpudWxsLCJwYXJ0aWFsIjpmYWxzZSwibGFzdE1vZGlmaWVkIjpudWxsLCJldGFnIjpudWxsLCJsaWNlbmNlIjp7ImlkIjoiT0RDLVBEREwtMS4wIiwidXJsIjoiaHR0cHM6Ly9vcGVuZGVmaW5pdGlvbi5vcmcvbGljZW5zZXMvb2RjLXBkZGwvIiwiYXR0cmlidXRpb24iOm51bGwsImRpc2NsYWltZXIiOm51bGx9fSx7InBhdGgiOiJvcmlnaW5hbHMvYXJjaGl2ZWRfY2l0eV9wYXJjZWxzLzIwMTctMDEtMjVUMjAxNDU5Wi9jaXR5X3Byb3BlcnR5X3BhcmNlbHNfZGF0YXNkLmNzdiIsInRhYmxlIjoiYXJjaGl2ZWRfY2l0eV9wYXJjZWxzIiwiZm9ybWF0IjoiT1JJR0lOQUwiLCJzb3VyY2VVcmwiOiJodHRwczovL3dlYi5hcmNoaXZlLm9yZy93ZWIvMjAxNzAxMjUyMDE0NTlpZF8vaHR0cDovL2RhdGEuc2FuZGllZ28uZ292L3NpdGVzL2RlZmF1bHQvZmlsZXMvY2l0eV9wcm9wZXJ0eV9wYXJjZWxzX2RhdGFzZC5jc3YiLCJyZXRyaWV2ZWRBdCI6IjIwMjYtMTAtMDhUMDY6NDU6NDQuNTk3Nzg1WiIsInNoYTI1NiI6ImRjOThlMDkzNzVmNWRhODc3NzgwYTI3Yzc1ZWFhNDk1MGE2YzVhYThmNjk1NmVlMzdlY2ZhZWM5MmEyZDMxOGEiLCJieXRlcyI6NzcxNzQsInJvd3MiOjQwNjIsInllYXIiOm51bGwsInBhcnRpYWwiOmZhbHNlLCJsYXN0TW9kaWZpZWQiOm51bGwsImV0YWciOm51bGwsImxpY2VuY2UiOnsiaWQiOiJPREMtUERETC0xLjAiLCJ1cmwiOiJodHRwczovL29wZW5kZWZpbml0aW9uLm9yZy9saWNlbnNlcy9vZGMtcGRkbC8iLCJhdHRyaWJ1dGlvbiI6bnVsbCwiZGlzY2xhaW1lciI6bnVsbH19LHsicGF0aCI6InBhcnF1ZXQvYXJjaGl2ZWRfY2l0eV9wYXJjZWxzLzIwMTctMDEtMjVUMjAxNDU5Wi9jaXR5X3Byb3BlcnR5X3BhcmNlbHNfZGF0YXNkLnBhcnF1ZXQiLCJ0YWJsZSI6ImFyY2hpdmVkX2NpdHlfcGFyY2VscyIsImZvcm1hdCI6IlBBUlFVRVQiLCJzb3VyY2VVcmwiOiJodHRwczovL3dlYi5hcmNoaXZlLm9yZy93ZWIvMjAxNzAxMjUyMDE0NTlpZF8vaHR0cDovL2RhdGEuc2FuZGllZ28uZ292L3NpdGVzL2RlZmF1bHQvZmlsZXMvY2l0eV9wcm9wZXJ0eV9wYXJjZWxzX2RhdGFzZC5jc3YiLCJyZXRyaWV2ZWRBdCI6IjIwMjYtMTAtMDhUMDY6NDU6NDQuNTk3Nzg1WiIsInNoYTI1NiI6ImZlYzIzYjQ0ZGY5YzBlYzgyNzFiNzk3Mzc1NzZhYWM5Njg4YWE4NmE5ZjM5OTU3YzA4OTUyOTc5NDdjMDNhZmQiLCJieXRlcyI6MzA5Nzc0LCJyb3dzIjo0MDYyLCJleGNsdWRlZFJvd3MiOjAsInllYXIiOm51bGwsInBhcnRpYWwiOmZhbHNlLCJsYXN0TW9kaWZpZWQiOm51bGwsImV0YWciOm51bGwsImxpY2VuY2UiOnsiaWQiOiJPREMtUERETC0xLjAiLCJ1cmwiOiJodHRwczovL29wZW5kZWZpbml0aW9uLm9yZy9saWNlbnNlcy9vZGMtcGRkbC8iLCJhdHRyaWJ1dGlvbiI6bnVsbCwiZGlzY2xhaW1lciI6bnVsbH19LHsicGF0aCI6Im9yaWdpbmFscy9hcmNoaXZlZF9jaXR5X3Byb3BlcnRpZXMvMjAxNy0wMS0wOFQwOTI1MzdaL2NpdHlfcHJvcGVydHlfZGV0YWlsc19kYXRhc2RfMS5jc3YiLCJ0YWJsZSI6ImFyY2hpdmVkX2NpdHlfcHJvcGVydGllcyIsImZvcm1hdCI6Ik9SSUdJTkFMIiwic291cmNlVXJsIjoiaHR0cHM6Ly93ZWIuYXJjaGl2ZS5vcmcvd2ViLzIwMTcwMTA4MDkyNTM3aWRfL2h0dHA6Ly9kYXRhLnNhbmRpZWdvLmdvdi9zaXRlcy9kZWZhdWx0L2ZpbGVzL2NpdHlfcHJvcGVydHlfZGV0YWlsc19kYXRhc2RfMS5jc3YiLCJyZXRyaWV2ZWRBdCI6IjIwMjYtMTAtMDhUMDY6NDU6NDUuNjQ0MjUxWiIsInNoYTI1NiI6IjA0MTc3ZGZkMDA0NzBjYjkwM2RmZTkyYzRiMzVkMzFhNzViM2FhM2FhODZkMTcxZDU3NmU1ZThmMGZjYTEzY2EiLCJieXRlcyI6NDkxOTg0LCJyb3dzIjo0MDY5LCJ5ZWFyIjpudWxsLCJwYXJ0aWFsIjpmYWxzZSwibGFzdE1vZGlmaWVkIjpudWxsLCJldGFnIjpudWxsLCJsaWNlbmNlIjp7ImlkIjoiT0RDLVBEREwtMS4wIiwidXJsIjoiaHR0cHM6Ly9vcGVuZGVmaW5pdGlvbi5vcmcvbGljZW5zZXMvb2RjLXBkZGwvIiwiYXR0cmlidXRpb24iOm51bGwsImRpc2NsYWltZXIiOm51bGx9fSx7InBhdGgiOiJwYXJxdWV0L2FyY2hpdmVkX2NpdHlfcHJvcGVydGllcy8yMDE3LTAxLTA4VDA5MjUzN1ovY2l0eV9wcm9wZXJ0eV9kZXRhaWxzX2RhdGFzZF8xLnBhcnF1ZXQiLCJ0YWJsZSI6ImFyY2hpdmVkX2NpdHlfcHJvcGVydGllcyIsImZvcm1hdCI6IlBBUlFVRVQiLCJzb3VyY2VVcmwiOiJodHRwczovL3dlYi5hcmNoaXZlLm9yZy93ZWIvMjAxNzAxMDgwOTI1MzdpZF8vaHR0cDovL2RhdGEuc2FuZGllZ28uZ292L3NpdGVzL2RlZmF1bHQvZmlsZXMvY2l0eV9wcm9wZXJ0eV9kZXRhaWxzX2RhdGFzZF8xLmNzdiIsInJldHJpZXZlZEF0IjoiMjAyNi0xMC0wOFQwNjo0NTo0NS42NDQyNTFaIiwic2hhMjU2IjoiNTVkNGMxNDRhZjU1MWFhMzM1MDgzNWQ2OGRlZjg5NDhlYWZkY2Y4Y2E3M2MwZGRmYThmNGNhZGEwYzJlYTU3NyIsImJ5dGVzIjo0MjA4NDIsInJvd3MiOjQwNjksImV4Y2x1ZGVkUm93cyI6MCwieWVhciI6bnVsbCwicGFydGlhbCI6ZmFsc2UsImxhc3RNb2RpZmllZCI6bnVsbCwiZXRhZyI6bnVsbCwibGljZW5jZSI6eyJpZCI6Ik9EQy1QRERMLTEuMCIsInVybCI6Imh0dHBzOi8vb3BlbmRlZmluaXRpb24ub3JnL2xpY2Vuc2VzL29kYy1wZGRsLyIsImF0dHJpYnV0aW9uIjpudWxsLCJkaXNjbGFpbWVyIjpudWxsfX0seyJwYXRoIjoib3JpZ2luYWxzL2FyY2hpdmVkX2NpdHlfbGVhc2VzLzIwMTYtMTItMjdUMDAwNTM1Wi9jaXR5X3Byb3BlcnR5X2xlYXNlc19kYXRhc2RfMS5jc3YiLCJ0YWJsZSI6ImFyY2hpdmVkX2NpdHlfbGVhc2VzIiwiZm9ybWF0IjoiT1JJR0lOQUwiLCJzb3VyY2VVcmwiOiJodHRwczovL3dlYi5hcmNoaXZlLm9yZy93ZWIvMjAxNjEyMjcwMDA1MzVpZF8vaHR0cDovL2RhdGEuc2FuZGllZ28uZ292L3NpdGVzL2RlZmF1bHQvZmlsZXMvY2l0eV9wcm9wZXJ0eV9sZWFzZXNfZGF0YXNkXzEuY3N2IiwicmV0cmlldmVkQXQiOiIyMDI2LTEwLTA4VDA2OjQ1OjQ3LjMyODY5MloiLCJzaGEyNTYiOiI3Zjc3NDlkMDdhMTM2N2Q0MGVmM2YzM2ZlYzI4ZGM3Yjk2MDM4Y2MxNzUxNDRmZDA2ZjJjYzc3MjNkMjU3ZmFkIiwiYnl0ZXMiOjk4MDEwLCJyb3dzIjo1OTEsInllYXIiOm51bGwsInBhcnRpYWwiOmZhbHNlLCJsYXN0TW9kaWZpZWQiOm51bGwsImV0YWciOm51bGwsImxpY2VuY2UiOnsiaWQiOiJPREMtUERETC0xLjAiLCJ1cmwiOiJodHRwczovL29wZW5kZWZpbml0aW9uLm9yZy9saWNlbnNlcy9vZGMtcGRkbC8iLCJhdHRyaWJ1dGlvbiI6bnVsbCwiZGlzY2xhaW1lciI6bnVsbH19LHsicGF0aCI6InBhcnF1ZXQvYXJjaGl2ZWRfY2l0eV9sZWFzZXMvMjAxNi0xMi0yN1QwMDA1MzVaL2NpdHlfcHJvcGVydHlfbGVhc2VzX2RhdGFzZF8xLnBhcnF1ZXQiLCJ0YWJsZSI6ImFyY2hpdmVkX2NpdHlfbGVhc2VzIiwiZm9ybWF0IjoiUEFSUVVFVCIsInNvdXJjZVVybCI6Imh0dHBzOi8vd2ViLmFyY2hpdmUub3JnL3dlYi8yMDE2MTIyNzAwMDUzNWlkXy9odHRwOi8vZGF0YS5zYW5kaWVnby5nb3Yvc2l0ZXMvZGVmYXVsdC9maWxlcy9jaXR5X3Byb3BlcnR5X2xlYXNlc19kYXRhc2RfMS5jc3YiLCJyZXRyaWV2ZWRBdCI6IjIwMjYtMTAtMDhUMDY6NDU6NDcuMzI4NjkyWiIsInNoYTI1NiI6IjU5NjgwMTNhYzYyNGVmNTMyNTQ5ZTQ4MmZhODhmNGZhMzkwNWU2NDY2YmY4MTI0MTA5MDU1OWUwNTE0MmU5MDYiLCJieXRlcyI6MTAyMjIxLCJyb3dzIjo1OTEsImV4Y2x1ZGVkUm93cyI6MCwieWVhciI6bnVsbCwicGFydGlhbCI6ZmFsc2UsImxhc3RNb2RpZmllZCI6bnVsbCwiZXRhZyI6bnVsbCwibGljZW5jZSI6eyJpZCI6Ik9EQy1QRERMLTEuMCIsInVybCI6Imh0dHBzOi8vb3BlbmRlZmluaXRpb24ub3JnL2xpY2Vuc2VzL29kYy1wZGRsLyIsImF0dHJpYnV0aW9uIjpudWxsLCJkaXNjbGFpbWVyIjpudWxsfX0seyJwYXRoIjoib3JpZ2luYWxzL2FyY2hpdmVkX2NpdHlfbGVhc2VzLzIwMTctMDEtMjVUMDQxNDQzWi9jaXR5X3Byb3BlcnR5X2xlYXNlc19kYXRhc2RfMC5jc3YiLCJ0YWJsZSI6ImFyY2hpdmVkX2NpdHlfbGVhc2VzIiwiZm9ybWF0IjoiT1JJR0lOQUwiLCJzb3VyY2VVcmwiOiJodHRwczovL3dlYi5hcmNoaXZlLm9yZy93ZWIvMjAxNzAxMjUwNDE0NDNpZF8vaHR0cDovL2RhdGEuc2FuZGllZ28uZ292L3NpdGVzL2RlZmF1bHQvZmlsZXMvY2l0eV9wcm9wZXJ0eV9sZWFzZXNfZGF0YXNkXzAuY3N2IiwicmV0cmlldmVkQXQiOiIyMDI2LTEwLTA4VDA2OjQ1OjQ3Ljc3ODk1NVoiLCJzaGEyNTYiOiI3MzQzMjI0NTE5YzdlNmU2MDEyYWFiZGY1OWJmMzgwMGFiMzhkMmNkNzI2ZjQ2ODQxNDBmMjhhMTk5ZWVkNDZjIiwiYnl0ZXMiOjk4NTMzLCJyb3dzIjo1OTQsInllYXIiOm51bGwsInBhcnRpYWwiOmZhbHNlLCJsYXN0TW9kaWZpZWQiOm51bGwsImV0YWciOm51bGwsImxpY2VuY2UiOnsiaWQiOiJPREMtUERETC0xLjAiLCJ1cmwiOiJodHRwczovL29wZW5kZWZpbml0aW9uLm9yZy9saWNlbnNlcy9vZGMtcGRkbC8iLCJhdHRyaWJ1dGlvbiI6bnVsbCwiZGlzY2xhaW1lciI6bnVsbH19LHsicGF0aCI6InBhcnF1ZXQvYXJjaGl2ZWRfY2l0eV9sZWFzZXMvMjAxNy0wMS0yNVQwNDE0NDNaL2NpdHlfcHJvcGVydHlfbGVhc2VzX2RhdGFzZF8wLnBhcnF1ZXQiLCJ0YWJsZSI6ImFyY2hpdmVkX2NpdHlfbGVhc2VzIiwiZm9ybWF0IjoiUEFSUVVFVCIsInNvdXJjZVVybCI6Imh0dHBzOi8vd2ViLmFyY2hpdmUub3JnL3dlYi8yMDE3MDEyNTA0MTQ0M2lkXy9odHRwOi8vZGF0YS5zYW5kaWVnby5nb3Yvc2l0ZXMvZGVmYXVsdC9maWxlcy9jaXR5X3Byb3BlcnR5X2xlYXNlc19kYXRhc2RfMC5jc3YiLCJyZXRyaWV2ZWRBdCI6IjIwMjYtMTAtMDhUMDY6NDU6NDcuNzc4OTU1WiIsInNoYTI1NiI6IjIwOWUzNjQyMjdjMjdkYThkZjFhOWUyMmMwMzA5MjYzOTBjZjcwN2NhZmU0NDU1OWRhM2EzMzMwN2VlM2EwYTEiLCJieXRlcyI6MTAyODM1LCJyb3dzIjo1OTQsImV4Y2x1ZGVkUm93cyI6MCwieWVhciI6bnVsbCwicGFydGlhbCI6ZmFsc2UsImxhc3RNb2RpZmllZCI6bnVsbCwiZXRhZyI6bnVsbCwibGljZW5jZSI6eyJpZCI6Ik9EQy1QRERMLTEuMCIsInVybCI6Imh0dHBzOi8vb3BlbmRlZmluaXRpb24ub3JnL2xpY2Vuc2VzL29kYy1wZGRsLyIsImF0dHJpYnV0aW9uIjpudWxsLCJkaXNjbGFpbWVyIjpudWxsfX0seyJwYXRoIjoib3JpZ2luYWxzL2FyY2hpdmVkX2NpdHlfbGVhc2VfYmlsbGluZy8yMDE2LTEyLTI3VDAwMDU1MFovY2l0eV9wcm9wZXJ0eV9iaWxsaW5nX2RhdGFzZF8wLmNzdiIsInRhYmxlIjoiYXJjaGl2ZWRfY2l0eV9sZWFzZV9iaWxsaW5nIiwiZm9ybWF0IjoiT1JJR0lOQUwiLCJzb3VyY2VVcmwiOiJodHRwczovL3dlYi5hcmNoaXZlLm9yZy93ZWIvMjAxNjEyMjcwMDA1NTBpZF8vaHR0cDovL2RhdGEuc2FuZGllZ28uZ292L3NpdGVzL2RlZmF1bHQvZmlsZXMvY2l0eV9wcm9wZXJ0eV9iaWxsaW5nX2RhdGFzZF8wLmNzdiIsInJldHJpZXZlZEF0IjoiMjAyNi0xMC0wOFQwNjo0NTo0OC40ODYwMDlaIiwic2hhMjU2IjoiMTkwYjI2MjNkMjkyY2EwMmI1ODQ3ZDMyNmU0ZDU0MzEzNTRiNmY5YzU2ZmNiZWM1MzNkZTFmZjhiZWRhYjBmNiIsImJ5dGVzIjoxMTI1MzA5NCwicm93cyI6MTUwMjAxLCJ5ZWFyIjpudWxsLCJwYXJ0aWFsIjpmYWxzZSwibGFzdE1vZGlmaWVkIjpudWxsLCJldGFnIjpudWxsLCJsaWNlbmNlIjp7ImlkIjoiT0RDLVBEREwtMS4wIiwidXJsIjoiaHR0cHM6Ly9vcGVuZGVmaW5pdGlvbi5vcmcvbGljZW5zZXMvb2RjLXBkZGwvIiwiYXR0cmlidXRpb24iOm51bGwsImRpc2NsYWltZXIiOm51bGx9fSx7InBhdGgiOiJwYXJxdWV0L2FyY2hpdmVkX2NpdHlfbGVhc2VfYmlsbGluZy8yMDE2LTEyLTI3VDAwMDU1MFovY2l0eV9wcm9wZXJ0eV9iaWxsaW5nX2RhdGFzZF8wLnBhcnF1ZXQiLCJ0YWJsZSI6ImFyY2hpdmVkX2NpdHlfbGVhc2VfYmlsbGluZyIsImZvcm1hdCI6IlBBUlFVRVQiLCJzb3VyY2VVcmwiOiJodHRwczovL3dlYi5hcmNoaXZlLm9yZy93ZWIvMjAxNjEyMjcwMDA1NTBpZF8vaHR0cDovL2RhdGEuc2FuZGllZ28uZ292L3NpdGVzL2RlZmF1bHQvZmlsZXMvY2l0eV9wcm9wZXJ0eV9iaWxsaW5nX2RhdGFzZF8wLmNzdiIsInJldHJpZXZlZEF0IjoiMjAyNi0xMC0wOFQwNjo0NTo0OC40ODYwMDlaIiwic2hhMjU2IjoiMjJkYWFjNGM1Yzg1ODYzMmMzYTA4YzQ3YWEzZjlmMmU5YzljNDZhNTA1ODU4ZWRkNDgwMmVmMmMwZjQ4ZjVkOCIsImJ5dGVzIjoxMTYwMzkwNSwicm93cyI6MTUwMjAxLCJleGNsdWRlZFJvd3MiOjAsInllYXIiOm51bGwsInBhcnRpYWwiOmZhbHNlLCJsYXN0TW9kaWZpZWQiOm51bGwsImV0YWciOm51bGwsImxpY2VuY2UiOnsiaWQiOiJPREMtUERETC0xLjAiLCJ1cmwiOiJodHRwczovL29wZW5kZWZpbml0aW9uLm9yZy9saWNlbnNlcy9vZGMtcGRkbC8iLCJhdHRyaWJ1dGlvbiI6bnVsbCwiZGlzY2xhaW1lciI6bnVsbH19LHsicGF0aCI6Im9yaWdpbmFscy9hcmNoaXZlZF9jaXR5X2xlYXNlX2JpbGxpbmcvMjAxNy0wMS0wOFQxOTAxNDNaL2NpdHlfcHJvcGVydHlfYmlsbGluZ19kYXRhc2RfMS5jc3YiLCJ0YWJsZSI6ImFyY2hpdmVkX2NpdHlfbGVhc2VfYmlsbGluZyIsImZvcm1hdCI6Ik9SSUdJTkFMIiwic291cmNlVXJsIjoiaHR0cHM6Ly93ZWIuYXJjaGl2ZS5vcmcvd2ViLzIwMTcwMTA4MTkwMTQzaWRfL2h0dHA6Ly9kYXRhLnNhbmRpZWdvLmdvdi9zaXRlcy9kZWZhdWx0L2ZpbGVzL2NpdHlfcHJvcGVydHlfYmlsbGluZ19kYXRhc2RfMS5jc3YiLCJyZXRyaWV2ZWRBdCI6IjIwMjYtMTAtMDhUMDY6NDU6NTQuNzY2NTQ5WiIsInNoYTI1NiI6IjJmMGJhYzU5YWQyZjA4NTdlODY3YjQ4NTg3ZWNhZjk1OGJhMmFlZWM5ZjFmNDU2YWY4NGM1MTg0MzdmNGQ2MDYiLCJieXRlcyI6MTEyODY0NjIsInJvd3MiOjE1MDYwMywieWVhciI6bnVsbCwicGFydGlhbCI6ZmFsc2UsImxhc3RNb2RpZmllZCI6bnVsbCwiZXRhZyI6bnVsbCwibGljZW5jZSI6eyJpZCI6Ik9EQy1QRERMLTEuMCIsInVybCI6Imh0dHBzOi8vb3BlbmRlZmluaXRpb24ub3JnL2xpY2Vuc2VzL29kYy1wZGRsLyIsImF0dHJpYnV0aW9uIjpudWxsLCJkaXNjbGFpbWVyIjpudWxsfX0seyJwYXRoIjoicGFycXVldC9hcmNoaXZlZF9jaXR5X2xlYXNlX2JpbGxpbmcvMjAxNy0wMS0wOFQxOTAxNDNaL2NpdHlfcHJvcGVydHlfYmlsbGluZ19kYXRhc2RfMS5wYXJxdWV0IiwidGFibGUiOiJhcmNoaXZlZF9jaXR5X2xlYXNlX2JpbGxpbmciLCJmb3JtYXQiOiJQQVJRVUVUIiwic291cmNlVXJsIjoiaHR0cHM6Ly93ZWIuYXJjaGl2ZS5vcmcvd2ViLzIwMTcwMTA4MTkwMTQzaWRfL2h0dHA6Ly9kYXRhLnNhbmRpZWdvLmdvdi9zaXRlcy9kZWZhdWx0L2ZpbGVzL2NpdHlfcHJvcGVydHlfYmlsbGluZ19kYXRhc2RfMS5jc3YiLCJyZXRyaWV2ZWRBdCI6IjIwMjYtMTAtMDhUMDY6NDU6NTQuNzY2NTQ5WiIsInNoYTI1NiI6ImMzZmIzOGVjOTI0MzU5MzhiZjFjMDljNDFmOTBhYTFlYmUxZDRmZmM2MzhlMDk0ZTE0NzdlYzAzN2RiNmZlYTUiLCJieXRlcyI6MTE2MzQ1MTAsInJvd3MiOjE1MDYwMywiZXhjbHVkZWRSb3dzIjowLCJ5ZWFyIjpudWxsLCJwYXJ0aWFsIjpmYWxzZSwibGFzdE1vZGlmaWVkIjpudWxsLCJldGFnIjpudWxsLCJsaWNlbmNlIjp7ImlkIjoiT0RDLVBEREwtMS4wIiwidXJsIjoiaHR0cHM6Ly9vcGVuZGVmaW5pdGlvbi5vcmcvbGljZW5zZXMvb2RjLXBkZGwvIiwiYXR0cmlidXRpb24iOm51bGwsImRpc2NsYWltZXIiOm51bGx9fV19",
+  "manifestSha256": "766daaab96ec78906c165cc2a20ffeaffadd9192c1a11493e63f0baabf5ee5aa",
+  "manifest": {
+    "pack": "san-diego-wayback",
+    "packVersion": "2026.10.8",
+    "schemaVersion": "1.0",
+    "builtAt": "2026-10-08T06:45:59.490404+00:00",
+    "licence": {
+      "id": "mixed",
+      "url": "https://huggingface.co/datasets/Writerslogic/onrecord-san-diego-wayback",
+      "disclaimer": "This pack's files come from several publishers: see each file's licence, attribution and disclaimer."
+    },
+    "files": [
+      {
+        "path": "originals/archived_service_reports/2026-05-12T132416Z/get_it_done_requests_open_datasd.csv",
+        "table": "archived_service_reports",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://web.archive.org/web/20260512132416id_/https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_open_datasd.csv",
+        "retrievedAt": "2026-10-08T06:45:25.258397Z",
+        "sha256": "ca9a0513fac38285d8b5449c25b17877f56eeee9afa695cbca96ab63c24bcea5",
+        "bytes": 32593342,
+        "rows": 86372,
+        "year": null,
+        "partial": false,
+        "lastModified": null,
+        "etag": null,
+        "licence": {
+          "id": "ODC-PDDL-1.0",
+          "url": "https://opendefinition.org/licenses/odc-pddl/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/archived_service_reports/2026-05-12T132416Z/get_it_done_requests_open_datasd.parquet",
+        "table": "archived_service_reports",
+        "format": "PARQUET",
+        "sourceUrl": "https://web.archive.org/web/20260512132416id_/https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_open_datasd.csv",
+        "retrievedAt": "2026-10-08T06:45:25.258397Z",
+        "sha256": "76163f4e814acaa314f4ea861aeb2d49e5e6a5c2b277085e1a6ea3307e7988b5",
+        "bytes": 12282680,
+        "rows": 86372,
+        "excludedRows": 0,
+        "year": null,
+        "partial": false,
+        "lastModified": null,
+        "etag": null,
+        "licence": {
+          "id": "ODC-PDDL-1.0",
+          "url": "https://opendefinition.org/licenses/odc-pddl/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "originals/archived_city_parcels/2025-12-08T071038Z/city_property_parcels_datasd.csv",
+        "table": "archived_city_parcels",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://web.archive.org/web/20251208071038id_/https://seshat.datasd.org/city_owned_properties_parcels/city_property_parcels_datasd.csv",
+        "retrievedAt": "2026-10-08T06:45:42.750154Z",
+        "sha256": "6f3883135639ab3392076f86dcbd14be6386214bc0727777d80801595a505395",
+        "bytes": 92221,
+        "rows": 4193,
+        "year": null,
+        "partial": false,
+        "lastModified": null,
+        "etag": null,
+        "licence": {
+          "id": "ODC-PDDL-1.0",
+          "url": "https://opendefinition.org/licenses/odc-pddl/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/archived_city_parcels/2025-12-08T071038Z/city_property_parcels_datasd.parquet",
+        "table": "archived_city_parcels",
+        "format": "PARQUET",
+        "sourceUrl": "https://web.archive.org/web/20251208071038id_/https://seshat.datasd.org/city_owned_properties_parcels/city_property_parcels_datasd.csv",
+        "retrievedAt": "2026-10-08T06:45:42.750154Z",
+        "sha256": "97770db83921b80ecd9cfc1db713ade3a3939c25c7876c182df9a4c87856ba24",
+        "bytes": 319444,
+        "rows": 4193,
+        "excludedRows": 0,
+        "year": null,
+        "partial": false,
+        "lastModified": null,
+        "etag": null,
+        "licence": {
+          "id": "ODC-PDDL-1.0",
+          "url": "https://opendefinition.org/licenses/odc-pddl/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "originals/archived_city_parcels/2016-11-03T063507Z/city_property_parcels_datasd_1.csv",
+        "table": "archived_city_parcels",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://web.archive.org/web/20161103063507id_/http://data.sandiego.gov:80/sites/default/files/city_property_parcels_datasd_1.csv",
+        "retrievedAt": "2026-10-08T06:45:43.132120Z",
+        "sha256": "33eb81b11dae1a9fa04aee93316cc4cee9ae543f030ec943a962167d2735e356",
+        "bytes": 73171,
+        "rows": 4065,
+        "year": null,
+        "partial": false,
+        "lastModified": null,
+        "etag": null,
+        "licence": {
+          "id": "ODC-PDDL-1.0",
+          "url": "https://opendefinition.org/licenses/odc-pddl/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/archived_city_parcels/2016-11-03T063507Z/city_property_parcels_datasd_1.parquet",
+        "table": "archived_city_parcels",
+        "format": "PARQUET",
+        "sourceUrl": "https://web.archive.org/web/20161103063507id_/http://data.sandiego.gov:80/sites/default/files/city_property_parcels_datasd_1.csv",
+        "retrievedAt": "2026-10-08T06:45:43.132120Z",
+        "sha256": "0deaded530a736adbc0108c377ea9ff145fc27dc3923cabb45b7382270ff374f",
+        "bytes": 310025,
+        "rows": 4065,
+        "excludedRows": 0,
+        "year": null,
+        "partial": false,
+        "lastModified": null,
+        "etag": null,
+        "licence": {
+          "id": "ODC-PDDL-1.0",
+          "url": "https://opendefinition.org/licenses/odc-pddl/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "originals/archived_city_parcels/2016-12-27T000627Z/city_property_parcels_datasd_0.csv",
+        "table": "archived_city_parcels",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://web.archive.org/web/20161227000627id_/http://data.sandiego.gov/sites/default/files/city_property_parcels_datasd_0.csv",
+        "retrievedAt": "2026-10-08T06:45:43.922220Z",
+        "sha256": "629fba3cd6ddb2f47b77e4757a7effd432393e9a57bbf3e5058d865843b0e443",
+        "bytes": 73205,
+        "rows": 4067,
+        "year": null,
+        "partial": false,
+        "lastModified": null,
+        "etag": null,
+        "licence": {
+          "id": "ODC-PDDL-1.0",
+          "url": "https://opendefinition.org/licenses/odc-pddl/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/archived_city_parcels/2016-12-27T000627Z/city_property_parcels_datasd_0.parquet",
+        "table": "archived_city_parcels",
+        "format": "PARQUET",
+        "sourceUrl": "https://web.archive.org/web/20161227000627id_/http://data.sandiego.gov/sites/default/files/city_property_parcels_datasd_0.csv",
+        "retrievedAt": "2026-10-08T06:45:43.922220Z",
+        "sha256": "b4b98552510054c6ef4526160a9d1966d9df1e5585213f27a929d0e5d1c87fb6",
+        "bytes": 310156,
+        "rows": 4067,
+        "excludedRows": 0,
+        "year": null,
+        "partial": false,
+        "lastModified": null,
+        "etag": null,
+        "licence": {
+          "id": "ODC-PDDL-1.0",
+          "url": "https://opendefinition.org/licenses/odc-pddl/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "originals/archived_city_parcels/2017-01-25T201459Z/city_property_parcels_datasd.csv",
+        "table": "archived_city_parcels",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://web.archive.org/web/20170125201459id_/http://data.sandiego.gov/sites/default/files/city_property_parcels_datasd.csv",
+        "retrievedAt": "2026-10-08T06:45:44.597785Z",
+        "sha256": "dc98e09375f5da877780a27c75eaa4950a6c5aa8f6956ee37ecfaec92a2d318a",
+        "bytes": 77174,
+        "rows": 4062,
+        "year": null,
+        "partial": false,
+        "lastModified": null,
+        "etag": null,
+        "licence": {
+          "id": "ODC-PDDL-1.0",
+          "url": "https://opendefinition.org/licenses/odc-pddl/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/archived_city_parcels/2017-01-25T201459Z/city_property_parcels_datasd.parquet",
+        "table": "archived_city_parcels",
+        "format": "PARQUET",
+        "sourceUrl": "https://web.archive.org/web/20170125201459id_/http://data.sandiego.gov/sites/default/files/city_property_parcels_datasd.csv",
+        "retrievedAt": "2026-10-08T06:45:44.597785Z",
+        "sha256": "fec23b44df9c0ec8271b79737576aac9688aa86a9f39957c0895297947c03afd",
+        "bytes": 309774,
+        "rows": 4062,
+        "excludedRows": 0,
+        "year": null,
+        "partial": false,
+        "lastModified": null,
+        "etag": null,
+        "licence": {
+          "id": "ODC-PDDL-1.0",
+          "url": "https://opendefinition.org/licenses/odc-pddl/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "originals/archived_city_properties/2017-01-08T092537Z/city_property_details_datasd_1.csv",
+        "table": "archived_city_properties",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://web.archive.org/web/20170108092537id_/http://data.sandiego.gov/sites/default/files/city_property_details_datasd_1.csv",
+        "retrievedAt": "2026-10-08T06:45:45.644251Z",
+        "sha256": "04177dfd00470cb903dfe92c4b35d31a75b3aa3aa86d171d576e5e8f0fca13ca",
+        "bytes": 491984,
+        "rows": 4069,
+        "year": null,
+        "partial": false,
+        "lastModified": null,
+        "etag": null,
+        "licence": {
+          "id": "ODC-PDDL-1.0",
+          "url": "https://opendefinition.org/licenses/odc-pddl/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/archived_city_properties/2017-01-08T092537Z/city_property_details_datasd_1.parquet",
+        "table": "archived_city_properties",
+        "format": "PARQUET",
+        "sourceUrl": "https://web.archive.org/web/20170108092537id_/http://data.sandiego.gov/sites/default/files/city_property_details_datasd_1.csv",
+        "retrievedAt": "2026-10-08T06:45:45.644251Z",
+        "sha256": "55d4c144af551aa3350835d68def8948eafdcf8ca73c0ddfa8f4cada0c2ea577",
+        "bytes": 420842,
+        "rows": 4069,
+        "excludedRows": 0,
+        "year": null,
+        "partial": false,
+        "lastModified": null,
+        "etag": null,
+        "licence": {
+          "id": "ODC-PDDL-1.0",
+          "url": "https://opendefinition.org/licenses/odc-pddl/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "originals/archived_city_leases/2016-12-27T000535Z/city_property_leases_datasd_1.csv",
+        "table": "archived_city_leases",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://web.archive.org/web/20161227000535id_/http://data.sandiego.gov/sites/default/files/city_property_leases_datasd_1.csv",
+        "retrievedAt": "2026-10-08T06:45:47.328692Z",
+        "sha256": "7f7749d07a1367d40ef3f33fec28dc7b96038cc175144fd06f2cc7723d257fad",
+        "bytes": 98010,
+        "rows": 591,
+        "year": null,
+        "partial": false,
+        "lastModified": null,
+        "etag": null,
+        "licence": {
+          "id": "ODC-PDDL-1.0",
+          "url": "https://opendefinition.org/licenses/odc-pddl/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/archived_city_leases/2016-12-27T000535Z/city_property_leases_datasd_1.parquet",
+        "table": "archived_city_leases",
+        "format": "PARQUET",
+        "sourceUrl": "https://web.archive.org/web/20161227000535id_/http://data.sandiego.gov/sites/default/files/city_property_leases_datasd_1.csv",
+        "retrievedAt": "2026-10-08T06:45:47.328692Z",
+        "sha256": "5968013ac624ef532549e482fa88f4fa3905e6466bf81241090559e05142e906",
+        "bytes": 102221,
+        "rows": 591,
+        "excludedRows": 0,
+        "year": null,
+        "partial": false,
+        "lastModified": null,
+        "etag": null,
+        "licence": {
+          "id": "ODC-PDDL-1.0",
+          "url": "https://opendefinition.org/licenses/odc-pddl/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "originals/archived_city_leases/2017-01-25T041443Z/city_property_leases_datasd_0.csv",
+        "table": "archived_city_leases",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://web.archive.org/web/20170125041443id_/http://data.sandiego.gov/sites/default/files/city_property_leases_datasd_0.csv",
+        "retrievedAt": "2026-10-08T06:45:47.778955Z",
+        "sha256": "7343224519c7e6e6012aabdf59bf3800ab38d2cd726f4684140f28a199eed46c",
+        "bytes": 98533,
+        "rows": 594,
+        "year": null,
+        "partial": false,
+        "lastModified": null,
+        "etag": null,
+        "licence": {
+          "id": "ODC-PDDL-1.0",
+          "url": "https://opendefinition.org/licenses/odc-pddl/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/archived_city_leases/2017-01-25T041443Z/city_property_leases_datasd_0.parquet",
+        "table": "archived_city_leases",
+        "format": "PARQUET",
+        "sourceUrl": "https://web.archive.org/web/20170125041443id_/http://data.sandiego.gov/sites/default/files/city_property_leases_datasd_0.csv",
+        "retrievedAt": "2026-10-08T06:45:47.778955Z",
+        "sha256": "209e364227c27da8df1a9e22c030926390cf707cafe44559da3a33307ee3a0a1",
+        "bytes": 102835,
+        "rows": 594,
+        "excludedRows": 0,
+        "year": null,
+        "partial": false,
+        "lastModified": null,
+        "etag": null,
+        "licence": {
+          "id": "ODC-PDDL-1.0",
+          "url": "https://opendefinition.org/licenses/odc-pddl/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "originals/archived_city_lease_billing/2016-12-27T000550Z/city_property_billing_datasd_0.csv",
+        "table": "archived_city_lease_billing",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://web.archive.org/web/20161227000550id_/http://data.sandiego.gov/sites/default/files/city_property_billing_datasd_0.csv",
+        "retrievedAt": "2026-10-08T06:45:48.486009Z",
+        "sha256": "190b2623d292ca02b5847d326e4d5431354b6f9c56fcbec533de1ff8bedab0f6",
+        "bytes": 11253094,
+        "rows": 150201,
+        "year": null,
+        "partial": false,
+        "lastModified": null,
+        "etag": null,
+        "licence": {
+          "id": "ODC-PDDL-1.0",
+          "url": "https://opendefinition.org/licenses/odc-pddl/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/archived_city_lease_billing/2016-12-27T000550Z/city_property_billing_datasd_0.parquet",
+        "table": "archived_city_lease_billing",
+        "format": "PARQUET",
+        "sourceUrl": "https://web.archive.org/web/20161227000550id_/http://data.sandiego.gov/sites/default/files/city_property_billing_datasd_0.csv",
+        "retrievedAt": "2026-10-08T06:45:48.486009Z",
+        "sha256": "22daac4c5c858632c3a08c47aa3f9f2e9c9c46a505858edd4802ef2c0f48f5d8",
+        "bytes": 11603905,
+        "rows": 150201,
+        "excludedRows": 0,
+        "year": null,
+        "partial": false,
+        "lastModified": null,
+        "etag": null,
+        "licence": {
+          "id": "ODC-PDDL-1.0",
+          "url": "https://opendefinition.org/licenses/odc-pddl/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "originals/archived_city_lease_billing/2017-01-08T190143Z/city_property_billing_datasd_1.csv",
+        "table": "archived_city_lease_billing",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://web.archive.org/web/20170108190143id_/http://data.sandiego.gov/sites/default/files/city_property_billing_datasd_1.csv",
+        "retrievedAt": "2026-10-08T06:45:54.766549Z",
+        "sha256": "2f0bac59ad2f0857e867b48587ecaf958ba2aeec9f1f456af84c518437f4d606",
+        "bytes": 11286462,
+        "rows": 150603,
+        "year": null,
+        "partial": false,
+        "lastModified": null,
+        "etag": null,
+        "licence": {
+          "id": "ODC-PDDL-1.0",
+          "url": "https://opendefinition.org/licenses/odc-pddl/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/archived_city_lease_billing/2017-01-08T190143Z/city_property_billing_datasd_1.parquet",
+        "table": "archived_city_lease_billing",
+        "format": "PARQUET",
+        "sourceUrl": "https://web.archive.org/web/20170108190143id_/http://data.sandiego.gov/sites/default/files/city_property_billing_datasd_1.csv",
+        "retrievedAt": "2026-10-08T06:45:54.766549Z",
+        "sha256": "c3fb38ec92435938bf1c09c41f90aa1ebe1d4ffc638e094e1477ec037db6fea5",
+        "bytes": 11634510,
+        "rows": 150603,
+        "excludedRows": 0,
+        "year": null,
+        "partial": false,
+        "lastModified": null,
+        "etag": null,
+        "licence": {
+          "id": "ODC-PDDL-1.0",
+          "url": "https://opendefinition.org/licenses/odc-pddl/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      }
+    ]
+  },
+  "signature": {
+    "algorithm": "Ed25519",
+    "publicKeyHex": "b42202850cd9ecda4ab2b96548891d3a2a8275f74dde76bba2153826089ca8ff",
+    "signerKeyId": "266f3c9c0320f40951854c7af66b6e73395a6735828fa04092c1cf79d2dafd2d",
+    "signatureHex": "8c8de526143150884eecfa3f737c49cc8baf0b13e03d43b4b807460d83cc749d75f4bc6e6fe26c3e301f183291a7d4f0fdd2a71082face49d34e55197e938c02",
+    "identityAssurance": "SELF_MANAGED_LOCAL_KEY_NOT_EXTERNALLY_ATTESTED"
+  }
+}

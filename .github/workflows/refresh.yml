@@ -1,0 +1,44 @@
+name: Maintain public OnRecord datasets
+
+on:
+  schedule:
+    - cron: '41 12 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dataset-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      UV_NO_CACHE: '1'
+      HF_HUB_DISABLE_TELEMETRY: '1'
+      ONRECORD_PUBLIC_RUNNER: 'true'
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9
+        with:
+          version: '0.12.10'
+          enable-cache: false
+      - run: uv sync --locked --no-dev
+      - run: uv run --locked python -m unittest discover -s tests -v
+      - name: Collect and publish validated updates
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: uv run --locked python updater.py --publish --checkpoint
+      - name: Record run summary
+        if: always()
+        run: |
+          if [ -f .run/status.json ]; then
+            uv run --locked python summarize.py >> "$GITHUB_STEP_SUMMARY"
+          fi

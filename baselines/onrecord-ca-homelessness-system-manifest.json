@@ -1,0 +1,475 @@
+{
+  "manifestCanonicalBase64": "eyJwYWNrIjoiY2EtaG9tZWxlc3NuZXNzLXN5c3RlbSIsInBhY2tWZXJzaW9uIjoiMjAyNi4xMC44Iiwic2NoZW1hVmVyc2lvbiI6IjEuMCIsImJ1aWx0QXQiOiIyMDI2LTEwLTA4VDA2OjU1OjIwLjU4MjI4NCswMDowMCIsImxpY2VuY2UiOnsiaWQiOiJtaXhlZCIsInVybCI6Imh0dHBzOi8vaHVnZ2luZ2ZhY2UuY28vZGF0YXNldHMvV3JpdGVyc2xvZ2ljL29ucmVjb3JkLWNhLWhvbWVsZXNzbmVzcy1zeXN0ZW0iLCJkaXNjbGFpbWVyIjoiVGhpcyBwYWNrJ3MgZmlsZXMgY29tZSBmcm9tIHNldmVyYWwgcHVibGlzaGVyczogc2VlIGVhY2ggZmlsZSdzIGxpY2VuY2UsIGF0dHJpYnV0aW9uIGFuZCBkaXNjbGFpbWVyLiJ9LCJmaWxlcyI6W3sicGF0aCI6Im9yaWdpbmFscy9jYV9zeXN0ZW1fcGVyZm9ybWFuY2VfbWVhc3VyZXMvY2Etc3Btcy1wcmlvci15ZWFycy1hbmQtbGFzdC10d2VsdmUtbW9udGhzLWN5MjAyNS5jc3YiLCJ0YWJsZSI6ImNhX3N5c3RlbV9wZXJmb3JtYW5jZV9tZWFzdXJlcyIsImZvcm1hdCI6Ik9SSUdJTkFMIiwic291cmNlVXJsIjoiaHR0cHM6Ly9wdWJsaXNoLmRhdGEuY2EuZ292L2RhdGFzZXQvZDNmOWNhNGQtM2U2MC00MzRiLTlmYTMtOTFlZTBiZWZkMzRkL3Jlc291cmNlL2UwMjE3OGQ5LTFkMzQtNDc5OC05OTc5LWY1MGFmOWYxNzQyZS9kb3dubG9hZC9jYS1zcG1zLXByaW9yLXllYXJzLWFuZC1sYXN0LXR3ZWx2ZS1tb250aHMtY3kyMDI1LmNzdiIsInJldHJpZXZlZEF0IjoiMjAyNi0xMC0wOFQwNjo1NTowOC4zNzQ1NzlaIiwic2hhMjU2IjoiZDJjZmMwZWU5M2IxNjFkNDVlNTM2MGQ5Zjk3NGQwZGM5NjYxZDBlNWU1MjdmM2QwM2M1MjA5MTc1MWRhMjY4ZCIsImJ5dGVzIjoyNTk3NSwicm93cyI6MzY4LCJ5ZWFyIjpudWxsLCJwYXJ0aWFsIjpmYWxzZSwibGFzdE1vZGlmaWVkIjoiVGh1LCAwMSBPY3QgMjAyNiAxMzowMzo0NyBHTVQiLCJldGFnIjoiXCI0NGY0NDI4MDJhMzZmZGYwNTVlMTYxODdkMjg2MjU5NlwiIiwibGljZW5jZSI6eyJpZCI6IkNDMC0xLjAiLCJ1cmwiOiJodHRwczovL2NyZWF0aXZlY29tbW9ucy5vcmcvcHVibGljZG9tYWluL3plcm8vMS4wLyIsImF0dHJpYnV0aW9uIjpudWxsLCJkaXNjbGFpbWVyIjpudWxsfX0seyJwYXRoIjoicGFycXVldC9jYV9zeXN0ZW1fcGVyZm9ybWFuY2VfbWVhc3VyZXMvY2Etc3Btcy1wcmlvci15ZWFycy1hbmQtbGFzdC10d2VsdmUtbW9udGhzLWN5MjAyNS5wYXJxdWV0IiwidGFibGUiOiJjYV9zeXN0ZW1fcGVyZm9ybWFuY2VfbWVhc3VyZXMiLCJmb3JtYXQiOiJQQVJRVUVUIiwic291cmNlVXJsIjoiaHR0cHM6Ly9wdWJsaXNoLmRhdGEuY2EuZ292L2RhdGFzZXQvZDNmOWNhNGQtM2U2MC00MzRiLTlmYTMtOTFlZTBiZWZkMzRkL3Jlc291cmNlL2UwMjE3OGQ5LTFkMzQtNDc5OC05OTc5LWY1MGFmOWYxNzQyZS9kb3dubG9hZC9jYS1zcG1zLXByaW9yLXllYXJzLWFuZC1sYXN0LXR3ZWx2ZS1tb250aHMtY3kyMDI1LmNzdiIsInJldHJpZXZlZEF0IjoiMjAyNi0xMC0wOFQwNjo1NTowOC4zNzQ1NzlaIiwic2hhMjU2IjoiOTQ0MTkyMjUyZDZiMDYzNzdhMzUwOWMyOTNkM2JjMzRjZWUzNDBlYmQxZGYzZWUzMDRmYTQ1ZDZiMTU4NjhmMyIsImJ5dGVzIjo0NzYzMCwicm93cyI6MzY4LCJleGNsdWRlZFJvd3MiOjAsInllYXIiOm51bGwsInBhcnRpYWwiOmZhbHNlLCJsYXN0TW9kaWZpZWQiOiJUaHUsIDAxIE9jdCAyMDI2IDEzOjAzOjQ3IEdNVCIsImV0YWciOiJcIjQ0ZjQ0MjgwMmEzNmZkZjA1NWUxNjE4N2QyODYyNTk2XCIiLCJsaWNlbmNlIjp7ImlkIjoiQ0MwLTEuMCIsInVybCI6Imh0dHBzOi8vY3JlYXRpdmVjb21tb25zLm9yZy9wdWJsaWNkb21haW4vemVyby8xLjAvIiwiYXR0cmlidXRpb24iOm51bGwsImRpc2NsYWltZXIiOm51bGx9fSx7InBhdGgiOiJvcmlnaW5hbHMvY2FsX2ljaF9zeXN0ZW1fcGVyZm9ybWFuY2VfbWVhc3VyZXNfZGljdGlvbmFyeS9jYS1zcG1zLWRhdGEtZGljdGlvbmFyeS5jc3YiLCJ0YWJsZSI6ImNhbF9pY2hfc3lzdGVtX3BlcmZvcm1hbmNlX21lYXN1cmVzX2RpY3Rpb25hcnkiLCJmb3JtYXQiOiJPUklHSU5BTCIsInNvdXJjZVVybCI6Imh0dHBzOi8vZGF0YS5jYS5nb3YvZGF0YXNldC9kM2Y5Y2E0ZC0zZTYwLTQzNGItOWZhMy05MWVlMGJlZmQzNGQvcmVzb3VyY2UvZmQ0ZmY3YzgtYTU0YS00YWYyLTlhMTMtMDNhOGZkY2M5YjIyL2Rvd25sb2FkL2NhLXNwbXMtZGF0YS1kaWN0aW9uYXJ5LmNzdiIsInJldHJpZXZlZEF0IjoiMjAyNi0xMC0wOFQwNjo1NTowOS44NzM3NDlaIiwic2hhMjU2IjoiNDViOTkxNjBkYTA4ZGMwMjlkY2ZkNjk3N2UwNGNjM2M1MjIzNDQ0NWMwOWU5Y2I1NjJmZWQ1MmUxOTU4ZTJlOSIsImJ5dGVzIjoyOTgxLCJyb3dzIjo4LCJ5ZWFyIjpudWxsLCJwYXJ0aWFsIjp0cnVlLCJsYXN0TW9kaWZpZWQiOiJUaHUsIDAxIE9jdCAyMDI2IDEzOjAzOjUwIEdNVCIsImV0YWciOiJcImM1NGI3NWQ0ODRkZThkMGI4MTJiM2UzYmMzYmEyYTdkXCIiLCJsaWNlbmNlIjp7ImlkIjoiQ0MwLTEuMCIsInVybCI6Imh0dHBzOi8vb3BlbmRlZmluaXRpb24ub3JnL2xpY2Vuc2VzL2NjLXplcm8vIiwiYXR0cmlidXRpb24iOm51bGwsImRpc2NsYWltZXIiOm51bGx9fSx7InBhdGgiOiJwYXJxdWV0L2NhbF9pY2hfc3lzdGVtX3BlcmZvcm1hbmNlX21lYXN1cmVzX2RpY3Rpb25hcnkvY2Etc3Btcy1kYXRhLWRpY3Rpb25hcnkucGFycXVldCIsInRhYmxlIjoiY2FsX2ljaF9zeXN0ZW1fcGVyZm9ybWFuY2VfbWVhc3VyZXNfZGljdGlvbmFyeSIsImZvcm1hdCI6IlBBUlFVRVQiLCJzb3VyY2VVcmwiOiJodHRwczovL2RhdGEuY2EuZ292L2RhdGFzZXQvZDNmOWNhNGQtM2U2MC00MzRiLTlmYTMtOTFlZTBiZWZkMzRkL3Jlc291cmNlL2ZkNGZmN2M4LWE1NGEtNGFmMi05YTEzLTAzYThmZGNjOWIyMi9kb3dubG9hZC9jYS1zcG1zLWRhdGEtZGljdGlvbmFyeS5jc3YiLCJyZXRyaWV2ZWRBdCI6IjIwMjYtMTAtMDhUMDY6NTU6MDkuODczNzQ5WiIsInNoYTI1NiI6IjA4ZWMwMTIxODI0ZjkxZDkxMjBhNjI4YjQyYzExMzQ0YTRkNjhiMDQ2MTU3NDQ4ZGM5NjIxMGRlYjg5MGE2Y2UiLCJieXRlcyI6NjkwMywicm93cyI6OCwiZXhjbHVkZWRSb3dzIjowLCJ5ZWFyIjpudWxsLCJwYXJ0aWFsIjp0cnVlLCJsYXN0TW9kaWZpZWQiOiJUaHUsIDAxIE9jdCAyMDI2IDEzOjAzOjUwIEdNVCIsImV0YWciOiJcImM1NGI3NWQ0ODRkZThkMGI4MTJiM2UzYmMzYmEyYTdkXCIiLCJsaWNlbmNlIjp7ImlkIjoiQ0MwLTEuMCIsInVybCI6Imh0dHBzOi8vb3BlbmRlZmluaXRpb24ub3JnL2xpY2Vuc2VzL2NjLXplcm8vIiwiYXR0cmlidXRpb24iOm51bGwsImRpc2NsYWltZXIiOm51bGx9fSx7InBhdGgiOiJvcmlnaW5hbHMvY2FsX2ljaF9kZW1vZ3JhcGhpY3NfZ2VuZGVyL29wZW5kYXRhcG9ydGFsY2FsZW5kYXJ5ZWFyZ2VuZGVyLmNzdiIsInRhYmxlIjoiY2FsX2ljaF9kZW1vZ3JhcGhpY3NfZ2VuZGVyIiwiZm9ybWF0IjoiT1JJR0lOQUwiLCJzb3VyY2VVcmwiOiJodHRwczovL2RhdGEuY2EuZ292L2RhdGFzZXQvYzdlZDFhZTQtNGY5My00ZmM3LWI2MDMtM2NkMDdhNTVkODYyL3Jlc291cmNlLzU3MTQyNTU1LWYyZGEtNDYyZi1hOTk5LWQ0NGFiZjBhZjY5Yy9kb3dubG9hZC9vcGVuZGF0YXBvcnRhbGNhbGVuZGFyeWVhcmdlbmRlci5jc3YiLCJyZXRyaWV2ZWRBdCI6IjIwMjYtMTAtMDhUMDY6NTU6MTAuNzU2ODgyWiIsInNoYTI1NiI6ImRmZWE2NzhjYmRmNDk5ODdhZGNkMzY4NjIyZGM3NWJmMjUxZTFmMTIxODM5ZTY3N2MzM2FhOGJjN2I4MzNiNTkiLCJieXRlcyI6NTk5NDMsInJvd3MiOjE0NjcsInllYXIiOm51bGwsInBhcnRpYWwiOnRydWUsImxhc3RNb2RpZmllZCI6IlRodSwgMDEgT2N0IDIwMjYgMTg6MTQ6MDIgR01UIiwiZXRhZyI6IlwiNTZiMTY3NzE4MjZlYTUwMGFlNzM1M2JiMDhmYWY0NmFcIiIsImxpY2VuY2UiOnsiaWQiOiJDQzAtMS4wIiwidXJsIjoiaHR0cHM6Ly9vcGVuZGVmaW5pdGlvbi5vcmcvbGljZW5zZXMvY2MtemVyby8iLCJhdHRyaWJ1dGlvbiI6bnVsbCwiZGlzY2xhaW1lciI6bnVsbH19LHsicGF0aCI6InBhcnF1ZXQvY2FsX2ljaF9kZW1vZ3JhcGhpY3NfZ2VuZGVyL29wZW5kYXRhcG9ydGFsY2FsZW5kYXJ5ZWFyZ2VuZGVyLnBhcnF1ZXQiLCJ0YWJsZSI6ImNhbF9pY2hfZGVtb2dyYXBoaWNzX2dlbmRlciIsImZvcm1hdCI6IlBBUlFVRVQiLCJzb3VyY2VVcmwiOiJodHRwczovL2RhdGEuY2EuZ292L2RhdGFzZXQvYzdlZDFhZTQtNGY5My00ZmM3LWI2MDMtM2NkMDdhNTVkODYyL3Jlc291cmNlLzU3MTQyNTU1LWYyZGEtNDYyZi1hOTk5LWQ0NGFiZjBhZjY5Yy9kb3dubG9hZC9vcGVuZGF0YXBvcnRhbGNhbGVuZGFyeWVhcmdlbmRlci5jc3YiLCJyZXRyaWV2ZWRBdCI6IjIwMjYtMTAtMDhUMDY6NTU6MTAuNzU2ODgyWiIsInNoYTI1NiI6ImNiNzQzYzRhYmMxZWFkNmM2OGU5YjAzZThkMGY2NGU4YWE3NGM4MjBhYWRkZGNlNGEzM2MxMjFlMTgwYjY3ZDkiLCJieXRlcyI6MTEwNjEwLCJyb3dzIjoxNDY3LCJleGNsdWRlZFJvd3MiOjAsInllYXIiOm51bGwsInBhcnRpYWwiOnRydWUsImxhc3RNb2RpZmllZCI6IlRodSwgMDEgT2N0IDIwMjYgMTg6MTQ6MDIgR01UIiwiZXRhZyI6IlwiNTZiMTY3NzE4MjZlYTUwMGFlNzM1M2JiMDhmYWY0NmFcIiIsImxpY2VuY2UiOnsiaWQiOiJDQzAtMS4wIiwidXJsIjoiaHR0cHM6Ly9vcGVuZGVmaW5pdGlvbi5vcmcvbGljZW5zZXMvY2MtemVyby8iLCJhdHRyaWJ1dGlvbiI6bnVsbCwiZGlzY2xhaW1lciI6bnVsbH19LHsicGF0aCI6Im9yaWdpbmFscy9jYWxfaWNoX2RlbW9ncmFwaGljc19yYWNlL29wZW5kYXRhcG9ydGFsY2FsZW5kYXJ5ZWFycmFjZS5jc3YiLCJ0YWJsZSI6ImNhbF9pY2hfZGVtb2dyYXBoaWNzX3JhY2UiLCJmb3JtYXQiOiJPUklHSU5BTCIsInNvdXJjZVVybCI6Imh0dHBzOi8vZGF0YS5jYS5nb3YvZGF0YXNldC9jN2VkMWFlNC00ZjkzLTRmYzctYjYwMy0zY2QwN2E1NWQ4NjIvcmVzb3VyY2UvYjdjZTEyNDItMGUzMy00NGM4LWI1NjEtNGMzNGM1ZTc4MzEyL2Rvd25sb2FkL29wZW5kYXRhcG9ydGFsY2FsZW5kYXJ5ZWFycmFjZS5jc3YiLCJyZXRyaWV2ZWRBdCI6IjIwMjYtMTAtMDhUMDY6NTU6MTIuMzAyMjkwWiIsInNoYTI1NiI6Ijk5ZDJhY2FmYzEyMmVjYTZlZmI2NjhiMGIzNTJkMmIwNmI5YjBkZTI1MDU5ZDU5ODZhM2VkN2FmODIzNGY5ZGQiLCJieXRlcyI6NDk5MDc1LCJyb3dzIjo4Mjc3LCJ5ZWFyIjpudWxsLCJwYXJ0aWFsIjp0cnVlLCJsYXN0TW9kaWZpZWQiOiJUaHUsIDAxIE9jdCAyMDI2IDE4OjE0OjA1IEdNVCIsImV0YWciOiJcIjgyYzM3Y2UwYTYyYzY2ZWJlZTcwNjJhZjBjMWU4Zjg0XCIiLCJsaWNlbmNlIjp7ImlkIjoiQ0MwLTEuMCIsInVybCI6Imh0dHBzOi8vb3BlbmRlZmluaXRpb24ub3JnL2xpY2Vuc2VzL2NjLXplcm8vIiwiYXR0cmlidXRpb24iOm51bGwsImRpc2NsYWltZXIiOm51bGx9fSx7InBhdGgiOiJwYXJxdWV0L2NhbF9pY2hfZGVtb2dyYXBoaWNzX3JhY2Uvb3BlbmRhdGFwb3J0YWxjYWxlbmRhcnllYXJyYWNlLnBhcnF1ZXQiLCJ0YWJsZSI6ImNhbF9pY2hfZGVtb2dyYXBoaWNzX3JhY2UiLCJmb3JtYXQiOiJQQVJRVUVUIiwic291cmNlVXJsIjoiaHR0cHM6Ly9kYXRhLmNhLmdvdi9kYXRhc2V0L2M3ZWQxYWU0LTRmOTMtNGZjNy1iNjAzLTNjZDA3YTU1ZDg2Mi9yZXNvdXJjZS9iN2NlMTI0Mi0wZTMzLTQ0YzgtYjU2MS00YzM0YzVlNzgzMTIvZG93bmxvYWQvb3BlbmRhdGFwb3J0YWxjYWxlbmRhcnllYXJyYWNlLmNzdiIsInJldHJpZXZlZEF0IjoiMjAyNi0xMC0wOFQwNjo1NToxMi4zMDIyOTBaIiwic2hhMjU2IjoiN2E5NDdlYjZjNGI4OTVmYzQ2NThmYmIzMGQyNmI1YmQzNjk3Y2ZlZjI2YmY2NzM2OWEwMDk3NDYzMTcyMzE0ZiIsImJ5dGVzIjo1OTAwNDIsInJvd3MiOjgyNzcsImV4Y2x1ZGVkUm93cyI6MCwieWVhciI6bnVsbCwicGFydGlhbCI6dHJ1ZSwibGFzdE1vZGlmaWVkIjoiVGh1LCAwMSBPY3QgMjAyNiAxODoxNDowNSBHTVQiLCJldGFnIjoiXCI4MmMzN2NlMGE2MmM2NmViZWU3MDYyYWYwYzFlOGY4NFwiIiwibGljZW5jZSI6eyJpZCI6IkNDMC0xLjAiLCJ1cmwiOiJodHRwczovL29wZW5kZWZpbml0aW9uLm9yZy9saWNlbnNlcy9jYy16ZXJvLyIsImF0dHJpYnV0aW9uIjpudWxsLCJkaXNjbGFpbWVyIjpudWxsfX0seyJwYXRoIjoib3JpZ2luYWxzL2NhbF9pY2hfZGVtb2dyYXBoaWNzX2FnZS9vcGVuZGF0YXBvcnRhbGNhbGVuZGFyeWVhcmFnZS5jc3YiLCJ0YWJsZSI6ImNhbF9pY2hfZGVtb2dyYXBoaWNzX2FnZSIsImZvcm1hdCI6Ik9SSUdJTkFMIiwic291cmNlVXJsIjoiaHR0cHM6Ly9kYXRhLmNhLmdvdi9kYXRhc2V0L2M3ZWQxYWU0LTRmOTMtNGZjNy1iNjAzLTNjZDA3YTU1ZDg2Mi9yZXNvdXJjZS9iMWE1YWUyNC01ODQyLTQyNWMtYjU2Yy1hYTkwZjhmMWM3NjcvZG93bmxvYWQvb3BlbmRhdGFwb3J0YWxjYWxlbmRhcnllYXJhZ2UuY3N2IiwicmV0cmlldmVkQXQiOiIyMDI2LTEwLTA4VDA2OjU1OjEzLjkwNTA5MloiLCJzaGEyNTYiOiJlNTkwMWNiMWQ3ZTcxODg5MDRjZTNlYWE1ZjdjM2NmYWUzMTE5YWFiNDUyOGY5YzcyNDg5YjcyNDRlODQ2MDkzIiwiYnl0ZXMiOjE3NDk3OSwicm93cyI6MzY2NSwieWVhciI6bnVsbCwicGFydGlhbCI6dHJ1ZSwibGFzdE1vZGlmaWVkIjoiVGh1LCAwMSBPY3QgMjAyNiAxODoxNDowOCBHTVQiLCJldGFnIjoiXCIxMWNmMjA1MzJhMzNkOWY5YjM3ZGJjNTIxNDUzODZmOVwiIiwibGljZW5jZSI6eyJpZCI6IkNDMC0xLjAiLCJ1cmwiOiJodHRwczovL29wZW5kZWZpbml0aW9uLm9yZy9saWNlbnNlcy9jYy16ZXJvLyIsImF0dHJpYnV0aW9uIjpudWxsLCJkaXNjbGFpbWVyIjpudWxsfX0seyJwYXRoIjoicGFycXVldC9jYWxfaWNoX2RlbW9ncmFwaGljc19hZ2Uvb3BlbmRhdGFwb3J0YWxjYWxlbmRhcnllYXJhZ2UucGFycXVldCIsInRhYmxlIjoiY2FsX2ljaF9kZW1vZ3JhcGhpY3NfYWdlIiwiZm9ybWF0IjoiUEFSUVVFVCIsInNvdXJjZVVybCI6Imh0dHBzOi8vZGF0YS5jYS5nb3YvZGF0YXNldC9jN2VkMWFlNC00ZjkzLTRmYzctYjYwMy0zY2QwN2E1NWQ4NjIvcmVzb3VyY2UvYjFhNWFlMjQtNTg0Mi00MjVjLWI1NmMtYWE5MGY4ZjFjNzY3L2Rvd25sb2FkL29wZW5kYXRhcG9ydGFsY2FsZW5kYXJ5ZWFyYWdlLmNzdiIsInJldHJpZXZlZEF0IjoiMjAyNi0xMC0wOFQwNjo1NToxMy45MDUwOTJaIiwic2hhMjU2IjoiYjExODk3ODNmMWM2OTc5NGM4NmE4MWFkOWZlZjNlNWMxYjVmM2Q2OWYzYmFjZjkzY2Y0OTA3MTgzNmM5MzI1ZiIsImJ5dGVzIjoyNjgyMzQsInJvd3MiOjM2NjUsImV4Y2x1ZGVkUm93cyI6MCwieWVhciI6bnVsbCwicGFydGlhbCI6dHJ1ZSwibGFzdE1vZGlmaWVkIjoiVGh1LCAwMSBPY3QgMjAyNiAxODoxNDowOCBHTVQiLCJldGFnIjoiXCIxMWNmMjA1MzJhMzNkOWY5YjM3ZGJjNTIxNDUzODZmOVwiIiwibGljZW5jZSI6eyJpZCI6IkNDMC0xLjAiLCJ1cmwiOiJodHRwczovL29wZW5kZWZpbml0aW9uLm9yZy9saWNlbnNlcy9jYy16ZXJvLyIsImF0dHJpYnV0aW9uIjpudWxsLCJkaXNjbGFpbWVyIjpudWxsfX0seyJwYXRoIjoib3JpZ2luYWxzL2NhbF9pY2hfZGVtb2dyYXBoaWNzX3ZldGVyYW4vb3BlbmRhdGFwb3J0YWxjYWxlbmRhcnllYXJ2ZXRlcmFuLmNzdiIsInRhYmxlIjoiY2FsX2ljaF9kZW1vZ3JhcGhpY3NfdmV0ZXJhbiIsImZvcm1hdCI6Ik9SSUdJTkFMIiwic291cmNlVXJsIjoiaHR0cHM6Ly9kYXRhLmNhLmdvdi9kYXRhc2V0L2M3ZWQxYWU0LTRmOTMtNGZjNy1iNjAzLTNjZDA3YTU1ZDg2Mi9yZXNvdXJjZS85MDczMWE3ZC0zZTMzLTRkNDUtOWJkZS0xYjBmZDY1YzUxY2IvZG93bmxvYWQvb3BlbmRhdGFwb3J0YWxjYWxlbmRhcnllYXJ2ZXRlcmFuLmNzdiIsInJldHJpZXZlZEF0IjoiMjAyNi0xMC0wOFQwNjo1NToxNS4yNDU0MTVaIiwic2hhMjU2IjoiY2Y3MDQyMGEyYjNlYzM1NmEzZGIwZTYwNTc2Njc0MDFiZmNkMmI0ZWJkMWE0MmM4N2Q4YTczZGNjYmRjZjAxNSIsImJ5dGVzIjo3NTUzLCJyb3dzIjo0NDksInllYXIiOm51bGwsInBhcnRpYWwiOnRydWUsImxhc3RNb2RpZmllZCI6IlRodSwgMDEgT2N0IDIwMjYgMTg6MTQ6MTIgR01UIiwiZXRhZyI6IlwiMDM1YWQ2MWYyYjM0YTE2OTdkY2UwNzFkMmU0NDU0ZjRcIiIsImxpY2VuY2UiOnsiaWQiOiJDQzAtMS4wIiwidXJsIjoiaHR0cHM6Ly9vcGVuZGVmaW5pdGlvbi5vcmcvbGljZW5zZXMvY2MtemVyby8iLCJhdHRyaWJ1dGlvbiI6bnVsbCwiZGlzY2xhaW1lciI6bnVsbH19LHsicGF0aCI6InBhcnF1ZXQvY2FsX2ljaF9kZW1vZ3JhcGhpY3NfdmV0ZXJhbi9vcGVuZGF0YXBvcnRhbGNhbGVuZGFyeWVhcnZldGVyYW4ucGFycXVldCIsInRhYmxlIjoiY2FsX2ljaF9kZW1vZ3JhcGhpY3NfdmV0ZXJhbiIsImZvcm1hdCI6IlBBUlFVRVQiLCJzb3VyY2VVcmwiOiJodHRwczovL2RhdGEuY2EuZ292L2RhdGFzZXQvYzdlZDFhZTQtNGY5My00ZmM3LWI2MDMtM2NkMDdhNTVkODYyL3Jlc291cmNlLzkwNzMxYTdkLTNlMzMtNGQ0NS05YmRlLTFiMGZkNjVjNTFjYi9kb3dubG9hZC9vcGVuZGF0YXBvcnRhbGNhbGVuZGFyeWVhcnZldGVyYW4uY3N2IiwicmV0cmlldmVkQXQiOiIyMDI2LTEwLTA4VDA2OjU1OjE1LjI0NTQxNVoiLCJzaGEyNTYiOiI3ZTY5MjAwOTdmMjFjNjYzZDA5YWE3NDFhMDRjNGQ4MDgzMGZlMjM5MjhjYjlmMGVhOTJjODgyMzViZTEwYmRiIiwiYnl0ZXMiOjM3Mjk3LCJyb3dzIjo0NDksImV4Y2x1ZGVkUm93cyI6MCwieWVhciI6bnVsbCwicGFydGlhbCI6dHJ1ZSwibGFzdE1vZGlmaWVkIjoiVGh1LCAwMSBPY3QgMjAyNiAxODoxNDoxMiBHTVQiLCJldGFnIjoiXCIwMzVhZDYxZjJiMzRhMTY5N2RjZTA3MWQyZTQ0NTRmNFwiIiwibGljZW5jZSI6eyJpZCI6IkNDMC0xLjAiLCJ1cmwiOiJodHRwczovL29wZW5kZWZpbml0aW9uLm9yZy9saWNlbnNlcy9jYy16ZXJvLyIsImF0dHJpYnV0aW9uIjpudWxsLCJkaXNjbGFpbWVyIjpudWxsfX0seyJwYXRoIjoib3JpZ2luYWxzL2NhbF9pY2hfZGVtb2dyYXBoaWNzX2Rpc2FiaWxpdHkvb3BlbmRhdGFwb3J0YWxjYWxlbmRhcnllYXJkaXMuY3N2IiwidGFibGUiOiJjYWxfaWNoX2RlbW9ncmFwaGljc19kaXNhYmlsaXR5IiwiZm9ybWF0IjoiT1JJR0lOQUwiLCJzb3VyY2VVcmwiOiJodHRwczovL2RhdGEuY2EuZ292L2RhdGFzZXQvYzdlZDFhZTQtNGY5My00ZmM3LWI2MDMtM2NkMDdhNTVkODYyL3Jlc291cmNlLzE1YzZmMjIyLTU2ZDktNDE4NC05N2NkLWZjYTY5MjNmMjQ3NC9kb3dubG9hZC9vcGVuZGF0YXBvcnRhbGNhbGVuZGFyeWVhcmRpcy5jc3YiLCJyZXRyaWV2ZWRBdCI6IjIwMjYtMTAtMDhUMDY6NTU6MTYuNTgzMjI1WiIsInNoYTI1NiI6ImEzMjk0ODczZjgyOTU0MWQwODE5MGI2ZjkxZDdkMGIzMmRmMGEwNWU4OTNjYWUyNTMwMzgwODE5ODUxZjQ3MDMiLCJieXRlcyI6Nzk5NSwicm93cyI6NDQ5LCJ5ZWFyIjpudWxsLCJwYXJ0aWFsIjp0cnVlLCJsYXN0TW9kaWZpZWQiOiJUaHUsIDAxIE9jdCAyMDI2IDE4OjE0OjE0IEdNVCIsImV0YWciOiJcIjk5MWViOTQxOTVlYzYxNzNkYTYzMDRjZWI4N2YxZDg2XCIiLCJsaWNlbmNlIjp7ImlkIjoiQ0MwLTEuMCIsInVybCI6Imh0dHBzOi8vb3BlbmRlZmluaXRpb24ub3JnL2xpY2Vuc2VzL2NjLXplcm8vIiwiYXR0cmlidXRpb24iOm51bGwsImRpc2NsYWltZXIiOm51bGx9fSx7InBhdGgiOiJwYXJxdWV0L2NhbF9pY2hfZGVtb2dyYXBoaWNzX2Rpc2FiaWxpdHkvb3BlbmRhdGFwb3J0YWxjYWxlbmRhcnllYXJkaXMucGFycXVldCIsInRhYmxlIjoiY2FsX2ljaF9kZW1vZ3JhcGhpY3NfZGlzYWJpbGl0eSIsImZvcm1hdCI6IlBBUlFVRVQiLCJzb3VyY2VVcmwiOiJodHRwczovL2RhdGEuY2EuZ292L2RhdGFzZXQvYzdlZDFhZTQtNGY5My00ZmM3LWI2MDMtM2NkMDdhNTVkODYyL3Jlc291cmNlLzE1YzZmMjIyLTU2ZDktNDE4NC05N2NkLWZjYTY5MjNmMjQ3NC9kb3dubG9hZC9vcGVuZGF0YXBvcnRhbGNhbGVuZGFyeWVhcmRpcy5jc3YiLCJyZXRyaWV2ZWRBdCI6IjIwMjYtMTAtMDhUMDY6NTU6MTYuNTgzMjI1WiIsInNoYTI1NiI6IjA0ZDk1OGVmYmE5ZDJjZjBlMmRmMzVkZjI4NmIyMDVlMzVhNTE3YjU3NWUyNzI0NzZiZjMyMzM1MDVlNGY0OTEiLCJieXRlcyI6Mzc4NjcsInJvd3MiOjQ0OSwiZXhjbHVkZWRSb3dzIjowLCJ5ZWFyIjpudWxsLCJwYXJ0aWFsIjp0cnVlLCJsYXN0TW9kaWZpZWQiOiJUaHUsIDAxIE9jdCAyMDI2IDE4OjE0OjE0IEdNVCIsImV0YWciOiJcIjk5MWViOTQxOTVlYzYxNzNkYTYzMDRjZWI4N2YxZDg2XCIiLCJsaWNlbmNlIjp7ImlkIjoiQ0MwLTEuMCIsInVybCI6Imh0dHBzOi8vb3BlbmRlZmluaXRpb24ub3JnL2xpY2Vuc2VzL2NjLXplcm8vIiwiYXR0cmlidXRpb24iOm51bGwsImRpc2NsYWltZXIiOm51bGx9fSx7InBhdGgiOiJvcmlnaW5hbHMvY2FsX2ljaF9yYWNpYWxfZGlzcGFyaXRpZXMvb3BlbmRhdGFwb3J0YWxjYWxlbmRhcnllYXJyYWNpYWxkaXMuY3N2IiwidGFibGUiOiJjYWxfaWNoX3JhY2lhbF9kaXNwYXJpdGllcyIsImZvcm1hdCI6Ik9SSUdJTkFMIiwic291cmNlVXJsIjoiaHR0cHM6Ly9kYXRhLmNhLmdvdi9kYXRhc2V0L2M3ZWQxYWU0LTRmOTMtNGZjNy1iNjAzLTNjZDA3YTU1ZDg2Mi9yZXNvdXJjZS9hNzlhMWJmZS03MWE3LTQ3ZjctOGM1Mi1mZWJiNDNhYTQ5NzMvZG93bmxvYWQvb3BlbmRhdGFwb3J0YWxjYWxlbmRhcnllYXJyYWNpYWxkaXMuY3N2IiwicmV0cmlldmVkQXQiOiIyMDI2LTEwLTA4VDA2OjU1OjE3LjM4Njg3MVoiLCJzaGEyNTYiOiJmZDlmZGUwZTkxZmUwZjQ1NjViNGVjYWQxOGQ2ZGZmNzQ1NGQ1OTYxODZlM2QyYzM1MWY5MTk3OGNiMjk2YzQ3IiwiYnl0ZXMiOjE4MjczMCwicm93cyI6MjIwNSwieWVhciI6bnVsbCwicGFydGlhbCI6dHJ1ZSwibGFzdE1vZGlmaWVkIjoiVGh1LCAwMSBPY3QgMjAyNiAxODoxNDoxNyBHTVQiLCJldGFnIjoiXCIxZGRmOTU2YjMzMmFlNzI0YjdjMWQxYmNmMGVkOTdlOVwiIiwibGljZW5jZSI6eyJpZCI6IkNDMC0xLjAiLCJ1cmwiOiJodHRwczovL29wZW5kZWZpbml0aW9uLm9yZy9saWNlbnNlcy9jYy16ZXJvLyIsImF0dHJpYnV0aW9uIjpudWxsLCJkaXNjbGFpbWVyIjpudWxsfX0seyJwYXRoIjoicGFycXVldC9jYWxfaWNoX3JhY2lhbF9kaXNwYXJpdGllcy9vcGVuZGF0YXBvcnRhbGNhbGVuZGFyeWVhcnJhY2lhbGRpcy5wYXJxdWV0IiwidGFibGUiOiJjYWxfaWNoX3JhY2lhbF9kaXNwYXJpdGllcyIsImZvcm1hdCI6IlBBUlFVRVQiLCJzb3VyY2VVcmwiOiJodHRwczovL2RhdGEuY2EuZ292L2RhdGFzZXQvYzdlZDFhZTQtNGY5My00ZmM3LWI2MDMtM2NkMDdhNTVkODYyL3Jlc291cmNlL2E3OWExYmZlLTcxYTctNDdmNy04YzUyLWZlYmI0M2FhNDk3My9kb3dubG9hZC9vcGVuZGF0YXBvcnRhbGNhbGVuZGFyeWVhcnJhY2lhbGRpcy5jc3YiLCJyZXRyaWV2ZWRBdCI6IjIwMjYtMTAtMDhUMDY6NTU6MTcuMzg2ODcxWiIsInNoYTI1NiI6IjAwMmM4MGZkNzYzMzFmNGY0MmViZWNkZTYzMWYxODBiZjMxZDJjNjVlYmEyMjRiYzNlZjk4YTQ5ZTE4OTE2ZDAiLCJieXRlcyI6MTc4NTY0LCJyb3dzIjoyMjA1LCJleGNsdWRlZFJvd3MiOjAsInllYXIiOm51bGwsInBhcnRpYWwiOnRydWUsImxhc3RNb2RpZmllZCI6IlRodSwgMDEgT2N0IDIwMjYgMTg6MTQ6MTcgR01UIiwiZXRhZyI6IlwiMWRkZjk1NmIzMzJhZTcyNGI3YzFkMWJjZjBlZDk3ZTlcIiIsImxpY2VuY2UiOnsiaWQiOiJDQzAtMS4wIiwidXJsIjoiaHR0cHM6Ly9vcGVuZGVmaW5pdGlvbi5vcmcvbGljZW5zZXMvY2MtemVyby8iLCJhdHRyaWJ1dGlvbiI6bnVsbCwiZGlzY2xhaW1lciI6bnVsbH19LHsicGF0aCI6Im9yaWdpbmFscy9jYWxfaWNoX2hlbHBfYWN0X2dvYWxzL2hlbHAtYWN0LWdvYWxzLXN0YXRld2lkZS1hbmQtYnktY29jLmNzdiIsInRhYmxlIjoiY2FsX2ljaF9oZWxwX2FjdF9nb2FscyIsImZvcm1hdCI6Ik9SSUdJTkFMIiwic291cmNlVXJsIjoiaHR0cHM6Ly9kYXRhLmNhLmdvdi9kYXRhc2V0LzVlMjI3Y2JlLTJhMTYtNGNlMS05OGUxLTk1NDkzYmM2MjQ5Zi9yZXNvdXJjZS9kNjE4NWZlMi05MDAyLTRiMWUtOWMzYy1jMWE4OWYwZTY4MTYvZG93bmxvYWQvaGVscC1hY3QtZ29hbHMtc3RhdGV3aWRlLWFuZC1ieS1jb2MuY3N2IiwicmV0cmlldmVkQXQiOiIyMDI2LTEwLTA4VDA2OjU1OjE4LjQ4MDE3NVoiLCJzaGEyNTYiOiIxYTUyOTViOWMzNWYwNDdmNTQ5MGJhZjViNzQxZTY5OTk3N2Y4YTU5OGRjODlmZTM5NWU2OTQwNjdkYmE4YjY0IiwiYnl0ZXMiOjg0MzMxLCJyb3dzIjo5MDAsInllYXIiOm51bGwsInBhcnRpYWwiOnRydWUsImxhc3RNb2RpZmllZCI6IlRodSwgMDEgT2N0IDIwMjYgMTg6MDM6MzUgR01UIiwiZXRhZyI6IlwiNGZjZTQzNWFiMzgxNDA3NWZmNTkzODZmZWU1YmFkN2ZcIiIsImxpY2VuY2UiOnsiaWQiOiJDQzAtMS4wIiwidXJsIjoiaHR0cHM6Ly9vcGVuZGVmaW5pdGlvbi5vcmcvbGljZW5zZXMvY2MtemVyby8iLCJhdHRyaWJ1dGlvbiI6bnVsbCwiZGlzY2xhaW1lciI6bnVsbH19LHsicGF0aCI6InBhcnF1ZXQvY2FsX2ljaF9oZWxwX2FjdF9nb2Fscy9oZWxwLWFjdC1nb2Fscy1zdGF0ZXdpZGUtYW5kLWJ5LWNvYy5wYXJxdWV0IiwidGFibGUiOiJjYWxfaWNoX2hlbHBfYWN0X2dvYWxzIiwiZm9ybWF0IjoiUEFSUVVFVCIsInNvdXJjZVVybCI6Imh0dHBzOi8vZGF0YS5jYS5nb3YvZGF0YXNldC81ZTIyN2NiZS0yYTE2LTRjZTEtOThlMS05NTQ5M2JjNjI0OWYvcmVzb3VyY2UvZDYxODVmZTItOTAwMi00YjFlLTljM2MtYzFhODlmMGU2ODE2L2Rvd25sb2FkL2hlbHAtYWN0LWdvYWxzLXN0YXRld2lkZS1hbmQtYnktY29jLmNzdiIsInJldHJpZXZlZEF0IjoiMjAyNi0xMC0wOFQwNjo1NToxOC40ODAxNzVaIiwic2hhMjU2IjoiZGZiNzU2Y2FhZDlmMzg4YzRlYmMzYmEwZGU2ODFiMTg3MDJhNmE4MmEyNzk4NDUyZGIzMTcyMGEyMDQ5OTk5NCIsImJ5dGVzIjo4NDA5MCwicm93cyI6OTAwLCJleGNsdWRlZFJvd3MiOjAsInllYXIiOm51bGwsInBhcnRpYWwiOnRydWUsImxhc3RNb2RpZmllZCI6IlRodSwgMDEgT2N0IDIwMjYgMTg6MDM6MzUgR01UIiwiZXRhZyI6IlwiNGZjZTQzNWFiMzgxNDA3NWZmNTkzODZmZWU1YmFkN2ZcIiIsImxpY2VuY2UiOnsiaWQiOiJDQzAtMS4wIiwidXJsIjoiaHR0cHM6Ly9vcGVuZGVmaW5pdGlvbi5vcmcvbGljZW5zZXMvY2MtemVyby8iLCJhdHRyaWJ1dGlvbiI6bnVsbCwiZGlzY2xhaW1lciI6bnVsbH19LHsicGF0aCI6Im9yaWdpbmFscy9odWRfc3lzdGVtX3BlcmZvcm1hbmNlX21lYXN1cmVzL1N5c3RlbS1QZXJmb3JtYW5jZS1NZWFzdXJlcy1EYXRhLnhsc3giLCJ0YWJsZSI6Imh1ZF9zeXN0ZW1fcGVyZm9ybWFuY2VfbWVhc3VyZXMiLCJmb3JtYXQiOiJPUklHSU5BTCIsInNvdXJjZVVybCI6Imh0dHBzOi8vZmlsZXMuaHVkZXhjaGFuZ2UuaW5mby9yZXNvdXJjZXMvZG9jdW1lbnRzL1N5c3RlbS1QZXJmb3JtYW5jZS1NZWFzdXJlcy1EYXRhLnhsc3giLCJyZXRyaWV2ZWRBdCI6IjIwMjYtMTAtMDhUMDY6NTU6MTkuNTUwMjgzWiIsInNoYTI1NiI6IjgyNzk2ZWIwNjg2ZTNmYzUzZDY0ZWJkNmNhNGQ5YTRiMjYyOWYzMTM1OTFiN2QxYWU4ZDNkM2FhYjQzYzYxYWYiLCJieXRlcyI6MjUzMDM3Mywicm93cyI6Mzg3LCJ5ZWFyIjpudWxsLCJwYXJ0aWFsIjp0cnVlLCJsYXN0TW9kaWZpZWQiOiJXZWQsIDI4IEphbiAyMDI2IDE2OjMxOjIwIEdNVCIsImV0YWciOiJcImI0ZTdhODMzMWViOGM0ZjMxNDAxZDcwMTQzNzczMDk0XCIiLCJsaWNlbmNlIjp7ImlkIjoicHVibGljLWRvbWFpbi11cy1nb3Zlcm5tZW50IiwidXJsIjoiaHR0cHM6Ly93d3cubGF3LmNvcm5lbGwuZWR1L3VzY29kZS90ZXh0LzE3LzEwNSIsImF0dHJpYnV0aW9uIjpudWxsLCJkaXNjbGFpbWVyIjpudWxsfX0seyJwYXRoIjoicGFycXVldC9odWRfc3lzdGVtX3BlcmZvcm1hbmNlX21lYXN1cmVzL1N5c3RlbS1QZXJmb3JtYW5jZS1NZWFzdXJlcy1EYXRhLnBhcnF1ZXQiLCJ0YWJsZSI6Imh1ZF9zeXN0ZW1fcGVyZm9ybWFuY2VfbWVhc3VyZXMiLCJmb3JtYXQiOiJQQVJRVUVUIiwic291cmNlVXJsIjoiaHR0cHM6Ly9maWxlcy5odWRleGNoYW5nZS5pbmZvL3Jlc291cmNlcy9kb2N1bWVudHMvU3lzdGVtLVBlcmZvcm1hbmNlLU1lYXN1cmVzLURhdGEueGxzeCIsInJldHJpZXZlZEF0IjoiMjAyNi0xMC0wOFQwNjo1NToxOS41NTAyODNaIiwic2hhMjU2IjoiN2I3NWM0YWU3ZTEwNjhhZDYzZWQzMWNkODQ0NTg0ZWNkYzc3YzIzM2U3OTZmMTlhMDU4ZTk4YzNhZGFjZGE4NSIsImJ5dGVzIjoyMzQxMTUsInJvd3MiOjM4NywiZXhjbHVkZWRSb3dzIjowLCJ5ZWFyIjpudWxsLCJwYXJ0aWFsIjp0cnVlLCJsYXN0TW9kaWZpZWQiOiJXZWQsIDI4IEphbiAyMDI2IDE2OjMxOjIwIEdNVCIsImV0YWciOiJcImI0ZTdhODMzMWViOGM0ZjMxNDAxZDcwMTQzNzczMDk0XCIiLCJsaWNlbmNlIjp7ImlkIjoicHVibGljLWRvbWFpbi11cy1nb3Zlcm5tZW50IiwidXJsIjoiaHR0cHM6Ly93d3cubGF3LmNvcm5lbGwuZWR1L3VzY29kZS90ZXh0LzE3LzEwNSIsImF0dHJpYnV0aW9uIjpudWxsLCJkaXNjbGFpbWVyIjpudWxsfX0seyJwYXRoIjoib3JpZ2luYWxzL2hjZF9lcmZfcHJvamVjdGVkX3BlcnNvbnNfc2VydmVkL2VyZi1hbGwtcm91bmRzLWVuY2FtcG1lbnQtcHJvamVjdGlvbnMtYW5kLXN0YXR1cy54bHN4IiwidGFibGUiOiJoY2RfZXJmX3Byb2plY3RlZF9wZXJzb25zX3NlcnZlZCIsImZvcm1hdCI6Ik9SSUdJTkFMIiwic291cmNlVXJsIjoiaHR0cHM6Ly93d3cuaGNkLmNhLmdvdi9zaXRlcy9kZWZhdWx0L2ZpbGVzL2RvY3MvZ3JhbnRzLWFuZC1mdW5kaW5nL2NhbGljaC9lcmYtYWxsLXJvdW5kcy1lbmNhbXBtZW50LXByb2plY3Rpb25zLWFuZC1zdGF0dXMueGxzeCIsInJldHJpZXZlZEF0IjoiMjAyNi0xMC0wOFQwNjo1NToyMC40NzA5ODlaIiwic2hhMjU2IjoiMjA5MjQzMDUwOGY3ZWM3Mjk3NzZkMjdhZGM2YTYyOWEyOTFmMjE5NTY2OTg2MTkyNmVmMmE0ZTEwMzEzZmI3OSIsImJ5dGVzIjoxMTIwMTYsInJvd3MiOjEyNiwieWVhciI6bnVsbCwicGFydGlhbCI6dHJ1ZSwibGFzdE1vZGlmaWVkIjoiRnJpLCAyOSBNYXkgMjAyNiAxODowOTozNyBHTVQiLCJldGFnIjoiXCI2YTE5ZDY2MS0xYjU5MFwiIiwibGljZW5jZSI6eyJpZCI6IkNBLXB1YmxpYy1yZWNvcmRzIiwidXJsIjoiaHR0cHM6Ly93d3cuaGNkLmNhLmdvdi9jb25kaXRpb24tb2YtdXNlIiwiYXR0cmlidXRpb24iOm51bGwsImRpc2NsYWltZXIiOm51bGx9fSx7InBhdGgiOiJwYXJxdWV0L2hjZF9lcmZfcHJvamVjdGVkX3BlcnNvbnNfc2VydmVkL2VyZi1hbGwtcm91bmRzLWVuY2FtcG1lbnQtcHJvamVjdGlvbnMtYW5kLXN0YXR1cy5wYXJxdWV0IiwidGFibGUiOiJoY2RfZXJmX3Byb2plY3RlZF9wZXJzb25zX3NlcnZlZCIsImZvcm1hdCI6IlBBUlFVRVQiLCJzb3VyY2VVcmwiOiJodHRwczovL3d3dy5oY2QuY2EuZ292L3NpdGVzL2RlZmF1bHQvZmlsZXMvZG9jcy9ncmFudHMtYW5kLWZ1bmRpbmcvY2FsaWNoL2VyZi1hbGwtcm91bmRzLWVuY2FtcG1lbnQtcHJvamVjdGlvbnMtYW5kLXN0YXR1cy54bHN4IiwicmV0cmlldmVkQXQiOiIyMDI2LTEwLTA4VDA2OjU1OjIwLjQ3MDk4OVoiLCJzaGEyNTYiOiI0NjBjOWE2ZWNiNjYwM2E1MzQ0MTcyNTBlMGU0YWU1OTkyYjkyMTE3ZjU2NjUwODBhZTc4MmUwMTQyNmI5YzFiIiwiYnl0ZXMiOjE3MjcyLCJyb3dzIjoxMjYsImV4Y2x1ZGVkUm93cyI6MCwieWVhciI6bnVsbCwicGFydGlhbCI6dHJ1ZSwibGFzdE1vZGlmaWVkIjoiRnJpLCAyOSBNYXkgMjAyNiAxODowOTozNyBHTVQiLCJldGFnIjoiXCI2YTE5ZDY2MS0xYjU5MFwiIiwibGljZW5jZSI6eyJpZCI6IkNBLXB1YmxpYy1yZWNvcmRzIiwidXJsIjoiaHR0cHM6Ly93d3cuaGNkLmNhLmdvdi9jb25kaXRpb24tb2YtdXNlIiwiYXR0cmlidXRpb24iOm51bGwsImRpc2NsYWltZXIiOm51bGx9fV19",
+  "manifestSha256": "07f60553674728c8f7a7221d6856489e65a945ed528e911d54b5702d54219403",
+  "manifest": {
+    "pack": "ca-homelessness-system",
+    "packVersion": "2026.10.8",
+    "schemaVersion": "1.0",
+    "builtAt": "2026-10-08T06:55:20.582284+00:00",
+    "licence": {
+      "id": "mixed",
+      "url": "https://huggingface.co/datasets/Writerslogic/onrecord-ca-homelessness-system",
+      "disclaimer": "This pack's files come from several publishers: see each file's licence, attribution and disclaimer."
+    },
+    "files": [
+      {
+        "path": "originals/ca_system_performance_measures/ca-spms-prior-years-and-last-twelve-months-cy2025.csv",
+        "table": "ca_system_performance_measures",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://publish.data.ca.gov/dataset/d3f9ca4d-3e60-434b-9fa3-91ee0befd34d/resource/e02178d9-1d34-4798-9979-f50af9f1742e/download/ca-spms-prior-years-and-last-twelve-months-cy2025.csv",
+        "retrievedAt": "2026-10-08T06:55:08.374579Z",
+        "sha256": "d2cfc0ee93b161d45e5360d9f974d0dc9661d0e5e527f3d03c52091751da268d",
+        "bytes": 25975,
+        "rows": 368,
+        "year": null,
+        "partial": false,
+        "lastModified": "Thu, 01 Oct 2026 13:03:47 GMT",
+        "etag": "\"44f442802a36fdf055e16187d2862596\"",
+        "licence": {
+          "id": "CC0-1.0",
+          "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/ca_system_performance_measures/ca-spms-prior-years-and-last-twelve-months-cy2025.parquet",
+        "table": "ca_system_performance_measures",
+        "format": "PARQUET",
+        "sourceUrl": "https://publish.data.ca.gov/dataset/d3f9ca4d-3e60-434b-9fa3-91ee0befd34d/resource/e02178d9-1d34-4798-9979-f50af9f1742e/download/ca-spms-prior-years-and-last-twelve-months-cy2025.csv",
+        "retrievedAt": "2026-10-08T06:55:08.374579Z",
+        "sha256": "944192252d6b06377a3509c293d3bc34cee340ebd1df3ee304fa45d6b15868f3",
+        "bytes": 47630,
+        "rows": 368,
+        "excludedRows": 0,
+        "year": null,
+        "partial": false,
+        "lastModified": "Thu, 01 Oct 2026 13:03:47 GMT",
+        "etag": "\"44f442802a36fdf055e16187d2862596\"",
+        "licence": {
+          "id": "CC0-1.0",
+          "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "originals/cal_ich_system_performance_measures_dictionary/ca-spms-data-dictionary.csv",
+        "table": "cal_ich_system_performance_measures_dictionary",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://data.ca.gov/dataset/d3f9ca4d-3e60-434b-9fa3-91ee0befd34d/resource/fd4ff7c8-a54a-4af2-9a13-03a8fdcc9b22/download/ca-spms-data-dictionary.csv",
+        "retrievedAt": "2026-10-08T06:55:09.873749Z",
+        "sha256": "45b99160da08dc029dcfd6977e04cc3c52234445c09e9cb562fed52e1958e2e9",
+        "bytes": 2981,
+        "rows": 8,
+        "year": null,
+        "partial": true,
+        "lastModified": "Thu, 01 Oct 2026 13:03:50 GMT",
+        "etag": "\"c54b75d484de8d0b812b3e3bc3ba2a7d\"",
+        "licence": {
+          "id": "CC0-1.0",
+          "url": "https://opendefinition.org/licenses/cc-zero/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/cal_ich_system_performance_measures_dictionary/ca-spms-data-dictionary.parquet",
+        "table": "cal_ich_system_performance_measures_dictionary",
+        "format": "PARQUET",
+        "sourceUrl": "https://data.ca.gov/dataset/d3f9ca4d-3e60-434b-9fa3-91ee0befd34d/resource/fd4ff7c8-a54a-4af2-9a13-03a8fdcc9b22/download/ca-spms-data-dictionary.csv",
+        "retrievedAt": "2026-10-08T06:55:09.873749Z",
+        "sha256": "08ec0121824f91d9120a628b42c11344a4d68b046157448dc96210deb890a6ce",
+        "bytes": 6903,
+        "rows": 8,
+        "excludedRows": 0,
+        "year": null,
+        "partial": true,
+        "lastModified": "Thu, 01 Oct 2026 13:03:50 GMT",
+        "etag": "\"c54b75d484de8d0b812b3e3bc3ba2a7d\"",
+        "licence": {
+          "id": "CC0-1.0",
+          "url": "https://opendefinition.org/licenses/cc-zero/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "originals/cal_ich_demographics_gender/opendataportalcalendaryeargender.csv",
+        "table": "cal_ich_demographics_gender",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://data.ca.gov/dataset/c7ed1ae4-4f93-4fc7-b603-3cd07a55d862/resource/57142555-f2da-462f-a999-d44abf0af69c/download/opendataportalcalendaryeargender.csv",
+        "retrievedAt": "2026-10-08T06:55:10.756882Z",
+        "sha256": "dfea678cbdf49987adcd368622dc75bf251e1f121839e677c33aa8bc7b833b59",
+        "bytes": 59943,
+        "rows": 1467,
+        "year": null,
+        "partial": true,
+        "lastModified": "Thu, 01 Oct 2026 18:14:02 GMT",
+        "etag": "\"56b16771826ea500ae7353bb08faf46a\"",
+        "licence": {
+          "id": "CC0-1.0",
+          "url": "https://opendefinition.org/licenses/cc-zero/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/cal_ich_demographics_gender/opendataportalcalendaryeargender.parquet",
+        "table": "cal_ich_demographics_gender",
+        "format": "PARQUET",
+        "sourceUrl": "https://data.ca.gov/dataset/c7ed1ae4-4f93-4fc7-b603-3cd07a55d862/resource/57142555-f2da-462f-a999-d44abf0af69c/download/opendataportalcalendaryeargender.csv",
+        "retrievedAt": "2026-10-08T06:55:10.756882Z",
+        "sha256": "cb743c4abc1ead6c68e9b03e8d0f64e8aa74c820aadddce4a33c121e180b67d9",
+        "bytes": 110610,
+        "rows": 1467,
+        "excludedRows": 0,
+        "year": null,
+        "partial": true,
+        "lastModified": "Thu, 01 Oct 2026 18:14:02 GMT",
+        "etag": "\"56b16771826ea500ae7353bb08faf46a\"",
+        "licence": {
+          "id": "CC0-1.0",
+          "url": "https://opendefinition.org/licenses/cc-zero/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "originals/cal_ich_demographics_race/opendataportalcalendaryearrace.csv",
+        "table": "cal_ich_demographics_race",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://data.ca.gov/dataset/c7ed1ae4-4f93-4fc7-b603-3cd07a55d862/resource/b7ce1242-0e33-44c8-b561-4c34c5e78312/download/opendataportalcalendaryearrace.csv",
+        "retrievedAt": "2026-10-08T06:55:12.302290Z",
+        "sha256": "99d2acafc122eca6efb668b0b352d2b06b9b0de25059d5986a3ed7af8234f9dd",
+        "bytes": 499075,
+        "rows": 8277,
+        "year": null,
+        "partial": true,
+        "lastModified": "Thu, 01 Oct 2026 18:14:05 GMT",
+        "etag": "\"82c37ce0a62c66ebee7062af0c1e8f84\"",
+        "licence": {
+          "id": "CC0-1.0",
+          "url": "https://opendefinition.org/licenses/cc-zero/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/cal_ich_demographics_race/opendataportalcalendaryearrace.parquet",
+        "table": "cal_ich_demographics_race",
+        "format": "PARQUET",
+        "sourceUrl": "https://data.ca.gov/dataset/c7ed1ae4-4f93-4fc7-b603-3cd07a55d862/resource/b7ce1242-0e33-44c8-b561-4c34c5e78312/download/opendataportalcalendaryearrace.csv",
+        "retrievedAt": "2026-10-08T06:55:12.302290Z",
+        "sha256": "7a947eb6c4b895fc4658fbb30d26b5bd3697cfef26bf67369a0097463172314f",
+        "bytes": 590042,
+        "rows": 8277,
+        "excludedRows": 0,
+        "year": null,
+        "partial": true,
+        "lastModified": "Thu, 01 Oct 2026 18:14:05 GMT",
+        "etag": "\"82c37ce0a62c66ebee7062af0c1e8f84\"",
+        "licence": {
+          "id": "CC0-1.0",
+          "url": "https://opendefinition.org/licenses/cc-zero/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "originals/cal_ich_demographics_age/opendataportalcalendaryearage.csv",
+        "table": "cal_ich_demographics_age",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://data.ca.gov/dataset/c7ed1ae4-4f93-4fc7-b603-3cd07a55d862/resource/b1a5ae24-5842-425c-b56c-aa90f8f1c767/download/opendataportalcalendaryearage.csv",
+        "retrievedAt": "2026-10-08T06:55:13.905092Z",
+        "sha256": "e5901cb1d7e7188904ce3eaa5f7c3cfae3119aab4528f9c72489b7244e846093",
+        "bytes": 174979,
+        "rows": 3665,
+        "year": null,
+        "partial": true,
+        "lastModified": "Thu, 01 Oct 2026 18:14:08 GMT",
+        "etag": "\"11cf20532a33d9f9b37dbc52145386f9\"",
+        "licence": {
+          "id": "CC0-1.0",
+          "url": "https://opendefinition.org/licenses/cc-zero/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/cal_ich_demographics_age/opendataportalcalendaryearage.parquet",
+        "table": "cal_ich_demographics_age",
+        "format": "PARQUET",
+        "sourceUrl": "https://data.ca.gov/dataset/c7ed1ae4-4f93-4fc7-b603-3cd07a55d862/resource/b1a5ae24-5842-425c-b56c-aa90f8f1c767/download/opendataportalcalendaryearage.csv",
+        "retrievedAt": "2026-10-08T06:55:13.905092Z",
+        "sha256": "b1189783f1c69794c86a81ad9fef3e5c1b5f3d69f3bacf93cf49071836c9325f",
+        "bytes": 268234,
+        "rows": 3665,
+        "excludedRows": 0,
+        "year": null,
+        "partial": true,
+        "lastModified": "Thu, 01 Oct 2026 18:14:08 GMT",
+        "etag": "\"11cf20532a33d9f9b37dbc52145386f9\"",
+        "licence": {
+          "id": "CC0-1.0",
+          "url": "https://opendefinition.org/licenses/cc-zero/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "originals/cal_ich_demographics_veteran/opendataportalcalendaryearveteran.csv",
+        "table": "cal_ich_demographics_veteran",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://data.ca.gov/dataset/c7ed1ae4-4f93-4fc7-b603-3cd07a55d862/resource/90731a7d-3e33-4d45-9bde-1b0fd65c51cb/download/opendataportalcalendaryearveteran.csv",
+        "retrievedAt": "2026-10-08T06:55:15.245415Z",
+        "sha256": "cf70420a2b3ec356a3db0e6057667401bfcd2b4ebd1a42c87d8a73dccbdcf015",
+        "bytes": 7553,
+        "rows": 449,
+        "year": null,
+        "partial": true,
+        "lastModified": "Thu, 01 Oct 2026 18:14:12 GMT",
+        "etag": "\"035ad61f2b34a1697dce071d2e4454f4\"",
+        "licence": {
+          "id": "CC0-1.0",
+          "url": "https://opendefinition.org/licenses/cc-zero/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/cal_ich_demographics_veteran/opendataportalcalendaryearveteran.parquet",
+        "table": "cal_ich_demographics_veteran",
+        "format": "PARQUET",
+        "sourceUrl": "https://data.ca.gov/dataset/c7ed1ae4-4f93-4fc7-b603-3cd07a55d862/resource/90731a7d-3e33-4d45-9bde-1b0fd65c51cb/download/opendataportalcalendaryearveteran.csv",
+        "retrievedAt": "2026-10-08T06:55:15.245415Z",
+        "sha256": "7e6920097f21c663d09aa741a04c4d80830fe23928cb9f0ea92c88235be10bdb",
+        "bytes": 37297,
+        "rows": 449,
+        "excludedRows": 0,
+        "year": null,
+        "partial": true,
+        "lastModified": "Thu, 01 Oct 2026 18:14:12 GMT",
+        "etag": "\"035ad61f2b34a1697dce071d2e4454f4\"",
+        "licence": {
+          "id": "CC0-1.0",
+          "url": "https://opendefinition.org/licenses/cc-zero/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "originals/cal_ich_demographics_disability/opendataportalcalendaryeardis.csv",
+        "table": "cal_ich_demographics_disability",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://data.ca.gov/dataset/c7ed1ae4-4f93-4fc7-b603-3cd07a55d862/resource/15c6f222-56d9-4184-97cd-fca6923f2474/download/opendataportalcalendaryeardis.csv",
+        "retrievedAt": "2026-10-08T06:55:16.583225Z",
+        "sha256": "a3294873f829541d08190b6f91d7d0b32df0a05e893cae2530380819851f4703",
+        "bytes": 7995,
+        "rows": 449,
+        "year": null,
+        "partial": true,
+        "lastModified": "Thu, 01 Oct 2026 18:14:14 GMT",
+        "etag": "\"991eb94195ec6173da6304ceb87f1d86\"",
+        "licence": {
+          "id": "CC0-1.0",
+          "url": "https://opendefinition.org/licenses/cc-zero/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/cal_ich_demographics_disability/opendataportalcalendaryeardis.parquet",
+        "table": "cal_ich_demographics_disability",
+        "format": "PARQUET",
+        "sourceUrl": "https://data.ca.gov/dataset/c7ed1ae4-4f93-4fc7-b603-3cd07a55d862/resource/15c6f222-56d9-4184-97cd-fca6923f2474/download/opendataportalcalendaryeardis.csv",
+        "retrievedAt": "2026-10-08T06:55:16.583225Z",
+        "sha256": "04d958efba9d2cf0e2df35df286b205e35a517b575e272476bf3233505e4f491",
+        "bytes": 37867,
+        "rows": 449,
+        "excludedRows": 0,
+        "year": null,
+        "partial": true,
+        "lastModified": "Thu, 01 Oct 2026 18:14:14 GMT",
+        "etag": "\"991eb94195ec6173da6304ceb87f1d86\"",
+        "licence": {
+          "id": "CC0-1.0",
+          "url": "https://opendefinition.org/licenses/cc-zero/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "originals/cal_ich_racial_disparities/opendataportalcalendaryearracialdis.csv",
+        "table": "cal_ich_racial_disparities",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://data.ca.gov/dataset/c7ed1ae4-4f93-4fc7-b603-3cd07a55d862/resource/a79a1bfe-71a7-47f7-8c52-febb43aa4973/download/opendataportalcalendaryearracialdis.csv",
+        "retrievedAt": "2026-10-08T06:55:17.386871Z",
+        "sha256": "fd9fde0e91fe0f4565b4ecad18d6dff7454d596186e3d2c351f91978cb296c47",
+        "bytes": 182730,
+        "rows": 2205,
+        "year": null,
+        "partial": true,
+        "lastModified": "Thu, 01 Oct 2026 18:14:17 GMT",
+        "etag": "\"1ddf956b332ae724b7c1d1bcf0ed97e9\"",
+        "licence": {
+          "id": "CC0-1.0",
+          "url": "https://opendefinition.org/licenses/cc-zero/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/cal_ich_racial_disparities/opendataportalcalendaryearracialdis.parquet",
+        "table": "cal_ich_racial_disparities",
+        "format": "PARQUET",
+        "sourceUrl": "https://data.ca.gov/dataset/c7ed1ae4-4f93-4fc7-b603-3cd07a55d862/resource/a79a1bfe-71a7-47f7-8c52-febb43aa4973/download/opendataportalcalendaryearracialdis.csv",
+        "retrievedAt": "2026-10-08T06:55:17.386871Z",
+        "sha256": "002c80fd76331f4f42ebecde631f180bf31d2c65eba224bc3ef98a49e18916d0",
+        "bytes": 178564,
+        "rows": 2205,
+        "excludedRows": 0,
+        "year": null,
+        "partial": true,
+        "lastModified": "Thu, 01 Oct 2026 18:14:17 GMT",
+        "etag": "\"1ddf956b332ae724b7c1d1bcf0ed97e9\"",
+        "licence": {
+          "id": "CC0-1.0",
+          "url": "https://opendefinition.org/licenses/cc-zero/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "originals/cal_ich_help_act_goals/help-act-goals-statewide-and-by-coc.csv",
+        "table": "cal_ich_help_act_goals",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://data.ca.gov/dataset/5e227cbe-2a16-4ce1-98e1-95493bc6249f/resource/d6185fe2-9002-4b1e-9c3c-c1a89f0e6816/download/help-act-goals-statewide-and-by-coc.csv",
+        "retrievedAt": "2026-10-08T06:55:18.480175Z",
+        "sha256": "1a5295b9c35f047f5490baf5b741e699977f8a598dc89fe395e694067dba8b64",
+        "bytes": 84331,
+        "rows": 900,
+        "year": null,
+        "partial": true,
+        "lastModified": "Thu, 01 Oct 2026 18:03:35 GMT",
+        "etag": "\"4fce435ab3814075ff59386fee5bad7f\"",
+        "licence": {
+          "id": "CC0-1.0",
+          "url": "https://opendefinition.org/licenses/cc-zero/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/cal_ich_help_act_goals/help-act-goals-statewide-and-by-coc.parquet",
+        "table": "cal_ich_help_act_goals",
+        "format": "PARQUET",
+        "sourceUrl": "https://data.ca.gov/dataset/5e227cbe-2a16-4ce1-98e1-95493bc6249f/resource/d6185fe2-9002-4b1e-9c3c-c1a89f0e6816/download/help-act-goals-statewide-and-by-coc.csv",
+        "retrievedAt": "2026-10-08T06:55:18.480175Z",
+        "sha256": "dfb756caad9f388c4ebc3ba0de681b18702a6a82a2798452db31720a20499994",
+        "bytes": 84090,
+        "rows": 900,
+        "excludedRows": 0,
+        "year": null,
+        "partial": true,
+        "lastModified": "Thu, 01 Oct 2026 18:03:35 GMT",
+        "etag": "\"4fce435ab3814075ff59386fee5bad7f\"",
+        "licence": {
+          "id": "CC0-1.0",
+          "url": "https://opendefinition.org/licenses/cc-zero/",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "originals/hud_system_performance_measures/System-Performance-Measures-Data.xlsx",
+        "table": "hud_system_performance_measures",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://files.hudexchange.info/resources/documents/System-Performance-Measures-Data.xlsx",
+        "retrievedAt": "2026-10-08T06:55:19.550283Z",
+        "sha256": "82796eb0686e3fc53d64ebd6ca4d9a4b2629f313591b7d1ae8d3d3aab43c61af",
+        "bytes": 2530373,
+        "rows": 387,
+        "year": null,
+        "partial": true,
+        "lastModified": "Wed, 28 Jan 2026 16:31:20 GMT",
+        "etag": "\"b4e7a8331eb8c4f31401d70143773094\"",
+        "licence": {
+          "id": "public-domain-us-government",
+          "url": "https://www.law.cornell.edu/uscode/text/17/105",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/hud_system_performance_measures/System-Performance-Measures-Data.parquet",
+        "table": "hud_system_performance_measures",
+        "format": "PARQUET",
+        "sourceUrl": "https://files.hudexchange.info/resources/documents/System-Performance-Measures-Data.xlsx",
+        "retrievedAt": "2026-10-08T06:55:19.550283Z",
+        "sha256": "7b75c4ae7e1068ad63ed31cd844584ecdc77c233e796f19a058e98c3adacda85",
+        "bytes": 234115,
+        "rows": 387,
+        "excludedRows": 0,
+        "year": null,
+        "partial": true,
+        "lastModified": "Wed, 28 Jan 2026 16:31:20 GMT",
+        "etag": "\"b4e7a8331eb8c4f31401d70143773094\"",
+        "licence": {
+          "id": "public-domain-us-government",
+          "url": "https://www.law.cornell.edu/uscode/text/17/105",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "originals/hcd_erf_projected_persons_served/erf-all-rounds-encampment-projections-and-status.xlsx",
+        "table": "hcd_erf_projected_persons_served",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/calich/erf-all-rounds-encampment-projections-and-status.xlsx",
+        "retrievedAt": "2026-10-08T06:55:20.470989Z",
+        "sha256": "2092430508f7ec729776d27adc6a629a291f2195669861926ef2a4e10313fb79",
+        "bytes": 112016,
+        "rows": 126,
+        "year": null,
+        "partial": true,
+        "lastModified": "Fri, 29 May 2026 18:09:37 GMT",
+        "etag": "\"6a19d661-1b590\"",
+        "licence": {
+          "id": "CA-public-records",
+          "url": "https://www.hcd.ca.gov/condition-of-use",
+          "attribution": null,
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/hcd_erf_projected_persons_served/erf-all-rounds-encampment-projections-and-status.parquet",
+        "table": "hcd_erf_projected_persons_served",
+        "format": "PARQUET",
+        "sourceUrl": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/calich/erf-all-rounds-encampment-projections-and-status.xlsx",
+        "retrievedAt": "2026-10-08T06:55:20.470989Z",
+        "sha256": "460c9a6ecb6603a534417250e0e4ae5992b92117f5665080ae782e01426b9c1b",
+        "bytes": 17272,
+        "rows": 126,
+        "excludedRows": 0,
+        "year": null,
+        "partial": true,
+        "lastModified": "Fri, 29 May 2026 18:09:37 GMT",
+        "etag": "\"6a19d661-1b590\"",
+        "licence": {
+          "id": "CA-public-records",
+          "url": "https://www.hcd.ca.gov/condition-of-use",
+          "attribution": null,
+          "disclaimer": null
+        }
+      }
+    ]
+  },
+  "signature": {
+    "algorithm": "Ed25519",
+    "publicKeyHex": "b42202850cd9ecda4ab2b96548891d3a2a8275f74dde76bba2153826089ca8ff",
+    "signerKeyId": "266f3c9c0320f40951854c7af66b6e73395a6735828fa04092c1cf79d2dafd2d",
+    "signatureHex": "d7654ea17e32fcd72de08d4db3b037fdb6b5077a6a7f1fb4bd4224179fa76e8bc238b815809e9f3151f2d7ea36e5b220f7d795c1b6ac97d812ab9f0a86371002",
+    "identityAssurance": "SELF_MANAGED_LOCAL_KEY_NOT_EXTERNALLY_ATTESTED"
+  }
+}

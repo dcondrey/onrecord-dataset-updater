@@ -1,0 +1,1704 @@
+{
+  "version": 1,
+  "policy": {
+    "dataset_preference": "Extend suitable existing datasets, including third-party datasets, before creating new datasets.",
+    "upstream_contributions": "Assess schema, provenance, licence, coverage and maintainer contribution rules. Prepare scoped contributions for suitable third-party datasets. Do not automatically publish to third-party repositories.",
+    "reports": "Completed report editions are frozen; refreshes do not change reports.",
+    "new_datasets": "No automatic creation. Document why extending or contributing to an existing dataset is unsuitable first."
+  },
+  "limits": {
+    "file_bytes": 134217728,
+    "run_bytes": 402653184,
+    "repo_added_bytes": 536870912,
+    "seconds": 840
+  },
+  "hosts": [
+    "huggingface.co",
+    "*.hf.co",
+    "*.huggingface.co",
+    "*.xethub.hf.co",
+    "*.amazonaws.com",
+    "seshat.datasd.org",
+    "data.ca.gov",
+    "publish.data.ca.gov",
+    "files.hudexchange.info",
+    "www.hcd.ca.gov",
+    "bythenumbers.sco.ca.gov",
+    "web.archive.org",
+    "*.r2.cloudflarestorage.com",
+    "*.r2.dev"
+  ],
+  "packs": [
+    {
+      "repo": "Writerslogic/onrecord-san-diego-money",
+      "baseline_commit": "1b67e0729f9e785269bdf7aae75ac38e7f99538f",
+      "baseline_manifest": "baselines/onrecord-san-diego-money-manifest.json",
+      "sources": [
+        {
+          "table": "budget_funds",
+          "url": "https://seshat.datasd.org/funds_city_budget/budget_reference_funds_datasd.csv",
+          "baseline_path": "originals/budget_funds/budget_reference_funds_datasd.csv",
+          "baseline_sha256": "9ff7cb4f02c5676960b39813a0d644eb3365de5180765d5adf3f7ca5badb4dce",
+          "baseline_bytes": 38081,
+          "baseline_rows": 583,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "city_parcels",
+          "url": "https://seshat.datasd.org/city_owned_properties_parcels/city_property_parcels_datasd.csv",
+          "baseline_path": "originals/city_parcels/city_property_parcels_datasd.csv",
+          "baseline_sha256": "d2151cfc77f00139c7f8f47711a45323165e0f6bba413217c0493f1e2e1af7a1",
+          "baseline_bytes": 92153,
+          "baseline_rows": 4187,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "city_leases",
+          "url": "https://seshat.datasd.org/city_owned_properties_leases/city_property_leases_datasd.csv",
+          "baseline_path": "originals/city_leases/city_property_leases_datasd.csv",
+          "baseline_sha256": "bfce469fb06248d822ea3037a93da6705de2cb34ae74d97fa7b728c5c8cb982c",
+          "baseline_bytes": 154615,
+          "baseline_rows": 811,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "budget_accounts",
+          "url": "https://seshat.datasd.org/accounts_city_budget/budget_reference_accounts_datasd.csv",
+          "baseline_path": "originals/budget_accounts/budget_reference_accounts_datasd.csv",
+          "baseline_sha256": "6a66ca1c680a11fbd3337beeafb4851cc9f3fc73e5a875108d1b5512d7204828",
+          "baseline_bytes": 194159,
+          "baseline_rows": 1833,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "capital_budget",
+          "url": "https://seshat.datasd.org/cip_fy_budget/budget_capital_fy_datasd.csv",
+          "baseline_path": "originals/capital_budget/budget_capital_fy_datasd.csv",
+          "baseline_sha256": "1874377ce0c49bb0127b3ce41809a1f98752dc07ec0589ac3276147d04e25d61",
+          "baseline_bytes": 327298,
+          "baseline_rows": 2193,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "budget_departments",
+          "url": "https://seshat.datasd.org/departments_city_budget/budget_reference_depts_datasd.csv",
+          "baseline_path": "originals/budget_departments/budget_reference_depts_datasd.csv",
+          "baseline_sha256": "fa3bfecc363f23cf7380484778b687f34641b9df76e91a0e467affcf12fe04d6",
+          "baseline_bytes": 353307,
+          "baseline_rows": 2800,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "city_properties",
+          "url": "https://seshat.datasd.org/city_owned_properties/city_property_details_datasd.csv",
+          "baseline_path": "originals/city_properties/city_property_details_datasd.csv",
+          "baseline_sha256": "04406ed5607561d0398d879ee13299d47e8c4c3c3540bc4bea0e89e4909b354c",
+          "baseline_bytes": 882528,
+          "baseline_rows": 4095,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "budget_adopted",
+          "url": "https://seshat.datasd.org/operating_budget/budget_operating_datasd.csv",
+          "baseline_path": "originals/budget_adopted/budget_operating_datasd.csv",
+          "baseline_sha256": "4ad8a734cb351a7ccae7939ea9c8076cf7e30a4d4f2a8c10f45852cb042c5fe5",
+          "baseline_bytes": 63825383,
+          "baseline_rows": 548811,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "capital_actuals",
+          "url": "https://seshat.datasd.org/cip_fy_actuals/actuals_capital_fy_datasd.csv",
+          "baseline_path": "originals/capital_actuals/actuals_capital_fy_datasd.csv",
+          "baseline_sha256": "872c99403fad3d6f8dc92018ea0da1afb66d36094f397b8c681d5842bb18afe2",
+          "baseline_bytes": 66116235,
+          "baseline_rows": 469677,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "budget_actuals",
+          "url": "https://seshat.datasd.org/operating_actuals/actuals_operating_datasd.csv",
+          "baseline_path": "originals/budget_actuals/actuals_operating_datasd.csv",
+          "baseline_sha256": "53cfc7488c40c2d3b654c64ba8599bc11a4086fa5efe403371c38eff78dd2143",
+          "baseline_bytes": 69104357,
+          "baseline_rows": 663858,
+          "year": null,
+          "archival": false
+        }
+      ]
+    },
+    {
+      "repo": "Writerslogic/onrecord-ca-homelessness-system",
+      "baseline_commit": "4b433fc24b1dd092de23ddfb5d4ef511664b23b7",
+      "baseline_manifest": "baselines/onrecord-ca-homelessness-system-manifest.json",
+      "sources": [
+        {
+          "table": "cal_ich_system_performance_measures_dictionary",
+          "url": "https://data.ca.gov/dataset/d3f9ca4d-3e60-434b-9fa3-91ee0befd34d/resource/fd4ff7c8-a54a-4af2-9a13-03a8fdcc9b22/download/ca-spms-data-dictionary.csv",
+          "baseline_path": "originals/cal_ich_system_performance_measures_dictionary/ca-spms-data-dictionary.csv",
+          "baseline_sha256": "45b99160da08dc029dcfd6977e04cc3c52234445c09e9cb562fed52e1958e2e9",
+          "baseline_bytes": 2981,
+          "baseline_rows": 8,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "cal_ich_demographics_veteran",
+          "url": "https://data.ca.gov/dataset/c7ed1ae4-4f93-4fc7-b603-3cd07a55d862/resource/90731a7d-3e33-4d45-9bde-1b0fd65c51cb/download/opendataportalcalendaryearveteran.csv",
+          "baseline_path": "originals/cal_ich_demographics_veteran/opendataportalcalendaryearveteran.csv",
+          "baseline_sha256": "cf70420a2b3ec356a3db0e6057667401bfcd2b4ebd1a42c87d8a73dccbdcf015",
+          "baseline_bytes": 7553,
+          "baseline_rows": 449,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "cal_ich_demographics_disability",
+          "url": "https://data.ca.gov/dataset/c7ed1ae4-4f93-4fc7-b603-3cd07a55d862/resource/15c6f222-56d9-4184-97cd-fca6923f2474/download/opendataportalcalendaryeardis.csv",
+          "baseline_path": "originals/cal_ich_demographics_disability/opendataportalcalendaryeardis.csv",
+          "baseline_sha256": "a3294873f829541d08190b6f91d7d0b32df0a05e893cae2530380819851f4703",
+          "baseline_bytes": 7995,
+          "baseline_rows": 449,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "ca_system_performance_measures",
+          "url": "https://publish.data.ca.gov/dataset/d3f9ca4d-3e60-434b-9fa3-91ee0befd34d/resource/e02178d9-1d34-4798-9979-f50af9f1742e/download/ca-spms-prior-years-and-last-twelve-months-cy2025.csv",
+          "baseline_path": "originals/ca_system_performance_measures/ca-spms-prior-years-and-last-twelve-months-cy2025.csv",
+          "baseline_sha256": "d2cfc0ee93b161d45e5360d9f974d0dc9661d0e5e527f3d03c52091751da268d",
+          "baseline_bytes": 25975,
+          "baseline_rows": 368,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "cal_ich_demographics_gender",
+          "url": "https://data.ca.gov/dataset/c7ed1ae4-4f93-4fc7-b603-3cd07a55d862/resource/57142555-f2da-462f-a999-d44abf0af69c/download/opendataportalcalendaryeargender.csv",
+          "baseline_path": "originals/cal_ich_demographics_gender/opendataportalcalendaryeargender.csv",
+          "baseline_sha256": "dfea678cbdf49987adcd368622dc75bf251e1f121839e677c33aa8bc7b833b59",
+          "baseline_bytes": 59943,
+          "baseline_rows": 1467,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "cal_ich_help_act_goals",
+          "url": "https://data.ca.gov/dataset/5e227cbe-2a16-4ce1-98e1-95493bc6249f/resource/d6185fe2-9002-4b1e-9c3c-c1a89f0e6816/download/help-act-goals-statewide-and-by-coc.csv",
+          "baseline_path": "originals/cal_ich_help_act_goals/help-act-goals-statewide-and-by-coc.csv",
+          "baseline_sha256": "1a5295b9c35f047f5490baf5b741e699977f8a598dc89fe395e694067dba8b64",
+          "baseline_bytes": 84331,
+          "baseline_rows": 900,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "hcd_erf_projected_persons_served",
+          "url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/calich/erf-all-rounds-encampment-projections-and-status.xlsx",
+          "baseline_path": "originals/hcd_erf_projected_persons_served/erf-all-rounds-encampment-projections-and-status.xlsx",
+          "baseline_sha256": "2092430508f7ec729776d27adc6a629a291f2195669861926ef2a4e10313fb79",
+          "baseline_bytes": 112016,
+          "baseline_rows": 126,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "cal_ich_demographics_age",
+          "url": "https://data.ca.gov/dataset/c7ed1ae4-4f93-4fc7-b603-3cd07a55d862/resource/b1a5ae24-5842-425c-b56c-aa90f8f1c767/download/opendataportalcalendaryearage.csv",
+          "baseline_path": "originals/cal_ich_demographics_age/opendataportalcalendaryearage.csv",
+          "baseline_sha256": "e5901cb1d7e7188904ce3eaa5f7c3cfae3119aab4528f9c72489b7244e846093",
+          "baseline_bytes": 174979,
+          "baseline_rows": 3665,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "cal_ich_racial_disparities",
+          "url": "https://data.ca.gov/dataset/c7ed1ae4-4f93-4fc7-b603-3cd07a55d862/resource/a79a1bfe-71a7-47f7-8c52-febb43aa4973/download/opendataportalcalendaryearracialdis.csv",
+          "baseline_path": "originals/cal_ich_racial_disparities/opendataportalcalendaryearracialdis.csv",
+          "baseline_sha256": "fd9fde0e91fe0f4565b4ecad18d6dff7454d596186e3d2c351f91978cb296c47",
+          "baseline_bytes": 182730,
+          "baseline_rows": 2205,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "cal_ich_demographics_race",
+          "url": "https://data.ca.gov/dataset/c7ed1ae4-4f93-4fc7-b603-3cd07a55d862/resource/b7ce1242-0e33-44c8-b561-4c34c5e78312/download/opendataportalcalendaryearrace.csv",
+          "baseline_path": "originals/cal_ich_demographics_race/opendataportalcalendaryearrace.csv",
+          "baseline_sha256": "99d2acafc122eca6efb668b0b352d2b06b9b0de25059d5986a3ed7af8234f9dd",
+          "baseline_bytes": 499075,
+          "baseline_rows": 8277,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "hud_system_performance_measures",
+          "url": "https://files.hudexchange.info/resources/documents/System-Performance-Measures-Data.xlsx",
+          "baseline_path": "originals/hud_system_performance_measures/System-Performance-Measures-Data.xlsx",
+          "baseline_sha256": "82796eb0686e3fc53d64ebd6ca4d9a4b2629f313591b7d1ae8d3d3aab43c61af",
+          "baseline_bytes": 2530373,
+          "baseline_rows": 387,
+          "year": null,
+          "archival": false
+        }
+      ]
+    },
+    {
+      "repo": "Writerslogic/onrecord-san-diego-capacity",
+      "baseline_commit": "60dee61c959c45a297c2b57f51e92e0643449aed",
+      "baseline_manifest": "baselines/onrecord-san-diego-capacity-manifest.json",
+      "sources": [
+        {
+          "table": "approvals_closed",
+          "url": "https://seshat.datasd.org/development_permits/approvals_closed_2026_datasd.csv",
+          "baseline_path": "originals/approvals_closed/approvals_closed_2026_datasd.csv",
+          "baseline_sha256": "584794ddc22769166a9b27eb27368d363d5a0bfc14ec144f7223af5e0d98fa80",
+          "baseline_bytes": 16397032,
+          "baseline_rows": 27773,
+          "year": 2026,
+          "archival": false
+        },
+        {
+          "table": "approvals_closed",
+          "url": "https://seshat.datasd.org/development_permits/approvals_closed_2024_datasd.csv",
+          "baseline_path": "originals/approvals_closed/approvals_closed_2024_datasd.csv",
+          "baseline_sha256": "9cef4733e94fd5490914c9ea4c2da87f17a54b15ed05410634fb6f2c5fc743d4",
+          "baseline_bytes": 17530809,
+          "baseline_rows": 28848,
+          "year": 2024,
+          "archival": false
+        },
+        {
+          "table": "approvals_closed",
+          "url": "https://seshat.datasd.org/development_permits/approvals_closed_2025_datasd.csv",
+          "baseline_path": "originals/approvals_closed/approvals_closed_2025_datasd.csv",
+          "baseline_sha256": "0c6a7faff6e2d3589332489eb35e53c77fe83945f33a551399721903c34aef47",
+          "baseline_bytes": 18250789,
+          "baseline_rows": 29079,
+          "year": 2025,
+          "archival": false
+        },
+        {
+          "table": "approvals_issued",
+          "url": "https://seshat.datasd.org/development_permits/approvals_issued_2026_datasd.csv",
+          "baseline_path": "originals/approvals_issued/approvals_issued_2026_datasd.csv",
+          "baseline_sha256": "dfc8f0c065612c2bb86121f54fbf3841fc5399925556cc89fcbe8a3519d9b9c6",
+          "baseline_bytes": 21727296,
+          "baseline_rows": 42365,
+          "year": 2026,
+          "archival": false
+        },
+        {
+          "table": "approvals_created",
+          "url": "https://seshat.datasd.org/development_permits/approvals_created_2026_datasd.csv",
+          "baseline_path": "originals/approvals_created/approvals_created_2026_datasd.csv",
+          "baseline_sha256": "49fc58988c4336a9e8a729a43a3071e48627bb44032ea6b71698caec9e7a86d8",
+          "baseline_bytes": 24818922,
+          "baseline_rows": 49178,
+          "year": 2026,
+          "archival": false
+        },
+        {
+          "table": "approvals_issued",
+          "url": "https://seshat.datasd.org/development_permits/approvals_issued_2024_datasd.csv",
+          "baseline_path": "originals/approvals_issued/approvals_issued_2024_datasd.csv",
+          "baseline_sha256": "cf83a4dab401c41f65a513e3e88137d4657278afab7d6d6b79b3edf8d544bb7c",
+          "baseline_bytes": 28897173,
+          "baseline_rows": 55090,
+          "year": 2024,
+          "archival": false
+        },
+        {
+          "table": "approvals_issued",
+          "url": "https://seshat.datasd.org/development_permits/approvals_issued_2025_datasd.csv",
+          "baseline_path": "originals/approvals_issued/approvals_issued_2025_datasd.csv",
+          "baseline_sha256": "1e734c31cc6332f6e61d652ed9f9fc4bf4a9dcd807d50e151de6f7b8c8c19a24",
+          "baseline_bytes": 29232737,
+          "baseline_rows": 54563,
+          "year": 2025,
+          "archival": false
+        },
+        {
+          "table": "approvals_created",
+          "url": "https://seshat.datasd.org/development_permits/approvals_created_2024_datasd.csv",
+          "baseline_path": "originals/approvals_created/approvals_created_2024_datasd.csv",
+          "baseline_sha256": "4dfeb05e4307cc96ef7dad6db1ec291c0411d8724ca2effcb8f745a90d8c62b2",
+          "baseline_bytes": 32756623,
+          "baseline_rows": 63414,
+          "year": 2024,
+          "archival": false
+        },
+        {
+          "table": "approvals_created",
+          "url": "https://seshat.datasd.org/development_permits/approvals_created_2025_datasd.csv",
+          "baseline_path": "originals/approvals_created/approvals_created_2025_datasd.csv",
+          "baseline_sha256": "5c4f93d553af666b1fb43a12376c697da32fec14bb7183d04ab9231f4102b8f0",
+          "baseline_bytes": 38061263,
+          "baseline_rows": 66317,
+          "year": 2025,
+          "archival": false
+        }
+      ]
+    },
+    {
+      "repo": "Writerslogic/onrecord-ca-housing",
+      "baseline_commit": "b362a99963c8e4e335466d71508a1d9285ea0252",
+      "baseline_manifest": "baselines/onrecord-ca-housing-manifest.json",
+      "sources": [
+        {
+          "table": "rhna_progress_5th_cycle",
+          "url": "https://publish.data.ca.gov/dataset/ff082e96-72f7-4443-9747-8b8dadc15671/resource/cff0bc49-dd85-43a1-b1d5-1cfa7cf1ae22/download/rhna_progress_5.csv",
+          "baseline_path": "originals/rhna_progress_5th_cycle/rhna_progress_5.csv",
+          "baseline_sha256": "c9d1dd512388a7defec733cb16f822c3118120697a92dffe8a6154b4e668b6fa",
+          "baseline_bytes": 43930,
+          "baseline_rows": 539,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "rhna_progress_6th_cycle",
+          "url": "https://publish.data.ca.gov/dataset/ff082e96-72f7-4443-9747-8b8dadc15671/resource/1e80a9cf-724c-432d-8374-e9708a6a92dc/download/rhna_progress_6.csv",
+          "baseline_path": "originals/rhna_progress_6th_cycle/rhna_progress_6.csv",
+          "baseline_sha256": "65b2c9635f11a0a98c505f844e3f58543f83d91f9fee960b85c1536facc660ad",
+          "baseline_bytes": 47019,
+          "baseline_rows": 539,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "city_rental_unit_business_tax_accounts",
+          "url": "https://seshat.datasd.org/rtax_accounts/rtax_accounts_datasd.csv",
+          "baseline_path": "originals/city_rental_unit_business_tax_accounts/rtax_accounts_datasd.csv",
+          "baseline_sha256": "b663fa5f6884f9b6f2d2b1afdf46bae23cb4415b026ebf7b1a1fab755735a834",
+          "baseline_bytes": 24322803,
+          "baseline_rows": 328722,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "apr_table_a_housing_applications",
+          "url": "https://publish.data.ca.gov/dataset/81b0841f-2802-403e-b48e-2ef4b751f77c/resource/c78b769d-cc02-4050-91ef-79ded665b5a8/download/tablea.csv",
+          "baseline_path": "originals/apr_table_a_housing_applications/tablea.csv",
+          "baseline_sha256": "e8f63f7060ab9857910fe4e8e80981df4814eab9ec05623c7bcb0c29f72a829e",
+          "baseline_bytes": 90673021,
+          "baseline_rows": 357993,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "apr_table_a2_housing_production",
+          "url": "https://publish.data.ca.gov/dataset/81b0841f-2802-403e-b48e-2ef4b751f77c/resource/fe505d9b-8c36-42ba-ba30-08bc4f34e022/download/tablea2.csv",
+          "baseline_path": "originals/apr_table_a2_housing_production/tablea2.csv",
+          "baseline_sha256": "74d4a2b44f0335008bc9eac0ff20c8bdd4827041a7319162856bbd1ed1b31730",
+          "baseline_bytes": 293373224,
+          "baseline_rows": 922800,
+          "year": null,
+          "archival": false
+        }
+      ]
+    },
+    {
+      "repo": "Writerslogic/onrecord-ca-public-money",
+      "baseline_commit": "bd6bb467f1bc6c1b5890592159ceca7a47198d07",
+      "baseline_manifest": "baselines/onrecord-ca-public-money-manifest.json",
+      "sources": [
+        {
+          "table": "sco_city_expenditures",
+          "url": "https://bythenumbers.sco.ca.gov/api/v3/views/ju3w-4gxp/export.csv",
+          "baseline_path": "originals/sco_city_expenditures/export.csv",
+          "baseline_sha256": "408c3766fd3836ff30a9798115453bdcabcc6256ad1401f264b23f0d76c2ecea",
+          "baseline_bytes": 325218271,
+          "baseline_rows": 1367618,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "sco_city_revenues",
+          "url": "https://bythenumbers.sco.ca.gov/api/v3/views/rrtv-rsj9/export.csv",
+          "baseline_path": "originals/sco_city_revenues/export.csv",
+          "baseline_sha256": "2b009abca97a274ca5d8e20675524171be008af60c9115bd86487ee870910f29",
+          "baseline_bytes": 888129973,
+          "baseline_rows": 2557528,
+          "year": null,
+          "archival": false
+        }
+      ]
+    },
+    {
+      "repo": "Writerslogic/onrecord-san-diego-reports",
+      "baseline_commit": "fe7b0d838d1fdee5d2d4b66334b864dfa4a45660",
+      "baseline_manifest": "baselines/onrecord-san-diego-reports-manifest.json",
+      "sources": [
+        {
+          "table": "call_dispositions",
+          "url": "https://seshat.datasd.org/police_calls_for_service/pd_dispo_codes_datasd.csv",
+          "baseline_path": "originals/call_dispositions/pd_dispo_codes_datasd.csv",
+          "baseline_sha256": "c814ba49fd2e62c0e347b37548d04d8625dbba8e89ff855c0cf204b7f1a9bd6e",
+          "baseline_bytes": 635,
+          "baseline_rows": 18,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "police_beats",
+          "url": "https://seshat.datasd.org/gis_police_beats/pd_beat_codes_list_datasd.csv",
+          "baseline_path": "originals/police_beats/pd_beat_codes_list_datasd.csv",
+          "baseline_sha256": "53071e03cd8eb79e187561e72ca8970d1d762934121bd4db3e21a104ead1b961",
+          "baseline_bytes": 2259,
+          "baseline_rows": 125,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "call_types",
+          "url": "https://seshat.datasd.org/police_calls_for_service/pd_cfs_calltypes_datasd.csv",
+          "baseline_path": "originals/call_types/pd_cfs_calltypes_datasd.csv",
+          "baseline_sha256": "5ae6fea42ba88c6ff1c2f096e6143c95b99321050e565abcb1ac97a3e6d7a51c",
+          "baseline_bytes": 9063,
+          "baseline_rows": 289,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "service_reports",
+          "url": "https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_closed_2016_datasd.csv",
+          "baseline_path": "originals/service_reports/get_it_done_requests_closed_2016_datasd.csv",
+          "baseline_sha256": "36bee7e1e58369e7ce158a50f056a6ae4ff9b98e9564982fb816c5056fd3854d",
+          "baseline_bytes": 11442272,
+          "baseline_rows": 33631,
+          "year": 2016,
+          "archival": false
+        },
+        {
+          "table": "fire_ems_incidents",
+          "url": "https://seshat.datasd.org/fire_ems_incidents/fd_incidents_2007_datasd.csv",
+          "baseline_path": "originals/fire_ems_incidents/fd_incidents_2007_datasd.csv",
+          "baseline_sha256": "815462c9a3df58031e3043272d34b046373b928bdec6884a7f4988435037ba3f",
+          "baseline_bytes": 14487402,
+          "baseline_rows": 107754,
+          "year": 2007,
+          "archival": false
+        },
+        {
+          "table": "fire_ems_incidents",
+          "url": "https://seshat.datasd.org/fire_ems_incidents/fd_incidents_2009_datasd.csv",
+          "baseline_path": "originals/fire_ems_incidents/fd_incidents_2009_datasd.csv",
+          "baseline_sha256": "d751a4952810fd68ee33edad7a79cb940590b132f35e370d13aca1bc0bb0d637",
+          "baseline_bytes": 15030446,
+          "baseline_rows": 112596,
+          "year": 2009,
+          "archival": false
+        },
+        {
+          "table": "fire_ems_incidents",
+          "url": "https://seshat.datasd.org/fire_ems_incidents/fd_incidents_2008_datasd.csv",
+          "baseline_path": "originals/fire_ems_incidents/fd_incidents_2008_datasd.csv",
+          "baseline_sha256": "72cd340b6255fd08df12850b4505cfae8b0beb8eadc56bddb7fd4568d1d1fc46",
+          "baseline_bytes": 15037527,
+          "baseline_rows": 111456,
+          "year": 2008,
+          "archival": false
+        },
+        {
+          "table": "fire_ems_incidents",
+          "url": "https://seshat.datasd.org/fire_ems_incidents/fd_incidents_2010_datasd.csv",
+          "baseline_path": "originals/fire_ems_incidents/fd_incidents_2010_datasd.csv",
+          "baseline_sha256": "eef3007efe34041688515345affe4f1d6b6deaaa6b16110477a647e5b562f4ef",
+          "baseline_bytes": 15609019,
+          "baseline_rows": 116620,
+          "year": 2010,
+          "archival": false
+        },
+        {
+          "table": "fire_ems_incidents",
+          "url": "https://seshat.datasd.org/fire_ems_incidents/fd_incidents_2011_datasd.csv",
+          "baseline_path": "originals/fire_ems_incidents/fd_incidents_2011_datasd.csv",
+          "baseline_sha256": "17b55e9b6c0f199c2a9bc9821c7e2ae6729f43f44a1330353f7ddce1c7c26123",
+          "baseline_bytes": 16095827,
+          "baseline_rows": 120120,
+          "year": 2011,
+          "archival": false
+        },
+        {
+          "table": "fire_ems_incidents",
+          "url": "https://seshat.datasd.org/fire_ems_incidents/fd_incidents_2012_datasd.csv",
+          "baseline_path": "originals/fire_ems_incidents/fd_incidents_2012_datasd.csv",
+          "baseline_sha256": "9ce28e61d829193b40d37fbe03271b16bd0c5a5d62241a1aaa5ea319a930a26a",
+          "baseline_bytes": 16933185,
+          "baseline_rows": 126059,
+          "year": 2012,
+          "archival": false
+        },
+        {
+          "table": "fire_ems_incidents",
+          "url": "https://seshat.datasd.org/fire_ems_incidents/fd_incidents_2013_datasd.csv",
+          "baseline_path": "originals/fire_ems_incidents/fd_incidents_2013_datasd.csv",
+          "baseline_sha256": "7fbbf102c4e7edeba618decd960cc59362374dae477aaab351afef0a29354b92",
+          "baseline_bytes": 17299107,
+          "baseline_rows": 128686,
+          "year": 2013,
+          "archival": false
+        },
+        {
+          "table": "fire_ems_incidents",
+          "url": "https://seshat.datasd.org/fire_ems_incidents/fd_incidents_2026_datasd.csv",
+          "baseline_path": "originals/fire_ems_incidents/fd_incidents_2026_datasd.csv",
+          "baseline_sha256": "b09641528b14217d270c21c1583956682b1b35e99afffd11353c5314fd9fbd14",
+          "baseline_bytes": 18254583,
+          "baseline_rows": 128362,
+          "year": 2026,
+          "archival": false
+        },
+        {
+          "table": "fire_ems_incidents",
+          "url": "https://seshat.datasd.org/fire_ems_incidents/fd_incidents_2014_datasd.csv",
+          "baseline_path": "originals/fire_ems_incidents/fd_incidents_2014_datasd.csv",
+          "baseline_sha256": "b233e40a7787f1058550dd5b7ec1504f1eb22f5b5169bb886da37dd5216d3471",
+          "baseline_bytes": 18346265,
+          "baseline_rows": 135505,
+          "year": 2014,
+          "archival": false
+        },
+        {
+          "table": "fire_ems_incidents",
+          "url": "https://seshat.datasd.org/fire_ems_incidents/fd_incidents_2015_datasd.csv",
+          "baseline_path": "originals/fire_ems_incidents/fd_incidents_2015_datasd.csv",
+          "baseline_sha256": "ce6a1daf54f26feb67355bc04c65a297860dcce892b6a965480d62210ca2e31e",
+          "baseline_bytes": 19803744,
+          "baseline_rows": 146647,
+          "year": 2015,
+          "archival": false
+        },
+        {
+          "table": "fire_ems_incidents",
+          "url": "https://seshat.datasd.org/fire_ems_incidents/fd_incidents_2016_datasd.csv",
+          "baseline_path": "originals/fire_ems_incidents/fd_incidents_2016_datasd.csv",
+          "baseline_sha256": "bc3cb093ef1ad759995d9f1fcd9fc11edb4adbec8c6ce97c0b1f44ab75f51972",
+          "baseline_bytes": 21169601,
+          "baseline_rows": 154445,
+          "year": 2016,
+          "archival": false
+        },
+        {
+          "table": "fire_ems_incidents",
+          "url": "https://seshat.datasd.org/fire_ems_incidents/fd_incidents_2020_datasd.csv",
+          "baseline_path": "originals/fire_ems_incidents/fd_incidents_2020_datasd.csv",
+          "baseline_sha256": "810b260cc6c29f4a70b4cb25cc0dfaee3622d3ed755dfac1318734f9e5f13624",
+          "baseline_bytes": 21174151,
+          "baseline_rows": 154556,
+          "year": 2020,
+          "archival": false
+        },
+        {
+          "table": "fire_ems_incidents",
+          "url": "https://seshat.datasd.org/fire_ems_incidents/fd_incidents_2018_datasd.csv",
+          "baseline_path": "originals/fire_ems_incidents/fd_incidents_2018_datasd.csv",
+          "baseline_sha256": "fb5c4750bcdc247564e2d86de220652b8bf5af5c6a2ab7aac6b65472cc9a42b8",
+          "baseline_bytes": 21384958,
+          "baseline_rows": 156418,
+          "year": 2018,
+          "archival": false
+        },
+        {
+          "table": "fire_ems_incidents",
+          "url": "https://seshat.datasd.org/fire_ems_incidents/fd_incidents_2017_datasd.csv",
+          "baseline_path": "originals/fire_ems_incidents/fd_incidents_2017_datasd.csv",
+          "baseline_sha256": "b4d21f0fedf8ed3017370607ea7c6d2a34df20a6d42ff062fe7bf4a697611003",
+          "baseline_bytes": 21825546,
+          "baseline_rows": 159168,
+          "year": 2017,
+          "archival": false
+        },
+        {
+          "table": "fire_ems_incidents",
+          "url": "https://seshat.datasd.org/fire_ems_incidents/fd_incidents_2019_datasd.csv",
+          "baseline_path": "originals/fire_ems_incidents/fd_incidents_2019_datasd.csv",
+          "baseline_sha256": "6564eb9a639ca10f1eaf1ff2f8c3e4dac1ab5dc915f6d1fb2149048fb716d7b9",
+          "baseline_bytes": 22083010,
+          "baseline_rows": 160861,
+          "year": 2019,
+          "archival": false
+        },
+        {
+          "table": "fire_ems_incidents",
+          "url": "https://seshat.datasd.org/fire_ems_incidents/fd_incidents_2021_datasd.csv",
+          "baseline_path": "originals/fire_ems_incidents/fd_incidents_2021_datasd.csv",
+          "baseline_sha256": "bf4fda61532559131615f22857f5164e7241267b8df0deb4cc6397025658e30f",
+          "baseline_bytes": 25792680,
+          "baseline_rows": 171740,
+          "year": 2021,
+          "archival": false
+        },
+        {
+          "table": "fire_ems_incidents",
+          "url": "https://seshat.datasd.org/fire_ems_incidents/fd_incidents_2022_datasd.csv",
+          "baseline_path": "originals/fire_ems_incidents/fd_incidents_2022_datasd.csv",
+          "baseline_sha256": "96151381e806bc62cb748af4fe73584cae02e9c4ed3b27171cdabdbeb86c3eff",
+          "baseline_bytes": 25857446,
+          "baseline_rows": 179825,
+          "year": 2022,
+          "archival": false
+        },
+        {
+          "table": "fire_ems_incidents",
+          "url": "https://seshat.datasd.org/fire_ems_incidents/fd_incidents_2025_datasd.csv",
+          "baseline_path": "originals/fire_ems_incidents/fd_incidents_2025_datasd.csv",
+          "baseline_sha256": "56c44f674de3333819540364221737dd2c373d1f25e4dae72f26240198596c3c",
+          "baseline_bytes": 26374445,
+          "baseline_rows": 185920,
+          "year": 2025,
+          "archival": false
+        },
+        {
+          "table": "fire_ems_incidents",
+          "url": "https://seshat.datasd.org/fire_ems_incidents/fd_incidents_2023_datasd.csv",
+          "baseline_path": "originals/fire_ems_incidents/fd_incidents_2023_datasd.csv",
+          "baseline_sha256": "7638e913d891b013f3b93db8f046589631dfd31138e7eaf3ef6de6ae8477ea79",
+          "baseline_bytes": 26408840,
+          "baseline_rows": 182830,
+          "year": 2023,
+          "archival": false
+        },
+        {
+          "table": "fire_ems_incidents",
+          "url": "https://seshat.datasd.org/fire_ems_incidents/fd_incidents_2024_datasd.csv",
+          "baseline_path": "originals/fire_ems_incidents/fd_incidents_2024_datasd.csv",
+          "baseline_sha256": "790ad0a8212c9a6e6ecd7bb1af952e2781364824f9d46133ff606507d32c968b",
+          "baseline_bytes": 27091513,
+          "baseline_rows": 187484,
+          "year": 2024,
+          "archival": false
+        },
+        {
+          "table": "service_reports",
+          "url": "https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_open_datasd.csv",
+          "baseline_path": "originals/service_reports/get_it_done_requests_open_datasd.csv",
+          "baseline_sha256": "85d2de368356d0246915e4732e8642f1725cf7396f952209c9dde02e461b49d3",
+          "baseline_bytes": 31247476,
+          "baseline_rows": 85207,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "police_calls",
+          "url": "https://seshat.datasd.org/police_calls_for_service/pd_calls_for_service_2026_datasd.csv",
+          "baseline_path": "originals/police_calls/pd_calls_for_service_2026_datasd.csv",
+          "baseline_sha256": "22ac5a88f8d2c4c41faebb060b661a3ad2c32fb26586cc1b5bdbdaf36ca9c7bc",
+          "baseline_bytes": 34286482,
+          "baseline_rows": 371226,
+          "year": 2026,
+          "archival": false
+        },
+        {
+          "table": "police_calls",
+          "url": "https://seshat.datasd.org/police_calls_for_service/pd_calls_for_service_2025_datasd.csv",
+          "baseline_path": "originals/police_calls/pd_calls_for_service_2025_datasd.csv",
+          "baseline_sha256": "a7f23c9b41024b21cd9f8652077d83acb49bdc7e7d2bd2b24b93421c8f725deb",
+          "baseline_bytes": 42867794,
+          "baseline_rows": 466979,
+          "year": 2025,
+          "archival": false
+        },
+        {
+          "table": "police_calls",
+          "url": "https://seshat.datasd.org/police_calls_for_service/pd_calls_for_service_2023_datasd.csv",
+          "baseline_path": "originals/police_calls/pd_calls_for_service_2023_datasd.csv",
+          "baseline_sha256": "103e96927f7c8d813628392237a8a2ade3b81bc7dbf57b6bd2fc846419d321f3",
+          "baseline_bytes": 45272460,
+          "baseline_rows": 463554,
+          "year": 2023,
+          "archival": false
+        },
+        {
+          "table": "service_reports",
+          "url": "https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_closed_2017_datasd.csv",
+          "baseline_path": "originals/service_reports/get_it_done_requests_closed_2017_datasd.csv",
+          "baseline_sha256": "fbdef7e5479548b38ec6b9910c2e538a7d088454be5c7fe7dc327860d7625e0c",
+          "baseline_bytes": 47915714,
+          "baseline_rows": 139500,
+          "year": 2017,
+          "archival": false
+        },
+        {
+          "table": "police_calls",
+          "url": "https://seshat.datasd.org/police_calls_for_service/pd_calls_for_service_2022_datasd.csv",
+          "baseline_path": "originals/police_calls/pd_calls_for_service_2022_datasd.csv",
+          "baseline_sha256": "5b8528745c595b5d9ac9375a90985663da4be820187d1bd373aacd4163a40894",
+          "baseline_bytes": 48790869,
+          "baseline_rows": 499256,
+          "year": 2022,
+          "archival": false
+        },
+        {
+          "table": "police_calls",
+          "url": "https://seshat.datasd.org/police_calls_for_service/pd_calls_for_service_2020_datasd.csv",
+          "baseline_path": "originals/police_calls/pd_calls_for_service_2020_datasd.csv",
+          "baseline_sha256": "ae849ef8dc36b760cba8f73fced0b7e71150806d6e5181ab08cce6b3137a0bfa",
+          "baseline_bytes": 55430216,
+          "baseline_rows": 567290,
+          "year": 2020,
+          "archival": false
+        },
+        {
+          "table": "police_calls",
+          "url": "https://seshat.datasd.org/police_calls_for_service/pd_calls_for_service_2021_datasd.csv",
+          "baseline_path": "originals/police_calls/pd_calls_for_service_2021_datasd.csv",
+          "baseline_sha256": "261f1f90f8832bf70f4ae2d9e6f9c44b76ce97f6d091960d324003cd964f128d",
+          "baseline_bytes": 55608781,
+          "baseline_rows": 568947,
+          "year": 2021,
+          "archival": false
+        },
+        {
+          "table": "police_calls",
+          "url": "https://seshat.datasd.org/police_calls_for_service/pd_calls_for_service_2018_datasd.csv",
+          "baseline_path": "originals/police_calls/pd_calls_for_service_2018_datasd.csv",
+          "baseline_sha256": "78362ea039bfdbd8cbdb460a4c1d1f2476fc2d38721973f6c1d32f9ac50a68cf",
+          "baseline_bytes": 55753123,
+          "baseline_rows": 570459,
+          "year": 2018,
+          "archival": false
+        },
+        {
+          "table": "police_calls",
+          "url": "https://seshat.datasd.org/police_calls_for_service/pd_calls_for_service_2016_datasd.csv",
+          "baseline_path": "originals/police_calls/pd_calls_for_service_2016_datasd.csv",
+          "baseline_sha256": "c024a6a97559098741b2351b03b89cce5ba6099aa818020ec792f60fef35257a",
+          "baseline_bytes": 57459437,
+          "baseline_rows": 586703,
+          "year": 2016,
+          "archival": false
+        },
+        {
+          "table": "police_calls",
+          "url": "https://seshat.datasd.org/police_calls_for_service/pd_calls_for_service_2017_datasd.csv",
+          "baseline_path": "originals/police_calls/pd_calls_for_service_2017_datasd.csv",
+          "baseline_sha256": "4f4b53e6169974bacb6165eedc0007269f9b07e2b16835859080b3408f2d6292",
+          "baseline_bytes": 57589110,
+          "baseline_rows": 580577,
+          "year": 2017,
+          "archival": false
+        },
+        {
+          "table": "police_calls",
+          "url": "https://seshat.datasd.org/police_calls_for_service/pd_calls_for_service_2019_datasd.csv",
+          "baseline_path": "originals/police_calls/pd_calls_for_service_2019_datasd.csv",
+          "baseline_sha256": "c5392edb0ca50d867eef34468f28fa3ce083fcb43d2e5ad0fdcc8f815df9f13a",
+          "baseline_bytes": 57744218,
+          "baseline_rows": 590967,
+          "year": 2019,
+          "archival": false
+        },
+        {
+          "table": "service_reports",
+          "url": "https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_closed_2018_datasd.csv",
+          "baseline_path": "originals/service_reports/get_it_done_requests_closed_2018_datasd.csv",
+          "baseline_sha256": "83b52e475645ebb26e8ce935e30f9761b0bbc1be8d50cd8f56b8500e173c8844",
+          "baseline_bytes": 59189660,
+          "baseline_rows": 169603,
+          "year": 2018,
+          "archival": false
+        },
+        {
+          "table": "police_calls",
+          "url": "https://seshat.datasd.org/police_calls_for_service/pd_calls_for_service_2015_datasd.csv",
+          "baseline_path": "originals/police_calls/pd_calls_for_service_2015_datasd.csv",
+          "baseline_sha256": "4aa2f51dca14a771bf2796b046d99f9691759c4c4efac96874365d0ddbc412fd",
+          "baseline_bytes": 61746839,
+          "baseline_rows": 608434,
+          "year": 2015,
+          "archival": false
+        },
+        {
+          "table": "police_calls",
+          "url": "https://seshat.datasd.org/police_calls_for_service/pd_calls_for_service_2024_datasd.csv",
+          "baseline_path": "originals/police_calls/pd_calls_for_service_2024_datasd.csv",
+          "baseline_sha256": "71c81beaa14a34c4eb96ed4c2ee2d643ab790afa65e4fa859fef1d10d5ef3a95",
+          "baseline_bytes": 89243319,
+          "baseline_rows": 970649,
+          "year": 2024,
+          "archival": false
+        },
+        {
+          "table": "service_reports",
+          "url": "https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_closed_2020_datasd.csv",
+          "baseline_path": "originals/service_reports/get_it_done_requests_closed_2020_datasd.csv",
+          "baseline_sha256": "567ab3c6586800284134e938bee237dc59c27cae61bd2719f9dad8505a4b9b28",
+          "baseline_bytes": 92007073,
+          "baseline_rows": 280071,
+          "year": 2020,
+          "archival": false
+        },
+        {
+          "table": "service_reports",
+          "url": "https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_closed_2019_datasd.csv",
+          "baseline_path": "originals/service_reports/get_it_done_requests_closed_2019_datasd.csv",
+          "baseline_sha256": "cf69b35ce3ae0cba835cceb06e519d6b8d5e559b38acc62039b558ebd149de69",
+          "baseline_bytes": 98985809,
+          "baseline_rows": 302699,
+          "year": 2019,
+          "archival": false
+        },
+        {
+          "table": "service_reports",
+          "url": "https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_closed_2022_datasd.csv",
+          "baseline_path": "originals/service_reports/get_it_done_requests_closed_2022_datasd.csv",
+          "baseline_sha256": "6e0bf9cb84c03d50624460307f11e5d08a449e23c47775f4394eac4d505a877f",
+          "baseline_bytes": 108469255,
+          "baseline_rows": 349233,
+          "year": 2022,
+          "archival": false
+        },
+        {
+          "table": "service_reports",
+          "url": "https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_closed_2026_datasd.csv",
+          "baseline_path": "originals/service_reports/get_it_done_requests_closed_2026_datasd.csv",
+          "baseline_sha256": "ffe0a6f31c2c9432a54528c84301e36d18672a42c83dc748f89cf2505efaf055",
+          "baseline_bytes": 109774831,
+          "baseline_rows": 321842,
+          "year": 2026,
+          "archival": false
+        },
+        {
+          "table": "service_reports",
+          "url": "https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_closed_2021_datasd.csv",
+          "baseline_path": "originals/service_reports/get_it_done_requests_closed_2021_datasd.csv",
+          "baseline_sha256": "3723565cdab985303a32ae5200f449ea5247dca803a216cd8e781d8c3f27cac4",
+          "baseline_bytes": 112984710,
+          "baseline_rows": 359886,
+          "year": 2021,
+          "archival": false
+        },
+        {
+          "table": "service_reports",
+          "url": "https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_closed_2025_datasd.csv",
+          "baseline_path": "originals/service_reports/get_it_done_requests_closed_2025_datasd.csv",
+          "baseline_sha256": "b9994d669db6cb47c2cdf8fd4a3010059b916a0bae2c2841102101f84b7688d9",
+          "baseline_bytes": 128229965,
+          "baseline_rows": 378669,
+          "year": 2025,
+          "archival": false
+        },
+        {
+          "table": "service_reports",
+          "url": "https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_closed_2023_datasd.csv",
+          "baseline_path": "originals/service_reports/get_it_done_requests_closed_2023_datasd.csv",
+          "baseline_sha256": "e5bf8713da311e6242058f5157fa0d62d58caaef16f02cff4f3c1da7bb729689",
+          "baseline_bytes": 131998760,
+          "baseline_rows": 432428,
+          "year": 2023,
+          "archival": false
+        },
+        {
+          "table": "service_reports",
+          "url": "https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_closed_2024_datasd.csv",
+          "baseline_path": "originals/service_reports/get_it_done_requests_closed_2024_datasd.csv",
+          "baseline_sha256": "19ee8a3bee5ecf9c8e60a6110fdfd86848259d94d5869b3a8f136740f6a3d69f",
+          "baseline_bytes": 135976733,
+          "baseline_rows": 429924,
+          "year": 2024,
+          "archival": false
+        }
+      ]
+    },
+    {
+      "repo": "Writerslogic/onrecord-san-diego-enforcement",
+      "baseline_commit": "277569fbf8f495f5e2d19a99717d5398e8b3998e",
+      "baseline_manifest": "baselines/onrecord-san-diego-enforcement-manifest.json",
+      "sources": [
+        {
+          "table": "hate_crimes",
+          "url": "https://seshat.datasd.org/hate_crimes/hate_crimes_datasd.csv",
+          "baseline_path": "originals/hate_crimes/hate_crimes_datasd.csv",
+          "baseline_sha256": "110922162aeaaf3654ee0017d97dcf53e67c46eae2b7eb5f99481f80490c1373",
+          "baseline_bytes": 14600,
+          "baseline_rows": 54,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "police_stop_seizure_basis",
+          "url": "https://seshat.datasd.org/police_ripa_prop_seize_basis/ripa_prop_seize_basis_datasd.csv",
+          "baseline_path": "originals/police_stop_seizure_basis/ripa_prop_seize_basis_datasd.csv",
+          "baseline_sha256": "a04fe701fd35e7ad4bcfcf534aecaf98855b883c1f73e993968ab5c2d401dca3",
+          "baseline_bytes": 592199,
+          "baseline_rows": 9942,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2026_part2_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2026_part2_datasd.csv",
+          "baseline_sha256": "5a6c820658a4b03a99fab4fc504cc8e1a5118e088ae7769895e5f385838940ee",
+          "baseline_bytes": 6507324,
+          "baseline_rows": 50953,
+          "year": 2026,
+          "archival": false
+        },
+        {
+          "table": "traffic_collisions",
+          "url": "https://seshat.datasd.org/traffic_collisions/pd_collisions_datasd.csv",
+          "baseline_path": "originals/traffic_collisions/pd_collisions_datasd.csv",
+          "baseline_sha256": "afe64a485ddf61f669f04548042d5d4a86f953f6646d03e81794309d4816d0ce",
+          "baseline_bytes": 12256796,
+          "baseline_rows": 78012,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2020_part1_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2020_part1_datasd.csv",
+          "baseline_sha256": "52472ba6c83de0aa1ab17ce61dff9bade8d75abbcb16d9690ad1aa3838ecb925",
+          "baseline_bytes": 15773303,
+          "baseline_rows": 115964,
+          "year": 2020,
+          "archival": false
+        },
+        {
+          "table": "police_offenses",
+          "url": "https://seshat.datasd.org/police_nibrs/pd_nibrs_2026_datasd.csv",
+          "baseline_path": "originals/police_offenses/pd_nibrs_2026_datasd.csv",
+          "baseline_sha256": "de0e8a202d97278b51e6e8c132eae38130c66915fb3f596cb1b2e6f788cbeffb",
+          "baseline_bytes": 23062332,
+          "baseline_rows": 59662,
+          "year": 2026,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2012_part1_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2012_part1_datasd.csv",
+          "baseline_sha256": "895a0ff0166bbe76e6157cfba763ac0da267a5367e440c2e79a417b91414686a",
+          "baseline_bytes": 24475446,
+          "baseline_rows": 179348,
+          "year": 2012,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2020_part2_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2020_part2_datasd.csv",
+          "baseline_sha256": "bf08b7afa3f0089f1c837dc85a5fd9a95c60692259fe03d89341415df5db086a",
+          "baseline_bytes": 27467505,
+          "baseline_rows": 200306,
+          "year": 2020,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2013_part1_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2013_part1_datasd.csv",
+          "baseline_sha256": "1d66350d703b74719f19065158a77b19feaf85e8f80762140ed5be172bc5a778",
+          "baseline_bytes": 27783331,
+          "baseline_rows": 203441,
+          "year": 2013,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2012_part2_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2012_part2_datasd.csv",
+          "baseline_sha256": "d4c4b39efc15c838eec04ba88d427f834218b6de0a69c8b745e45244f9f5005c",
+          "baseline_bytes": 28234778,
+          "baseline_rows": 206836,
+          "year": 2012,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2024_part1_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2024_part1_datasd.csv",
+          "baseline_sha256": "dd812714471931cd131678b51c13c913eaa179497dc017a0f7ff29bf2ebb069d",
+          "baseline_bytes": 28489500,
+          "baseline_rows": 227381,
+          "year": 2024,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2023_part1_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2023_part1_datasd.csv",
+          "baseline_sha256": "c7fa12579a34176d032b7af6992825d973a61c5a9e5a19f7fcc6a22cb66d0512",
+          "baseline_bytes": 28836850,
+          "baseline_rows": 230249,
+          "year": 2023,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2015_part1_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2015_part1_datasd.csv",
+          "baseline_sha256": "7cf06f4c313422f609d4eb068c480a60560418316b78589287b6f3240ca3c2a0",
+          "baseline_bytes": 29402241,
+          "baseline_rows": 214191,
+          "year": 2015,
+          "archival": false
+        },
+        {
+          "table": "police_offenses",
+          "url": "https://seshat.datasd.org/police_nibrs/pd_nibrs_2025_datasd.csv",
+          "baseline_path": "originals/police_offenses/pd_nibrs_2025_datasd.csv",
+          "baseline_sha256": "e8deefd749b1439488d56c58e74ea1a76bb19825f8dc782b18a8cf4be55bd20e",
+          "baseline_bytes": 30135459,
+          "baseline_rows": 77872,
+          "year": 2025,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2014_part1_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2014_part1_datasd.csv",
+          "baseline_sha256": "ada0a89aef12e4af4164dc03026ba14c6775652a95669a5f87ed025da9b15625",
+          "baseline_bytes": 30450409,
+          "baseline_rows": 220670,
+          "year": 2014,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2022_part2_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2022_part2_datasd.csv",
+          "baseline_sha256": "48f5e114953ec105d14fcd27b632a47425c0fc99d9a2958c519873313dd67ae9",
+          "baseline_bytes": 30680011,
+          "baseline_rows": 238345,
+          "year": 2022,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2023_part2_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2023_part2_datasd.csv",
+          "baseline_sha256": "8a401492e8a72bc95c3078d6a43b54626a30a412ab8d3021793e81cff405cf95",
+          "baseline_bytes": 31062880,
+          "baseline_rows": 246163,
+          "year": 2023,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2025_part2_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2025_part2_datasd.csv",
+          "baseline_sha256": "adfe0e824381ad69fe668df1bca5c5652bfaac38a7c983af7131ef50e0fde4c8",
+          "baseline_bytes": 31090394,
+          "baseline_rows": 245403,
+          "year": 2025,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2014_part2_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2014_part2_datasd.csv",
+          "baseline_sha256": "98db6089316103fcf78d1b82a817dac55107e9a386daa8b658583c4416b442b9",
+          "baseline_bytes": 31142078,
+          "baseline_rows": 225911,
+          "year": 2014,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2025_part1_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2025_part1_datasd.csv",
+          "baseline_sha256": "9392ac62a4b1c90d4eb7d3bd7adad5c36f7acda8c683ed33e4c70ccddd179218",
+          "baseline_bytes": 31244751,
+          "baseline_rows": 248873,
+          "year": 2025,
+          "archival": false
+        },
+        {
+          "table": "police_offenses",
+          "url": "https://seshat.datasd.org/police_nibrs/pd_nibrs_2023_datasd.csv",
+          "baseline_path": "originals/police_offenses/pd_nibrs_2023_datasd.csv",
+          "baseline_sha256": "ee0e06e1545720f7651332af3552fcf6b7b8c9e6698631ef15acaa27393ed75f",
+          "baseline_bytes": 31440513,
+          "baseline_rows": 79840,
+          "year": 2023,
+          "archival": false
+        },
+        {
+          "table": "police_offenses",
+          "url": "https://seshat.datasd.org/police_nibrs/pd_nibrs_2024_datasd.csv",
+          "baseline_path": "originals/police_offenses/pd_nibrs_2024_datasd.csv",
+          "baseline_sha256": "fac006ef4161ebeabadb25b889f65bd76680e56e97cc8cf661b45555af3789aa",
+          "baseline_bytes": 31496096,
+          "baseline_rows": 80673,
+          "year": 2024,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2024_part2_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2024_part2_datasd.csv",
+          "baseline_sha256": "4f07436079bca9328a55d0708a9896f535be678b65dda763f568cdfd4baf7a85",
+          "baseline_bytes": 31538379,
+          "baseline_rows": 248257,
+          "year": 2024,
+          "archival": false
+        },
+        {
+          "table": "police_offenses",
+          "url": "https://seshat.datasd.org/police_nibrs/pd_nibrs_2022_datasd.csv",
+          "baseline_path": "originals/police_offenses/pd_nibrs_2022_datasd.csv",
+          "baseline_sha256": "75264714d0fc2a24b17b0132c6c86630edb8e12d7532d2b8222e9b0496444bb2",
+          "baseline_bytes": 32064057,
+          "baseline_rows": 81408,
+          "year": 2022,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2013_part2_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2013_part2_datasd.csv",
+          "baseline_sha256": "8122c9914950eeba273f0859312ab987cbd65200d9037766224d3bc75459cd22",
+          "baseline_bytes": 32723187,
+          "baseline_rows": 238356,
+          "year": 2013,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2019_part1_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2019_part1_datasd.csv",
+          "baseline_sha256": "f884160756e8cb6654ff9b4e6a6277ec70a96ce51299c626c28f1abc7944efc1",
+          "baseline_bytes": 32733885,
+          "baseline_rows": 239562,
+          "year": 2019,
+          "archival": false
+        },
+        {
+          "table": "police_offenses",
+          "url": "https://seshat.datasd.org/police_nibrs/pd_nibrs_2020_datasd.csv",
+          "baseline_path": "originals/police_offenses/pd_nibrs_2020_datasd.csv",
+          "baseline_sha256": "5dda938df290b495c9dee3692802bc91d931bca110473cab188f88e5233d7b3d",
+          "baseline_bytes": 33753249,
+          "baseline_rows": 86056,
+          "year": 2020,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2018_part2_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2018_part2_datasd.csv",
+          "baseline_sha256": "964117d250b0a291512e775c85877acd1a440da63c677ee69a80254aa95d202c",
+          "baseline_bytes": 33868244,
+          "baseline_rows": 246206,
+          "year": 2018,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2021_part1_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2021_part1_datasd.csv",
+          "baseline_sha256": "b16b08cc58e7e133743d946c656093c40d57c875b7a72d0fcd64540377646848",
+          "baseline_bytes": 33891281,
+          "baseline_rows": 251231,
+          "year": 2021,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2016_part1_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2016_part1_datasd.csv",
+          "baseline_sha256": "3797d548cd2ab38eebc19fb50ccf6302de029e81a2aad04c4b05397fd730f718",
+          "baseline_bytes": 34084823,
+          "baseline_rows": 248069,
+          "year": 2016,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2018_part1_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2018_part1_datasd.csv",
+          "baseline_sha256": "04acce364d60d3bd392695988c767418b49249f68c88ed018776307cddea5f45",
+          "baseline_bytes": 34129860,
+          "baseline_rows": 248544,
+          "year": 2018,
+          "archival": false
+        },
+        {
+          "table": "police_offenses",
+          "url": "https://seshat.datasd.org/police_nibrs/pd_nibrs_2021_datasd.csv",
+          "baseline_path": "originals/police_offenses/pd_nibrs_2021_datasd.csv",
+          "baseline_sha256": "7845c91988d3548afe63b42abd7309db54160e7175da5c209f080d65f8782cfb",
+          "baseline_bytes": 34238985,
+          "baseline_rows": 86783,
+          "year": 2021,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2021_part2_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2021_part2_datasd.csv",
+          "baseline_sha256": "6eff3766cc0e362f332f317de048b93242bcf6a8fdb325741d0ea4e874f81154",
+          "baseline_bytes": 34242010,
+          "baseline_rows": 264858,
+          "year": 2021,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2017_part1_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2017_part1_datasd.csv",
+          "baseline_sha256": "bef32361ac1c0e76b3c5375a0f15115b367bc457c6bb72e499b7aa61cbf89ed9",
+          "baseline_bytes": 34679512,
+          "baseline_rows": 251546,
+          "year": 2017,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2019_part2_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2019_part2_datasd.csv",
+          "baseline_sha256": "27bb5e53f08df51734046a5eec342545b394d74fe55fc0333ce0520bcf8f28f6",
+          "baseline_bytes": 34778700,
+          "baseline_rows": 253086,
+          "year": 2019,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2022_part1_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2022_part1_datasd.csv",
+          "baseline_sha256": "1f027b7c391ae3c0eb57ad852554bef0dccdcfb360ce3bd0740b82d63bd81061",
+          "baseline_bytes": 34950580,
+          "baseline_rows": 271174,
+          "year": 2022,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2017_part2_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2017_part2_datasd.csv",
+          "baseline_sha256": "295eba655f013ff8a789ba32d5a8b9f14b84bb385405dfaceb46d6ce49bc3ad8",
+          "baseline_bytes": 35085220,
+          "baseline_rows": 254692,
+          "year": 2017,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2026_part1_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2026_part1_datasd.csv",
+          "baseline_sha256": "c56f17900eda033af00c9d44eb76a17c49253dd8d33d38d4004cc1f7eab73103",
+          "baseline_bytes": 35137154,
+          "baseline_rows": 278076,
+          "year": 2026,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2016_part2_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2016_part2_datasd.csv",
+          "baseline_sha256": "d33cc649f68a27b658cad27a84016e51d9eecd54b46fd6fde9ce510e33c8b5e5",
+          "baseline_bytes": 35207249,
+          "baseline_rows": 254947,
+          "year": 2016,
+          "archival": false
+        },
+        {
+          "table": "traffic_collision_people",
+          "url": "https://seshat.datasd.org/traffic_collision_details/pd_collisions_details_datasd.csv",
+          "baseline_path": "originals/traffic_collision_people/pd_collisions_details_datasd.csv",
+          "baseline_sha256": "181d3b1da9c771e82489bd236e60efcae2a4eed02e35ad9dddbc17a5c6484db1",
+          "baseline_bytes": 35302005,
+          "baseline_rows": 164770,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "parking_citations",
+          "url": "https://seshat.datasd.org/parking_citations/parking_citations_2015_part2_datasd.csv",
+          "baseline_path": "originals/parking_citations/parking_citations_2015_part2_datasd.csv",
+          "baseline_sha256": "89abaa4fb6cfb07d54c2d114b11ce7fabcb072fc3e23e7b85e31a71aca7e5e21",
+          "baseline_bytes": 35399909,
+          "baseline_rows": 255456,
+          "year": 2015,
+          "archival": false
+        },
+        {
+          "table": "police_stop_results",
+          "url": "https://seshat.datasd.org/police_ripa_stop_result/ripa_stop_result_datasd.csv",
+          "baseline_path": "originals/police_stop_results/ripa_stop_result_datasd.csv",
+          "baseline_sha256": "cfec190c8ca49fcc850ae496072c0e0ab44f7edda0a974f169bc6ff8d74da4fa",
+          "baseline_bytes": 35681625,
+          "baseline_rows": 293282,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "police_stop_reasons",
+          "url": "https://seshat.datasd.org/police_ripa_stop_reason/ripa_stop_reason_datasd.csv",
+          "baseline_path": "originals/police_stop_reasons/ripa_stop_reason_datasd.csv",
+          "baseline_sha256": "3652298995db846f488c589ca5565b7331b69d70b7fccb7c6eb199e91a670819",
+          "baseline_bytes": 49791643,
+          "baseline_rows": 275545,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "police_stops",
+          "url": "https://seshat.datasd.org/police_ripa_stops/ripa_stops_datasd.csv",
+          "baseline_path": "originals/police_stops/ripa_stops_datasd.csv",
+          "baseline_sha256": "29af0068d7507814aa6908a8693fd237e72f2bd97a8d9bc148c2908d8b056786",
+          "baseline_bytes": 77280407,
+          "baseline_rows": 264629,
+          "year": null,
+          "archival": false
+        }
+      ]
+    },
+    {
+      "repo": "Writerslogic/onrecord-san-diego-snapshots",
+      "baseline_commit": "5b0365d21f1da45f513621bfb62847a235b0907b",
+      "baseline_manifest": "baselines/onrecord-san-diego-snapshots-manifest.json",
+      "sources": [
+        {
+          "table": "call_dispositions",
+          "url": "https://seshat.datasd.org/police_calls_for_service/pd_dispo_codes_datasd.csv",
+          "baseline_path": "originals/call_dispositions/2026-10-08T044732Z/pd_dispo_codes_datasd.csv",
+          "baseline_sha256": "c814ba49fd2e62c0e347b37548d04d8625dbba8e89ff855c0cf204b7f1a9bd6e",
+          "baseline_bytes": 635,
+          "baseline_rows": 18,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "police_beats",
+          "url": "https://seshat.datasd.org/gis_police_beats/pd_beat_codes_list_datasd.csv",
+          "baseline_path": "originals/police_beats/2026-10-08T044733Z/pd_beat_codes_list_datasd.csv",
+          "baseline_sha256": "53071e03cd8eb79e187561e72ca8970d1d762934121bd4db3e21a104ead1b961",
+          "baseline_bytes": 2259,
+          "baseline_rows": 125,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "call_types",
+          "url": "https://seshat.datasd.org/police_calls_for_service/pd_cfs_calltypes_datasd.csv",
+          "baseline_path": "originals/call_types/2026-10-08T044732Z/pd_cfs_calltypes_datasd.csv",
+          "baseline_sha256": "5ae6fea42ba88c6ff1c2f096e6143c95b99321050e565abcb1ac97a3e6d7a51c",
+          "baseline_bytes": 9063,
+          "baseline_rows": 289,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "hate_crimes",
+          "url": "https://seshat.datasd.org/hate_crimes/hate_crimes_datasd.csv",
+          "baseline_path": "originals/hate_crimes/2026-10-08T044757Z/hate_crimes_datasd.csv",
+          "baseline_sha256": "110922162aeaaf3654ee0017d97dcf53e67c46eae2b7eb5f99481f80490c1373",
+          "baseline_bytes": 14600,
+          "baseline_rows": 54,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "budget_funds",
+          "url": "https://seshat.datasd.org/funds_city_budget/budget_reference_funds_datasd.csv",
+          "baseline_path": "originals/budget_funds/2026-10-08T044711Z/budget_reference_funds_datasd.csv",
+          "baseline_sha256": "9ff7cb4f02c5676960b39813a0d644eb3365de5180765d5adf3f7ca5badb4dce",
+          "baseline_bytes": 38081,
+          "baseline_rows": 583,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "city_parcels",
+          "url": "https://seshat.datasd.org/city_owned_properties_parcels/city_property_parcels_datasd.csv",
+          "baseline_path": "originals/city_parcels/2026-10-08T044712Z/city_property_parcels_datasd.csv",
+          "baseline_sha256": "d2151cfc77f00139c7f8f47711a45323165e0f6bba413217c0493f1e2e1af7a1",
+          "baseline_bytes": 92153,
+          "baseline_rows": 4187,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "city_leases",
+          "url": "https://seshat.datasd.org/city_owned_properties_leases/city_property_leases_datasd.csv",
+          "baseline_path": "originals/city_leases/2026-10-08T044713Z/city_property_leases_datasd.csv",
+          "baseline_sha256": "bfce469fb06248d822ea3037a93da6705de2cb34ae74d97fa7b728c5c8cb982c",
+          "baseline_bytes": 154615,
+          "baseline_rows": 811,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "budget_accounts",
+          "url": "https://seshat.datasd.org/accounts_city_budget/budget_reference_accounts_datasd.csv",
+          "baseline_path": "originals/budget_accounts/2026-10-08T044709Z/budget_reference_accounts_datasd.csv",
+          "baseline_sha256": "6a66ca1c680a11fbd3337beeafb4851cc9f3fc73e5a875108d1b5512d7204828",
+          "baseline_bytes": 194159,
+          "baseline_rows": 1833,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "capital_budget",
+          "url": "https://seshat.datasd.org/cip_fy_budget/budget_capital_fy_datasd.csv",
+          "baseline_path": "originals/capital_budget/2026-10-08T044702Z/budget_capital_fy_datasd.csv",
+          "baseline_sha256": "1874377ce0c49bb0127b3ce41809a1f98752dc07ec0589ac3276147d04e25d61",
+          "baseline_bytes": 327298,
+          "baseline_rows": 2193,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "budget_departments",
+          "url": "https://seshat.datasd.org/departments_city_budget/budget_reference_depts_datasd.csv",
+          "baseline_path": "originals/budget_departments/2026-10-08T044710Z/budget_reference_depts_datasd.csv",
+          "baseline_sha256": "fa3bfecc363f23cf7380484778b687f34641b9df76e91a0e467affcf12fe04d6",
+          "baseline_bytes": 353307,
+          "baseline_rows": 2800,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "police_stop_seizure_basis",
+          "url": "https://seshat.datasd.org/police_ripa_prop_seize_basis/ripa_prop_seize_basis_datasd.csv",
+          "baseline_path": "originals/police_stop_seizure_basis/2026-10-08T044750Z/ripa_prop_seize_basis_datasd.csv",
+          "baseline_sha256": "a04fe701fd35e7ad4bcfcf534aecaf98855b883c1f73e993968ab5c2d401dca3",
+          "baseline_bytes": 592199,
+          "baseline_rows": 9942,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "city_properties",
+          "url": "https://seshat.datasd.org/city_owned_properties/city_property_details_datasd.csv",
+          "baseline_path": "originals/city_properties/2026-10-08T044711Z/city_property_details_datasd.csv",
+          "baseline_sha256": "04406ed5607561d0398d879ee13299d47e8c4c3c3540bc4bea0e89e4909b354c",
+          "baseline_bytes": 882528,
+          "baseline_rows": 4095,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "traffic_collisions",
+          "url": "https://seshat.datasd.org/traffic_collisions/pd_collisions_datasd.csv",
+          "baseline_path": "originals/traffic_collisions/2026-10-08T044751Z/pd_collisions_datasd.csv",
+          "baseline_sha256": "ad62a66a7c25d15ede4707ee302b2026a771b9001ed258efbb07997d7afef440",
+          "baseline_bytes": 12260068,
+          "baseline_rows": 78033,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "service_reports",
+          "url": "https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_open_datasd.csv",
+          "baseline_path": "originals/service_reports/2026-10-08T044713Z/get_it_done_requests_open_datasd.csv",
+          "baseline_sha256": "85d2de368356d0246915e4732e8642f1725cf7396f952209c9dde02e461b49d3",
+          "baseline_bytes": 31247476,
+          "baseline_rows": 85207,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "traffic_collision_people",
+          "url": "https://seshat.datasd.org/traffic_collision_details/pd_collisions_details_datasd.csv",
+          "baseline_path": "originals/traffic_collision_people/2026-10-08T044753Z/pd_collisions_details_datasd.csv",
+          "baseline_sha256": "329819aeb8b1d18db028bccc0ca34b0b072990078f63887e3434ff66f500b4de",
+          "baseline_bytes": 35312011,
+          "baseline_rows": 164816,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "police_stop_results",
+          "url": "https://seshat.datasd.org/police_ripa_stop_result/ripa_stop_result_datasd.csv",
+          "baseline_path": "originals/police_stop_results/2026-10-08T044746Z/ripa_stop_result_datasd.csv",
+          "baseline_sha256": "cfec190c8ca49fcc850ae496072c0e0ab44f7edda0a974f169bc6ff8d74da4fa",
+          "baseline_bytes": 35681625,
+          "baseline_rows": 293282,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "police_stop_reasons",
+          "url": "https://seshat.datasd.org/police_ripa_stop_reason/ripa_stop_reason_datasd.csv",
+          "baseline_path": "originals/police_stop_reasons/2026-10-08T044741Z/ripa_stop_reason_datasd.csv",
+          "baseline_sha256": "3652298995db846f488c589ca5565b7331b69d70b7fccb7c6eb199e91a670819",
+          "baseline_bytes": 49791643,
+          "baseline_rows": 275545,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "budget_adopted",
+          "url": "https://seshat.datasd.org/operating_budget/budget_operating_datasd.csv",
+          "baseline_path": "originals/budget_adopted/2026-10-08T044643Z/budget_operating_datasd.csv",
+          "baseline_sha256": "4ad8a734cb351a7ccae7939ea9c8076cf7e30a4d4f2a8c10f45852cb042c5fe5",
+          "baseline_bytes": 63825383,
+          "baseline_rows": 548811,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "capital_actuals",
+          "url": "https://seshat.datasd.org/cip_fy_actuals/actuals_capital_fy_datasd.csv",
+          "baseline_path": "originals/capital_actuals/2026-10-08T044703Z/actuals_capital_fy_datasd.csv",
+          "baseline_sha256": "872c99403fad3d6f8dc92018ea0da1afb66d36094f397b8c681d5842bb18afe2",
+          "baseline_bytes": 66116235,
+          "baseline_rows": 469677,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "budget_actuals",
+          "url": "https://seshat.datasd.org/operating_actuals/actuals_operating_datasd.csv",
+          "baseline_path": "originals/budget_actuals/2026-10-08T044654Z/actuals_operating_datasd.csv",
+          "baseline_sha256": "53cfc7488c40c2d3b654c64ba8599bc11a4086fa5efe403371c38eff78dd2143",
+          "baseline_bytes": 69104357,
+          "baseline_rows": 663858,
+          "year": null,
+          "archival": false
+        },
+        {
+          "table": "police_stops",
+          "url": "https://seshat.datasd.org/police_ripa_stops/ripa_stops_datasd.csv",
+          "baseline_path": "originals/police_stops/2026-10-08T044733Z/ripa_stops_datasd.csv",
+          "baseline_sha256": "29af0068d7507814aa6908a8693fd237e72f2bd97a8d9bc148c2908d8b056786",
+          "baseline_bytes": 77280407,
+          "baseline_rows": 264629,
+          "year": null,
+          "archival": false
+        }
+      ]
+    },
+    {
+      "repo": "Writerslogic/onrecord-san-diego-wayback",
+      "baseline_commit": "615a857ed7405560e7d4b1da3756933a99253c4c",
+      "baseline_manifest": "baselines/onrecord-san-diego-wayback-manifest.json",
+      "sources": [
+        {
+          "table": "archived_city_parcels",
+          "url": "https://web.archive.org/web/20161103063507id_/http://data.sandiego.gov:80/sites/default/files/city_property_parcels_datasd_1.csv",
+          "baseline_path": "originals/archived_city_parcels/2016-11-03T063507Z/city_property_parcels_datasd_1.csv",
+          "baseline_sha256": "33eb81b11dae1a9fa04aee93316cc4cee9ae543f030ec943a962167d2735e356",
+          "baseline_bytes": 73171,
+          "baseline_rows": 4065,
+          "year": null,
+          "archival": true
+        },
+        {
+          "table": "archived_city_parcels",
+          "url": "https://web.archive.org/web/20161227000627id_/http://data.sandiego.gov/sites/default/files/city_property_parcels_datasd_0.csv",
+          "baseline_path": "originals/archived_city_parcels/2016-12-27T000627Z/city_property_parcels_datasd_0.csv",
+          "baseline_sha256": "629fba3cd6ddb2f47b77e4757a7effd432393e9a57bbf3e5058d865843b0e443",
+          "baseline_bytes": 73205,
+          "baseline_rows": 4067,
+          "year": null,
+          "archival": true
+        },
+        {
+          "table": "archived_city_parcels",
+          "url": "https://web.archive.org/web/20170125201459id_/http://data.sandiego.gov/sites/default/files/city_property_parcels_datasd.csv",
+          "baseline_path": "originals/archived_city_parcels/2017-01-25T201459Z/city_property_parcels_datasd.csv",
+          "baseline_sha256": "dc98e09375f5da877780a27c75eaa4950a6c5aa8f6956ee37ecfaec92a2d318a",
+          "baseline_bytes": 77174,
+          "baseline_rows": 4062,
+          "year": null,
+          "archival": true
+        },
+        {
+          "table": "archived_city_parcels",
+          "url": "https://web.archive.org/web/20251208071038id_/https://seshat.datasd.org/city_owned_properties_parcels/city_property_parcels_datasd.csv",
+          "baseline_path": "originals/archived_city_parcels/2025-12-08T071038Z/city_property_parcels_datasd.csv",
+          "baseline_sha256": "6f3883135639ab3392076f86dcbd14be6386214bc0727777d80801595a505395",
+          "baseline_bytes": 92221,
+          "baseline_rows": 4193,
+          "year": null,
+          "archival": true
+        },
+        {
+          "table": "archived_city_leases",
+          "url": "https://web.archive.org/web/20161227000535id_/http://data.sandiego.gov/sites/default/files/city_property_leases_datasd_1.csv",
+          "baseline_path": "originals/archived_city_leases/2016-12-27T000535Z/city_property_leases_datasd_1.csv",
+          "baseline_sha256": "7f7749d07a1367d40ef3f33fec28dc7b96038cc175144fd06f2cc7723d257fad",
+          "baseline_bytes": 98010,
+          "baseline_rows": 591,
+          "year": null,
+          "archival": true
+        },
+        {
+          "table": "archived_city_leases",
+          "url": "https://web.archive.org/web/20170125041443id_/http://data.sandiego.gov/sites/default/files/city_property_leases_datasd_0.csv",
+          "baseline_path": "originals/archived_city_leases/2017-01-25T041443Z/city_property_leases_datasd_0.csv",
+          "baseline_sha256": "7343224519c7e6e6012aabdf59bf3800ab38d2cd726f4684140f28a199eed46c",
+          "baseline_bytes": 98533,
+          "baseline_rows": 594,
+          "year": null,
+          "archival": true
+        },
+        {
+          "table": "archived_city_properties",
+          "url": "https://web.archive.org/web/20170108092537id_/http://data.sandiego.gov/sites/default/files/city_property_details_datasd_1.csv",
+          "baseline_path": "originals/archived_city_properties/2017-01-08T092537Z/city_property_details_datasd_1.csv",
+          "baseline_sha256": "04177dfd00470cb903dfe92c4b35d31a75b3aa3aa86d171d576e5e8f0fca13ca",
+          "baseline_bytes": 491984,
+          "baseline_rows": 4069,
+          "year": null,
+          "archival": true
+        },
+        {
+          "table": "archived_city_lease_billing",
+          "url": "https://web.archive.org/web/20161227000550id_/http://data.sandiego.gov/sites/default/files/city_property_billing_datasd_0.csv",
+          "baseline_path": "originals/archived_city_lease_billing/2016-12-27T000550Z/city_property_billing_datasd_0.csv",
+          "baseline_sha256": "190b2623d292ca02b5847d326e4d5431354b6f9c56fcbec533de1ff8bedab0f6",
+          "baseline_bytes": 11253094,
+          "baseline_rows": 150201,
+          "year": null,
+          "archival": true
+        },
+        {
+          "table": "archived_city_lease_billing",
+          "url": "https://web.archive.org/web/20170108190143id_/http://data.sandiego.gov/sites/default/files/city_property_billing_datasd_1.csv",
+          "baseline_path": "originals/archived_city_lease_billing/2017-01-08T190143Z/city_property_billing_datasd_1.csv",
+          "baseline_sha256": "2f0bac59ad2f0857e867b48587ecaf958ba2aeec9f1f456af84c518437f4d606",
+          "baseline_bytes": 11286462,
+          "baseline_rows": 150603,
+          "year": null,
+          "archival": true
+        },
+        {
+          "table": "archived_service_reports",
+          "url": "https://web.archive.org/web/20260512132416id_/https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_open_datasd.csv",
+          "baseline_path": "originals/archived_service_reports/2026-05-12T132416Z/get_it_done_requests_open_datasd.csv",
+          "baseline_sha256": "ca9a0513fac38285d8b5449c25b17877f56eeee9afa695cbca96ab63c24bcea5",
+          "baseline_bytes": 32593342,
+          "baseline_rows": 86372,
+          "year": null,
+          "archival": true
+        }
+      ]
+    }
+  ],
+  "upstream_candidates": [
+    {
+      "repo": "chrissoria/ca-city-councils",
+      "fit": "Current successor to san-diego-council; assess primary-source document links, coverage and source-ID corrections. Follow upstream build scripts and schema rather than create a competing council dataset."
+    },
+    {
+      "repo": "chrissoria/ca-county-boards",
+      "fit": "CC0 statewide county-board tables include San Diego; assess original San Diego reader, grant/agreement identifiers and provenance before proposing changes."
+    },
+    {
+      "repo": "chrissoria/san-diego-ordinances",
+      "fit": "Local ordinance corpus: assess citations, effective dates, amendments and source-link corrections; licence must be verified."
+    },
+    {
+      "repo": "paddybearsf/california-homeless-services",
+      "fit": "Service-provider directory: assess regional coverage and evidence-backed corrections; verify original source and directory scope."
+    }
+  ]
+}

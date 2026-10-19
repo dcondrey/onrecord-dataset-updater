@@ -1,0 +1,106 @@
+{
+  "manifestCanonicalBase64": "eyJwYWNrIjoiY2EtcHVibGljLW1vbmV5IiwicGFja1ZlcnNpb24iOiIyMDI2LjEwLjgiLCJzY2hlbWFWZXJzaW9uIjoiMS4wIiwiYnVpbHRBdCI6IjIwMjYtMTAtMDhUMDY6NTc6MDQuMDA5ODcwKzAwOjAwIiwibGljZW5jZSI6eyJpZCI6Im1peGVkIiwidXJsIjoiaHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kYXRhc2V0cy9Xcml0ZXJzbG9naWMvb25yZWNvcmQtY2EtcHVibGljLW1vbmV5IiwiZGlzY2xhaW1lciI6IlRoaXMgcGFjaydzIGZpbGVzIGNvbWUgZnJvbSBzZXZlcmFsIHB1Ymxpc2hlcnM6IHNlZSBlYWNoIGZpbGUncyBsaWNlbmNlLCBhdHRyaWJ1dGlvbiBhbmQgZGlzY2xhaW1lci4ifSwiZmlsZXMiOlt7InBhdGgiOiJvcmlnaW5hbHMvc2NvX2NpdHlfZXhwZW5kaXR1cmVzL2V4cG9ydC5jc3YiLCJ0YWJsZSI6InNjb19jaXR5X2V4cGVuZGl0dXJlcyIsImZvcm1hdCI6Ik9SSUdJTkFMIiwic291cmNlVXJsIjoiaHR0cHM6Ly9ieXRoZW51bWJlcnMuc2NvLmNhLmdvdi9hcGkvdjMvdmlld3MvanUzdy00Z3hwL2V4cG9ydC5jc3YiLCJyZXRyaWV2ZWRBdCI6IjIwMjYtMTAtMDhUMDY6NTU6MTAuNzU2ODc1WiIsInNoYTI1NiI6IjQwOGMzNzY2ZmQzODM2ZmYzMGE5Nzk4MTE1NDUzYmRjYWJjYzYyNTZhZDE0MDFmMjY0YjIzZjBkNzZjMmVjZWEiLCJieXRlcyI6MzI1MjE4MjcxLCJyb3dzIjoxMzY3NjE4LCJ5ZWFyIjpudWxsLCJwYXJ0aWFsIjp0cnVlLCJsYXN0TW9kaWZpZWQiOiJUaHUsIDA4IE9jdCAyMDI2IDA2OjU1OjA5IEdNVCIsImV0YWciOiJXL1wibDd6YlRFOEdleHN4aU9hVTc3bFVMcGYwd3RBcnY3eUFZV3dvQnRYTTR6cy0tZ3ppcFwiIiwibGljZW5jZSI6eyJpZCI6InB1YmxpYy1kb21haW4iLCJ1cmwiOiJodHRwczovL2J5dGhlbnVtYmVycy5zY28uY2EuZ292L2FwaS92aWV3cy9qdTN3LTRneHAuanNvbiIsImF0dHJpYnV0aW9uIjoiQ2FsaWZvcm5pYSBTdGF0ZSBDb250cm9sbGVyJ3MgT2ZmaWNlIiwiZGlzY2xhaW1lciI6bnVsbH19LHsicGF0aCI6InBhcnF1ZXQvc2NvX2NpdHlfZXhwZW5kaXR1cmVzL2V4cG9ydC5wYXJxdWV0IiwidGFibGUiOiJzY29fY2l0eV9leHBlbmRpdHVyZXMiLCJmb3JtYXQiOiJQQVJRVUVUIiwic291cmNlVXJsIjoiaHR0cHM6Ly9ieXRoZW51bWJlcnMuc2NvLmNhLmdvdi9hcGkvdjMvdmlld3MvanUzdy00Z3hwL2V4cG9ydC5jc3YiLCJyZXRyaWV2ZWRBdCI6IjIwMjYtMTAtMDhUMDY6NTU6MTAuNzU2ODc1WiIsInNoYTI1NiI6IjdiZmRkZTgzOGM4ZjIwZjgzY2RlYjQ0M2IxMWJlMTk1ZGQyODFkYTFmMWM1MDg4ODZiZWIyYWM2N2JiMDhkNTgiLCJieXRlcyI6MjYzOTc0MzAsInJvd3MiOjEzNjc2MTgsImV4Y2x1ZGVkUm93cyI6MCwieWVhciI6bnVsbCwicGFydGlhbCI6dHJ1ZSwibGFzdE1vZGlmaWVkIjoiVGh1LCAwOCBPY3QgMjAyNiAwNjo1NTowOSBHTVQiLCJldGFnIjoiVy9cImw3emJURThHZXhzeGlPYVU3N2xVTHBmMHd0QXJ2N3lBWVd3b0J0WE00enMtLWd6aXBcIiIsImxpY2VuY2UiOnsiaWQiOiJwdWJsaWMtZG9tYWluIiwidXJsIjoiaHR0cHM6Ly9ieXRoZW51bWJlcnMuc2NvLmNhLmdvdi9hcGkvdmlld3MvanUzdy00Z3hwLmpzb24iLCJhdHRyaWJ1dGlvbiI6IkNhbGlmb3JuaWEgU3RhdGUgQ29udHJvbGxlcidzIE9mZmljZSIsImRpc2NsYWltZXIiOm51bGx9fSx7InBhdGgiOiJvcmlnaW5hbHMvc2NvX2NpdHlfcmV2ZW51ZXMvZXhwb3J0LmNzdiIsInRhYmxlIjoic2NvX2NpdHlfcmV2ZW51ZXMiLCJmb3JtYXQiOiJPUklHSU5BTCIsInNvdXJjZVVybCI6Imh0dHBzOi8vYnl0aGVudW1iZXJzLnNjby5jYS5nb3YvYXBpL3YzL3ZpZXdzL3JydHYtcnNqOS9leHBvcnQuY3N2IiwicmV0cmlldmVkQXQiOiIyMDI2LTEwLTA4VDA2OjU1OjQyLjQ5MzkwNloiLCJzaGEyNTYiOiIyYjAwOWFiY2E5N2EyNzRjYTVkOGUyMDY3NTUyNDE3MWJlMDA4YWY2MGM5MTE1YmQ4NjQ4N2VlODcwOTEwZjI5IiwiYnl0ZXMiOjg4ODEyOTk3Mywicm93cyI6MjU1NzUyOCwieWVhciI6bnVsbCwicGFydGlhbCI6dHJ1ZSwibGFzdE1vZGlmaWVkIjoiVGh1LCAwOCBPY3QgMjAyNiAwNjo1NTo0MSBHTVQiLCJldGFnIjoiVy9cImlXUTlvcWozaWJFRXNZeXIwQmM3UV9qNmMxbHdtQXVaV29SVDhLdm93ZVktLWd6aXBcIiIsImxpY2VuY2UiOnsiaWQiOiJwdWJsaWMtZG9tYWluIiwidXJsIjoiaHR0cHM6Ly9ieXRoZW51bWJlcnMuc2NvLmNhLmdvdi9hcGkvdmlld3MvcnJ0di1yc2o5Lmpzb24iLCJhdHRyaWJ1dGlvbiI6IkNhbGlmb3JuaWEgU3RhdGUgQ29udHJvbGxlcidzIE9mZmljZSIsImRpc2NsYWltZXIiOm51bGx9fSx7InBhdGgiOiJwYXJxdWV0L3Njb19jaXR5X3JldmVudWVzL2V4cG9ydC5wYXJxdWV0IiwidGFibGUiOiJzY29fY2l0eV9yZXZlbnVlcyIsImZvcm1hdCI6IlBBUlFVRVQiLCJzb3VyY2VVcmwiOiJodHRwczovL2J5dGhlbnVtYmVycy5zY28uY2EuZ292L2FwaS92My92aWV3cy9ycnR2LXJzajkvZXhwb3J0LmNzdiIsInJldHJpZXZlZEF0IjoiMjAyNi0xMC0wOFQwNjo1NTo0Mi40OTM5MDZaIiwic2hhMjU2IjoiNzczMWEyNTJjYTA5YzFkZjBmZjcxZGQ4YzEyN2I4NjU3Zjc5NGQxNWNlZGQ3MjhhOWE3NzAzMjYwZjY3NTYzNCIsImJ5dGVzIjo1MDAwMjgzMiwicm93cyI6MjU1NzUyOCwiZXhjbHVkZWRSb3dzIjowLCJ5ZWFyIjpudWxsLCJwYXJ0aWFsIjp0cnVlLCJsYXN0TW9kaWZpZWQiOiJUaHUsIDA4IE9jdCAyMDI2IDA2OjU1OjQxIEdNVCIsImV0YWciOiJXL1wiaVdROW9xajNpYkVFc1l5cjBCYzdRX2o2YzFsd21BdVpXb1JUOEt2b3dlWS0tZ3ppcFwiIiwibGljZW5jZSI6eyJpZCI6InB1YmxpYy1kb21haW4iLCJ1cmwiOiJodHRwczovL2J5dGhlbnVtYmVycy5zY28uY2EuZ292L2FwaS92aWV3cy9ycnR2LXJzajkuanNvbiIsImF0dHJpYnV0aW9uIjoiQ2FsaWZvcm5pYSBTdGF0ZSBDb250cm9sbGVyJ3MgT2ZmaWNlIiwiZGlzY2xhaW1lciI6bnVsbH19XX0=",
+  "manifestSha256": "1f9cb166729c3ea52d5760d7f90295d9d9a08e15622a9f97cc38943e713931c9",
+  "manifest": {
+    "pack": "ca-public-money",
+    "packVersion": "2026.10.8",
+    "schemaVersion": "1.0",
+    "builtAt": "2026-10-08T06:57:04.009870+00:00",
+    "licence": {
+      "id": "mixed",
+      "url": "https://huggingface.co/datasets/Writerslogic/onrecord-ca-public-money",
+      "disclaimer": "This pack's files come from several publishers: see each file's licence, attribution and disclaimer."
+    },
+    "files": [
+      {
+        "path": "originals/sco_city_expenditures/export.csv",
+        "table": "sco_city_expenditures",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://bythenumbers.sco.ca.gov/api/v3/views/ju3w-4gxp/export.csv",
+        "retrievedAt": "2026-10-08T06:55:10.756875Z",
+        "sha256": "408c3766fd3836ff30a9798115453bdcabcc6256ad1401f264b23f0d76c2ecea",
+        "bytes": 325218271,
+        "rows": 1367618,
+        "year": null,
+        "partial": true,
+        "lastModified": "Thu, 08 Oct 2026 06:55:09 GMT",
+        "etag": "W/\"l7zbTE8GexsxiOaU77lULpf0wtArv7yAYWwoBtXM4zs--gzip\"",
+        "licence": {
+          "id": "public-domain",
+          "url": "https://bythenumbers.sco.ca.gov/api/views/ju3w-4gxp.json",
+          "attribution": "California State Controller's Office",
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/sco_city_expenditures/export.parquet",
+        "table": "sco_city_expenditures",
+        "format": "PARQUET",
+        "sourceUrl": "https://bythenumbers.sco.ca.gov/api/v3/views/ju3w-4gxp/export.csv",
+        "retrievedAt": "2026-10-08T06:55:10.756875Z",
+        "sha256": "7bfdde838c8f20f83cdeb443b11be195dd281da1f1c508886beb2ac67bb08d58",
+        "bytes": 26397430,
+        "rows": 1367618,
+        "excludedRows": 0,
+        "year": null,
+        "partial": true,
+        "lastModified": "Thu, 08 Oct 2026 06:55:09 GMT",
+        "etag": "W/\"l7zbTE8GexsxiOaU77lULpf0wtArv7yAYWwoBtXM4zs--gzip\"",
+        "licence": {
+          "id": "public-domain",
+          "url": "https://bythenumbers.sco.ca.gov/api/views/ju3w-4gxp.json",
+          "attribution": "California State Controller's Office",
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "originals/sco_city_revenues/export.csv",
+        "table": "sco_city_revenues",
+        "format": "ORIGINAL",
+        "sourceUrl": "https://bythenumbers.sco.ca.gov/api/v3/views/rrtv-rsj9/export.csv",
+        "retrievedAt": "2026-10-08T06:55:42.493906Z",
+        "sha256": "2b009abca97a274ca5d8e20675524171be008af60c9115bd86487ee870910f29",
+        "bytes": 888129973,
+        "rows": 2557528,
+        "year": null,
+        "partial": true,
+        "lastModified": "Thu, 08 Oct 2026 06:55:41 GMT",
+        "etag": "W/\"iWQ9oqj3ibEEsYyr0Bc7Q_j6c1lwmAuZWoRT8KvoweY--gzip\"",
+        "licence": {
+          "id": "public-domain",
+          "url": "https://bythenumbers.sco.ca.gov/api/views/rrtv-rsj9.json",
+          "attribution": "California State Controller's Office",
+          "disclaimer": null
+        }
+      },
+      {
+        "path": "parquet/sco_city_revenues/export.parquet",
+        "table": "sco_city_revenues",
+        "format": "PARQUET",
+        "sourceUrl": "https://bythenumbers.sco.ca.gov/api/v3/views/rrtv-rsj9/export.csv",
+        "retrievedAt": "2026-10-08T06:55:42.493906Z",
+        "sha256": "7731a252ca09c1df0ff71dd8c127b8657f794d15cedd728a9a7703260f675634",
+        "bytes": 50002832,
+        "rows": 2557528,
+        "excludedRows": 0,
+        "year": null,
+        "partial": true,
+        "lastModified": "Thu, 08 Oct 2026 06:55:41 GMT",
+        "etag": "W/\"iWQ9oqj3ibEEsYyr0Bc7Q_j6c1lwmAuZWoRT8KvoweY--gzip\"",
+        "licence": {
+          "id": "public-domain",
+          "url": "https://bythenumbers.sco.ca.gov/api/views/rrtv-rsj9.json",
+          "attribution": "California State Controller's Office",
+          "disclaimer": null
+        }
+      }
+    ]
+  },
+  "signature": {
+    "algorithm": "Ed25519",
+    "publicKeyHex": "b42202850cd9ecda4ab2b96548891d3a2a8275f74dde76bba2153826089ca8ff",
+    "signerKeyId": "266f3c9c0320f40951854c7af66b6e73395a6735828fa04092c1cf79d2dafd2d",
+    "signatureHex": "70b4b25207248111b44452a08714aea60beecbc2eb6bf29c0c191eb9b8f5c0749aea32232f28b56cf7054601e3ed195ab425d5d43aab34d6dfc4edba49d0050c",
+    "identityAssurance": "SELF_MANAGED_LOCAL_KEY_NOT_EXTERNALLY_ATTESTED"
+  }
+}
