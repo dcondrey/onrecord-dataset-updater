@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-16T22:31:18.227972Z",
-  "downloaded_bytes": 392369112,
-  "elapsed_seconds": 78.79,
+  "checked_at": "2026-11-24T00:22:10.798737Z",
+  "downloaded_bytes": 398460370,
+  "elapsed_seconds": 62.63,
   "packs": [
     {
-      "commit": "dd1f930a1bef6c0c9667719f81cdaccd1f565f03",
+      "commit": "2a3f86ef16df1dfea17af3f6b3e1e34671923470",
       "repo": "Writerslogic/onrecord-san-diego-money",
       "status": "published",
       "updated_sources": 1
@@ -17,13 +17,13 @@
       "updated_sources": 0
     },
     {
-      "commit": "177be1aa75b05f9ba4d50b4c6b0eacf5921fb197",
+      "commit": null,
       "repo": "Writerslogic/onrecord-san-diego-capacity",
-      "status": "published",
-      "updated_sources": 2
+      "status": "no_updates",
+      "updated_sources": 0
     },
     {
-      "commit": "dbc84252348eb130207ab016f694fddd2bf98381",
+      "commit": "87fc95ce0def019a52a7d44b284ccdbeef805de3",
       "discovery_warning": "Publisher crawling policy disallows retrieval",
       "repo": "Writerslogic/onrecord-ca-housing",
       "status": "published",
@@ -42,16 +42,16 @@
       "updated_sources": 0
     },
     {
-      "commit": "8835cfa06b33cd7ae07b3ab06522968338f8392f",
+      "commit": "99d61b8d9cb732a7179b684b468aaa18ec57b293",
       "repo": "Writerslogic/onrecord-san-diego-enforcement",
       "status": "published",
-      "updated_sources": 1
+      "updated_sources": 2
     },
     {
-      "commit": "250061b435a343e4cda0b69a2db1d599cb4b6d2b",
+      "commit": "3933e977270ca57cb3ae71a73e8c4b4f8249c107",
       "repo": "Writerslogic/onrecord-san-diego-snapshots",
       "status": "published",
-      "updated_sources": 3
+      "updated_sources": 4
     },
     {
       "commit": null,
@@ -77,9 +77,9 @@
       "url": "https://seshat.datasd.org/city_owned_properties_parcels/city_property_parcels_datasd.csv"
     },
     {
-      "bytes": 154702,
+      "bytes": 154951,
       "repo": "Writerslogic/onrecord-san-diego-money",
-      "sha256": "cd6261b4210d33fdcd98b98a7235b20042013344dd42a2e422593761b8498af9",
+      "sha256": "156f16a27f2937b991392b889dc8291f76dd910fa17ae6be6b5bdbd0dbd143bf",
       "status": "validated_update",
       "table": "city_leases",
       "url": "https://seshat.datasd.org/city_owned_properties_leases/city_property_leases_datasd.csv"
@@ -211,10 +211,11 @@
       "url": "https://files.hudexchange.info/resources/documents/System-Performance-Measures-Data.xlsx"
     },
     {
-      "bytes": 17489075,
+      "bytes": 17889720,
+      "reason": "Repository growth budget reached",
       "repo": "Writerslogic/onrecord-san-diego-capacity",
-      "sha256": "02f7674a6704f7c7b2f236be9ae39476b540d4436230e27d8a4240cf145edec9",
-      "status": "validated_update",
+      "sha256": "577aa860246dd9dde9b5e6e96133e7f60f3e18687b2a45795ec567c3f248b7ad",
+      "status": "budget_deferred",
       "table": "approvals_closed",
       "url": "https://seshat.datasd.org/development_permits/approvals_closed_2026_datasd.csv"
     },
@@ -231,18 +232,19 @@
       "url": "https://seshat.datasd.org/development_permits/approvals_closed_2025_datasd.csv"
     },
     {
-      "bytes": 23243764,
+      "bytes": 23843477,
+      "reason": "Repository growth budget reached",
       "repo": "Writerslogic/onrecord-san-diego-capacity",
-      "sha256": "a5070b4ad5f3de75c653da2d24c1fcd5be00dcc29dda887a74df30be385726df",
-      "status": "validated_update",
+      "sha256": "0d1caafd12cecdf0331821d553bb34343f478a5e9d302af88bbcfe44e9d744ab",
+      "status": "budget_deferred",
       "table": "approvals_issued",
       "url": "https://seshat.datasd.org/development_permits/approvals_issued_2026_datasd.csv"
     },
     {
-      "bytes": 26582409,
+      "bytes": 27270223,
       "reason": "Repository growth budget reached",
       "repo": "Writerslogic/onrecord-san-diego-capacity",
-      "sha256": "48f9c4c1a1b70a3192fe572e11817a12425917511c5f0950dd6316cf186e7fd5",
+      "sha256": "af3b3f9180633d3327df2fcee95bd5b1cf7cbcb4088084f6a967bfbab85c233f",
       "status": "budget_deferred",
       "table": "approvals_created",
       "url": "https://seshat.datasd.org/development_permits/approvals_created_2026_datasd.csv"
@@ -272,33 +274,35 @@
       "url": "https://seshat.datasd.org/development_permits/approvals_created_2025_datasd.csv"
     },
     {
-      "bytes": 44474,
+      "bytes": 44476,
       "repo": "Writerslogic/onrecord-ca-housing",
-      "sha256": "92e45dea4a3038ed8a6b37a431278c8d5897dd33049e02b28b73b872c0894de5",
+      "sha256": "bbbf76d0dd9785609295b001e7cbcfe5c5c2b8ae5f0613db8d1b6450d91e797e",
       "status": "validated_update",
       "table": "rhna_progress_5th_cycle",
       "url": "https://publish.data.ca.gov/dataset/ff082e96-72f7-4443-9747-8b8dadc15671/resource/cff0bc49-dd85-43a1-b1d5-1cfa7cf1ae22/download/rhna_progress_5.csv"
     },
     {
+      "bytes": 47562,
       "repo": "Writerslogic/onrecord-ca-housing",
-      "snapshot_sha256": "5fd6a9f23e3f20982903518b4df4b29a00018687247e7f894d904687c809554a",
-      "status": "publisher_not_modified",
+      "sha256": "ccd53aab99c212ff1950969deff08e799da361c28d9228749359493f7cec8863",
+      "status": "validated_update",
       "table": "rhna_progress_6th_cycle",
       "url": "https://publish.data.ca.gov/dataset/ff082e96-72f7-4443-9747-8b8dadc15671/resource/1e80a9cf-724c-432d-8374-e9708a6a92dc/download/rhna_progress_6.csv"
     },
     {
-      "bytes": 24363601,
+      "bytes": 24370615,
+      "reason": "Repository growth budget reached",
       "repo": "Writerslogic/onrecord-ca-housing",
-      "sha256": "7315b27d8c78de76dbdcf4ded4e3ff340a72a455a4314a689e3908db2ef45976",
-      "status": "validated_update",
+      "sha256": "371410e4a8ab5b07c1c203bfee57f268c49aa7964e4b8b73330e658567d42414",
+      "status": "budget_deferred",
       "table": "city_rental_unit_business_tax_accounts",
       "url": "https://seshat.datasd.org/rtax_accounts/rtax_accounts_datasd.csv"
     },
     {
-      "bytes": 91165762,
+      "bytes": 91174900,
       "reason": "Repository growth budget reached",
       "repo": "Writerslogic/onrecord-ca-housing",
-      "sha256": "e16c776b22d9ac011ca44abdd397eaa1713df0949adffff632c692c19b71c501",
+      "sha256": "6b49a8b84a07a5dfa7ce4fbf485a57bd3b910b77f73a060a350ae004e0393642",
       "status": "budget_deferred",
       "table": "apr_table_a_housing_applications",
       "url": "https://publish.data.ca.gov/dataset/81b0841f-2802-403e-b48e-2ef4b751f77c/resource/c78b769d-cc02-4050-91ef-79ded665b5a8/download/tablea.csv"
@@ -473,19 +477,19 @@
       "url": "https://seshat.datasd.org/fire_ems_incidents/fd_incidents_2024_datasd.csv"
     },
     {
-      "bytes": 31619812,
+      "bytes": 31528318,
       "reason": "Repository growth budget reached",
       "repo": "Writerslogic/onrecord-san-diego-reports",
-      "sha256": "d6d43843b4a6c34f37c78fcf59caf7f620e098fb665e67a24e1d3b2d107bbb7f",
+      "sha256": "fb41dc2c63b7d74383f2600bf9c68a7748e058a49b6ff105fc454148c0a336ac",
       "status": "budget_deferred",
       "table": "service_reports",
       "url": "https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_open_datasd.csv"
     },
     {
-      "bytes": 38498377,
+      "bytes": 39446710,
       "reason": "Repository growth budget reached",
       "repo": "Writerslogic/onrecord-san-diego-reports",
-      "sha256": "a921a6a268c4d173d6480367b4972ae131c50fe901096c5e036cd64af801aef3",
+      "sha256": "3e3e768e51f6a34b7842ef682c20bcbc79a71be439c24b4efbaf08ee7a50b4b2",
       "status": "budget_deferred",
       "table": "police_calls",
       "url": "https://seshat.datasd.org/police_calls_for_service/pd_calls_for_service_2026_datasd.csv"
@@ -587,10 +591,10 @@
       "url": "https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_closed_2022_datasd.csv"
     },
     {
-      "bytes": 125119463,
+      "bytes": 127760811,
       "reason": "Repository growth budget reached",
       "repo": "Writerslogic/onrecord-san-diego-reports",
-      "sha256": "62e06baefed74080ef889344237193f69428348c9ec38dddeb8a820cfb436c34",
+      "sha256": "0de1e5598524c6dae4fca8903448cc74e59dc8df1325df7e2624ab6534463955",
       "status": "budget_deferred",
       "table": "service_reports",
       "url": "https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_closed_2026_datasd.csv"
@@ -627,9 +631,10 @@
       "url": "https://seshat.datasd.org/hate_crimes/hate_crimes_datasd.csv"
     },
     {
+      "bytes": 620849,
       "repo": "Writerslogic/onrecord-san-diego-enforcement",
-      "snapshot_sha256": "052615dbd32d7f732b4cf090f820a2a4f631acfb25da4814e90ada6a3ea0f247",
-      "status": "publisher_not_modified",
+      "sha256": "4286afd97f4923f4c181bcc7a3068228d4de63b24d589602a9aae021cfd6f825",
+      "status": "validated_update",
       "table": "police_stop_seizure_basis",
       "url": "https://seshat.datasd.org/police_ripa_prop_seize_basis/ripa_prop_seize_basis_datasd.csv"
     },
@@ -641,9 +646,9 @@
       "url": "https://seshat.datasd.org/parking_citations/parking_citations_2026_part2_datasd.csv"
     },
     {
-      "bytes": 12396904,
+      "bytes": 12423096,
       "repo": "Writerslogic/onrecord-san-diego-enforcement",
-      "sha256": "457417b040222433a114eb11b044dd4f802f5a322b66a7637441a558abfa8563",
+      "sha256": "ce884b8943db296a9181c086c6c5583896fd4173a450116e7f91dae2ee3c7780",
       "status": "validated_update",
       "table": "traffic_collisions",
       "url": "https://seshat.datasd.org/traffic_collisions/pd_collisions_datasd.csv"
@@ -937,9 +942,9 @@
       "url": "https://seshat.datasd.org/city_owned_properties_parcels/city_property_parcels_datasd.csv"
     },
     {
-      "bytes": 154702,
+      "bytes": 154951,
       "repo": "Writerslogic/onrecord-san-diego-snapshots",
-      "sha256": "cd6261b4210d33fdcd98b98a7235b20042013344dd42a2e422593761b8498af9",
+      "sha256": "156f16a27f2937b991392b889dc8291f76dd910fa17ae6be6b5bdbd0dbd143bf",
       "status": "validated_update",
       "table": "city_leases",
       "url": "https://seshat.datasd.org/city_owned_properties_leases/city_property_leases_datasd.csv"
@@ -966,9 +971,10 @@
       "url": "https://seshat.datasd.org/departments_city_budget/budget_reference_depts_datasd.csv"
     },
     {
+      "bytes": 620849,
       "repo": "Writerslogic/onrecord-san-diego-snapshots",
-      "snapshot_sha256": "052615dbd32d7f732b4cf090f820a2a4f631acfb25da4814e90ada6a3ea0f247",
-      "status": "publisher_not_modified",
+      "sha256": "4286afd97f4923f4c181bcc7a3068228d4de63b24d589602a9aae021cfd6f825",
+      "status": "validated_update",
       "table": "police_stop_seizure_basis",
       "url": "https://seshat.datasd.org/police_ripa_prop_seize_basis/ripa_prop_seize_basis_datasd.csv"
     },
@@ -980,17 +986,17 @@
       "url": "https://seshat.datasd.org/city_owned_properties/city_property_details_datasd.csv"
     },
     {
-      "bytes": 12396904,
+      "bytes": 12423096,
       "repo": "Writerslogic/onrecord-san-diego-snapshots",
-      "sha256": "457417b040222433a114eb11b044dd4f802f5a322b66a7637441a558abfa8563",
+      "sha256": "ce884b8943db296a9181c086c6c5583896fd4173a450116e7f91dae2ee3c7780",
       "status": "validated_update",
       "table": "traffic_collisions",
       "url": "https://seshat.datasd.org/traffic_collisions/pd_collisions_datasd.csv"
     },
     {
-      "bytes": 31619812,
+      "bytes": 31528318,
       "repo": "Writerslogic/onrecord-san-diego-snapshots",
-      "sha256": "d6d43843b4a6c34f37c78fcf59caf7f620e098fb665e67a24e1d3b2d107bbb7f",
+      "sha256": "fb41dc2c63b7d74383f2600bf9c68a7748e058a49b6ff105fc454148c0a336ac",
       "status": "validated_update",
       "table": "service_reports",
       "url": "https://seshat.datasd.org/get_it_done_reports/get_it_done_requests_open_datasd.csv"
@@ -1108,9 +1114,9 @@
   "upstream_candidates": [
     {
       "action": "review_for_reuse_or_contribution",
-      "commit": "fbf6acafcc5a6ec027e68a750029f0ff0ea0f1e0",
+      "commit": "9c5fa7dcbdd7961a72deeb8f38281d4cea4d7d11",
       "fit": "Current successor to san-diego-council; assess primary-source document links, coverage and source-ID corrections. Follow upstream build scripts and schema rather than create a competing council dataset.",
-      "last_modified": "2026-11-16T14:11:22.000Z",
+      "last_modified": "2026-11-23T14:09:46.000Z",
       "licence_tags": [
         "license:cc0-1.0"
       ],
@@ -1118,9 +1124,9 @@
     },
     {
       "action": "review_for_reuse_or_contribution",
-      "commit": "1bc6f8cfc563fda1b4864eb3314ecabe4ed2bb2a",
+      "commit": "492fc9083f2674118193a47637d5761910a4d0e8",
       "fit": "CC0 statewide county-board tables include San Diego; assess original San Diego reader, grant/agreement identifiers and provenance before proposing changes.",
-      "last_modified": "2026-11-16T15:38:18.000Z",
+      "last_modified": "2026-11-23T15:05:57.000Z",
       "licence_tags": [
         "license:cc0-1.0"
       ],
@@ -1128,9 +1134,9 @@
     },
     {
       "action": "review_for_reuse_or_contribution",
-      "commit": "4a7b2de21c028a11a33b2bcdf05d99d8c22513d3",
+      "commit": "8de22e65f43cfe5095d3445b490a6265fabd020c",
       "fit": "Local ordinance corpus: assess citations, effective dates, amendments and source-link corrections; licence must be verified.",
-      "last_modified": "2026-11-15T14:34:15.000Z",
+      "last_modified": "2026-11-22T14:06:26.000Z",
       "licence_tags": [],
       "repo": "chrissoria/san-diego-ordinances"
     },
